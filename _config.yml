@@ -21,6 +21,7 @@ callouts:
     title: Warning
     color: red
 
+color_scheme: dark
 
 
 #aux_links:
