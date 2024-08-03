@@ -1,6 +1,7 @@
 ---
 title: Rules
 layout: home
+nav_order: 2
 ---
 
 # Project Connecticut Rules
