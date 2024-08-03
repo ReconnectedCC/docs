@@ -5,7 +5,7 @@ nav_order: 1
 ---
 
 # Project Connecticut
-Test Site!
+
 Project Connecticut is a ComputerCraft server that also has the sc-goodies and sc-peripherals mods from the SwitchCraft server.
 
 ## How do I join?
