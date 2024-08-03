@@ -1,6 +1,6 @@
 ---
 title: Rules
-layout: rules
+layout: home
 ---
 
 # Project Connecticut Rules
