@@ -48,6 +48,8 @@ nav_order: 2
 
 **3.4** Any bug that has the potential if being exploited by other players, should be **silently** and **responsibly** disclosed to a member of staff.
 
+**3.5** Do not use a seed structure predictor to predict structures. This causes an unfair advantage to players who can't do this.
+
 # ***§4*** Do not be a nuisance to other players
 **4.1** Spamming any type of chats with repeated words, repeated messages, pinging users or any other unwanted behaviour that could be considered disruptive to chatting is not allowed.
 
