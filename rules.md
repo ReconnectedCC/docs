@@ -33,6 +33,8 @@ nav_order: 2
 
 **2.7** Attempting to corrupt the world or chunkban yourself or another player by creating invalid items, blocks or network packets is not allowed.
 
+**2.8** Do not chain startup commands to other computers from a computer set up as a startup computer by staff.
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**2.7.1** Nesting containers is considered an invalid item and is not allowed.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**2.7.2** Creating items or blocks with excessive NBT data is not allowed.
