@@ -18,7 +18,7 @@ We use [packwiz](packwiz.infra.link) to distribute our modpack, the server IP is
 
 | Mod                                                                   | Side   | Optional | Depends by                           | Depends on             | Notes                                     |
 | --------------------------------------------------------------------- | ------ | -------- | ------------------------------------ | ---------------------- | ----------------------------------------- |
-| Architectury API                                                      | Both   |          | Unknown                              |                        |                                           |
+| [Architectury API](https://modrinth.com/mod/architectury-api)         | Both   |          | Unknown                              |                        |                                           |
 | [Bobby](https://modrinth.com/mod/bobby)                               | Client | Yes      |                                      |                        |                                           |
 | ~~[Asahi](https://modrinth.com/mod/asahi)~~                           | Client |          |                                      |                        | (currently removed because of issues)     |
 | [cc-prometheus](https://github.com/project-connecticut/cc-prometheus) | Server |          |                                      |                        | (A 1.21 fabric-only port)                 |
