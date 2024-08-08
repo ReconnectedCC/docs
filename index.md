@@ -48,6 +48,7 @@ We use [packwiz](packwiz.infra.link) to distribute our modpack, the server IP is
 | [No Chat Reports](https://modrinth.com/mod/no-chat-reports)           | Both   |          |                                      |                        | Public chat encryption is **not** allowed |
 | [Nvidium](https://modrinth.com/mod/nvidium)                           | Client | Yes      |                                      |                        |                                           |
 | [oωo (owo-lib)](https://modrinth.com/mod/owo-lib)                     | Server |          | ct-server                            |                        |                                           |
+| [Placeholder API](https://github.com/LuckPerms/placeholders/pull/58)  | Server |          | LuckPerms                            |                        |                                           |
 | [Roughly Enough Items](https://modrinth.com/mod/rei)                  | Client |          |                                      |                        |                                           |
 | [Seedguard](https://modrinth.com/mod/seedguard)                       | Server |          |                                      |                        |                                           |
 | [Sodium](https://modrinth.com/mod/sodium)                             | Client | Yes      | Indium                               | Indium                 |                                           |
