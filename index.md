@@ -38,7 +38,7 @@ We use [packwiz](packwiz.infra.link) to distribute our modpack, the server IP is
 | [FabricProxy-Lite](https://modrinth.com/mod/fabricproxy-lite)         | Server |          |                                      |                        |                                           |
 | [FancyMenu](https://modrinth.com/mod/fancymenu)                       | Client |          |                                      | Kokrete                | Preconfigured with a start menu           |
 | [Flan](https://modrinth.com/mod/flan)                                 | Server |          |                                      |                        | To be replaced                            |
-| [Indium](https://modrinth.com/mod/indium)                             | Client |          | Iris                                 |                        |                                           |
+| [Indium](https://modrinth.com/mod/indium)                             | Client | Yes         | Iris                                 |                        |                                           |
 | [Iris](https://modrinth.com/mod/iris)                                 | Cleint | Yes      | Nvidium                              | Sodium                 |                                           |
 | [Konkrete](https://modrinth.com/mod/konkrete)                         | Client |          | FancyMenu                            |                        |                                           |
 | [LuckPerms](https://modrinth.com/mod/luckperms)                       | Server |          |                                      | Fabric Permissions API |                                           |
