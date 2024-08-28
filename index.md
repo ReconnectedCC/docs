@@ -14,6 +14,10 @@ Join by downloading the modpack at [https://pack.ct.knijn.one/pack.zip](https://
 
 We use [packwiz](packwiz.infra.link) to distribute our modpack, the server IP is in the modpack.
 
+## How do I report issues and bugs?
+
+Right now, the easiest way to report issues and bugs is through our [contact form](https://forms.gle/uRGiuwez9xfpqQVv9)
+
 ## What is our mod list?
 
 | Mod                                                                   | Side   | Optional | Depends by                           | Depends on             | Notes                                     |
