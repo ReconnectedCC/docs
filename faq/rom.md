@@ -4,11 +4,11 @@ layout: home
 parent: FAQ
 ---
 
-# The Project Connecticut ROM
+# The ReconnectedCC ROM
 
-Here are the programs included in the ComputerCraft ROM on Project Connecticut.
+Here are the programs included in the ComputerCraft ROM on ReconnectedCC.
 
-The GitHub repo for the Project Connecticut ROM can be found at [github.com/project-connecticut/rom](https://github.com/project-connecticut/rom)
+The GitHub repo for the ReconnectedCC ROM can be found at [github.com/project-connecticut/rom](https://github.com/project-connecticut/rom)
 
 ## Libraries
 ### bigfont.lua
@@ -18,7 +18,7 @@ A library by Wojbie that allows you to write bigger text than the stock font
 An SC3 and SC2 compatible API, for backwards compatibility with older applications.
 
 ### connecticut.lua
-An API specific to the Project Connecticut server
+An API specific to the ReconnectedCC server
 
 ## Programs
 ### Cloud Catcher

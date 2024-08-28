@@ -4,7 +4,7 @@ layout: home
 nav_order: 2
 ---
 
-# Project Connecticut Rules
+# ReconnectedCC Rules
 ## ***§1*** Do not grief or deface the world
 **1.1** Griefing anyone's work, including programs on computers, even if it is unclaimed, is not allowed.
 

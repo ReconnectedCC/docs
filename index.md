@@ -4,13 +4,13 @@ layout: home
 nav_order: 1
 ---
 
-# Project Connecticut
+# ReconnectedCC
 
-Project Connecticut is a ComputerCraft server that also has the sc-goodies and sc-peripherals mods from the SwitchCraft server.
+ReconnectedCC is a ComputerCraft server that also has the sc-goodies and sc-peripherals mods from the SwitchCraft server.
 
 ## How do you join?
 
-Join by downloading the modpack at [https://pack.ct.knijn.one/pack.zip](https://pack.ct.knijn.one/pack.zip)
+Join by downloading the modpack at [https://pack.reconnected.cc/pack.zip](https://pack.reconnected.cc/pack.zip)
 
 We use [packwiz](packwiz.infra.link) to distribute our modpack, the server IP is in the modpack.
 
@@ -68,6 +68,17 @@ Right now, the easiest way to report issues and bugs is through our [contact for
 | [Trinkets](https://modrinth.com/mod/trinkets)                         | Both   |                             |                                      |                        |                                           |
 | [Vanilla Permissions](https://modrinth.com/mod/vanilla-permissions)   | Server |                             |                                      | Vanilla Permissions    |                                           |
 | [VulkanMod](https://modrinth.com/mod/vulkanmod)                       | Client | Yes                         |                                      |                        |                                           |
+
 ## How do we compare to other ComputerCraft servers?
-
-
+|                          | ReconnectedCC    | Lumina CC        | CC Factions                   | SwitchCraft3                                       |
+| ------------------------ | ---------------- | ---------------- | ----------------------------- | -------------------------------------------------- |
+| In operation             | Yes              | Yes              | Yes                           | No                                                 |
+| Server Location          | Finland          | Midwest          | Argentina (through Frankfurt) | Finland (through Frankfurt, Amsterdam and Ashburn) |
+| Server Version           | 1.21             | 1.20.1           | 1.12.2                        | 1.20.1                                             |
+| Server Type              | Dedicated Server | Dedicated server | 2008 laptop                   | Dedicated server                                   |
+| Server Host              | Hetzner          | In a house       | In a house                    | Hetzner                                            |
+| Active community         | TBD              | TBD              | ~4                            | Had ~30                                            |
+| Moderation style         | Personal, chill  | Personal, chill  | chill                         | Corporate                                          |
+| Mod Development location | Partly in house  | Partly in house  | Mostly not in house           | Mostly in house                                    |
+| Mod selection            | Simple           | More content     | Simple                        | Simple                                             |
+| Genre                    | PvE              | TBD              | PvP                           | PvE                                                |
