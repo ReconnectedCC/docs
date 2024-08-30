@@ -70,14 +70,14 @@ Right now, the easiest way to report issues and bugs is through our [contact for
 | [VulkanMod](https://modrinth.com/mod/vulkanmod)                       | Client | Yes                         |                                      |                        |                                           |
 
 ## How do we compare to other ComputerCraft servers?
-|                          | ReconnectedCC    | Lumina CC        | CC Factions                   | SwitchCraft3                                       |
+| Grid                     | ReconnectedCC    | Lumina CC        | CC Factions                   | SwitchCraft3                                       |
 | ------------------------ | ---------------- | ---------------- | ----------------------------- | -------------------------------------------------- |
-| In operation             | Yes              | Yes              | Yes                           | No                                                 |
+| In operation             | Yes              | Yes              | Yes                           | Yes                                                |
 | Server Location          | Finland          | Midwest          | Argentina (through Frankfurt) | Finland (through Frankfurt, Amsterdam and Ashburn) |
 | Server Version           | 1.21             | 1.20.1           | 1.12.2                        | 1.20.1                                             |
 | Server Type              | Dedicated Server | Dedicated server | 2008 laptop                   | Dedicated server                                   |
 | Server Host              | Hetzner          | In a house       | In a house                    | Hetzner                                            |
-| Active community         | TBD              | TBD              | ~4                            | Had ~30                                            |
+| Active community         | TBD              | TBD              | ~4                            | Had ~20                                            |
 | Moderation style         | Personal, chill  | Personal, chill  | chill                         | Corporate                                          |
 | Mod Development location | Partly in house  | Partly in house  | Mostly not in house           | Mostly in house                                    |
 | Mod selection            | Simple           | More content     | Simple                        | Simple                                             |
