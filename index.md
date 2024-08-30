@@ -70,15 +70,17 @@ Right now, the easiest way to report issues and bugs is through our [contact for
 | [VulkanMod](https://modrinth.com/mod/vulkanmod)                       | Client | Yes                         |                                      |                        |                                           |
 
 ## How do we compare to other ComputerCraft servers?
-| Grid                     | ReconnectedCC    | Lumina CC        | CC Factions                   | SwitchCraft3                                       |
-| ------------------------ | ---------------- | ---------------- | ----------------------------- | -------------------------------------------------- |
-| In operation             | Yes              | Yes              | Yes                           | Yes                                                |
-| Server Location          | Finland          | Midwest          | Argentina (through Frankfurt) | Finland (through Frankfurt, Amsterdam and Ashburn) |
-| Server Version           | 1.21             | 1.20.1           | 1.12.2                        | 1.20.1                                             |
-| Server Type              | Dedicated Server | Dedicated server | 2008 laptop                   | Dedicated server                                   |
-| Server Host              | Hetzner          | In a house       | In a house                    | Hetzner                                            |
-| Active community         | TBD              | TBD              | ~4                            | Had ~20                                            |
-| Moderation style         | Personal, chill  | Personal, chill  | chill                         | Corporate                                          |
-| Mod Development location | Partly in house  | Partly in house  | Mostly not in house           | Mostly in house                                    |
-| Mod selection            | Simple           | More content     | Simple                        | Simple                                             |
-| Genre                    | PvE              | TBD              | PvP                           | PvE                                                |
+| Grid                     | ReconnectedCC    | Lumina CC        | CC Factions                   | SwitchCraft3                                       | Devs.SMP            |
+| ------------------------ | ---------------- | ---------------- | ----------------------------- | -------------------------------------------------- | ------------------- |
+| In operation             | Yes              | Yes              | Yes                           | Yes (To be shut down on September 27)              | Yes                 |
+| Server Location          | Finland          | Midwest          | Argentina (through Frankfurt) | Finland (through Frankfurt, Amsterdam and Ashburn) | Germany             |
+| Server Version           | 1.21             | 1.20.1           | 1.12.2                        | 1.20.1                                             | 1.20.1              |
+| Server Type              | Dedicated Server | Dedicated server | 2008 laptop                   | Dedicated server                                   | Dedicated Server    |
+| Server Host              | Hetzner          | In a house       | In a house                    | Hetzner                                            | Hetzner             |
+| Active community         | TBD              | TBD              | ~4                            | Had ~20                                            | ~4                  |
+| Moderation style         | Personal, chill  | Personal, chill  | Chill                         | Corporate                                          | Chill               |
+| Mod Development location | Partly in house  | Partly in house  | Mostly not in house           | Mostly in house                                    | Mostly not in house |
+| Mod selection            | Simple           | More content     | Simple                        | Simple                                             | More =content       |
+| Genre                    | PvE              | TBD              | PvP                           | PvE                                                | PvE                 |
+
+*Would you like to have your server added? Make a PR!*
