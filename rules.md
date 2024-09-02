@@ -12,14 +12,10 @@ nav_order: 2
 
 **1.3** Unsightly builds and purging of land near spawn and other cities is not allowed.
 
-**1.4** Sending disruptive messages via modem or rednet (e.g. trying to break another program, setting up an incorrectly configured GPS server) is not allowed.
-
-**1.5** Do not use No Chat Reports' chat encryption feature in public chat. Using it in private messages is allowed however, as long as the receiving party is able to decode it.
-
-**1.6** Staff reserves the right to remove posters anywhere for any reason.
+**1.4** Staff reserves the right to remove posters anywhere for any reason.
 
 ## ***§2*** Do not abuse system resources with malicious intent
-**2.1** Abusing bugs, either in player software, or server software, is not allowed.
+**2.1** Abusing bugs in server software is not allowed.
 
 **2.2** Don't write programs that cause lag with malicious intent.
 
@@ -33,11 +29,12 @@ nav_order: 2
 
 **2.7** Attempting to corrupt the world or chunkban yourself or another player by creating invalid items, blocks or network packets is not allowed.
 
-**2.8** Do not chain startup commands to other computers from a computer set up as a startup computer by staff.
-
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**2.7.1** Nesting containers is considered an invalid item and is not allowed.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**2.7.2** Creating items or blocks with excessive NBT data is not allowed.
+
+**2.8** Do not chain startup commands to other computers from a computer set up as a startup computer by staff.
+
 
 ## ***§3*** Do not exploit bugs or cheat in any way
 **3.1** Exploiting any bug, new or old, is not allowed.
@@ -50,7 +47,7 @@ nav_order: 2
 
 **3.4** Any bug that has the potential if being exploited by other players, should be **silently** and **responsibly** disclosed to a member of staff.
 
-**3.5** Do not use a seed structure predictor to predict structures. This causes an unfair advantage to players who can't do this.
+**3.5** Do not use a seed structure predictor to predict structures.
 
 # ***§4*** Do not be a nuisance to other players
 **4.1** Spamming any type of chats with repeated words, repeated messages, pinging users or any other unwanted behaviour that could be considered disruptive to chatting is not allowed.
@@ -75,11 +72,9 @@ nav_order: 2
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**4.10.1** This includes in private messages to a player who did not consent to discussing them, or who no longer wishes to discuss them.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**4.10.2** Discussing any of the above topics with players who are under the age of 18 is completely disallowed, even in private messages, even if they are contributing to the discussion and even outside of the server. **Any** disrepsect to the age of consent will result in a non-negotiable ban.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**4.10.2** Discussing any of the above topics with players who are under the age of 18 is completely disallowed, even in private messages, even if they are contributing to the discussion and even outside of the server. **Any** disrespect to the age of consent will result in a non-negotiable ban.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**4.10.3** Discussion of NSFW topics is generally not recommended and should be taken with caution, and should be only taken when a staff member is active and can judge the dicussion.
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**4.10.4** Whenever anything makes you uncomfortable, please contact a staff member privately.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**4.10.3** Whenever anything makes you uncomfortable, please contact a staff member privately.
 
 **4.11** Stealing items or money from a player, shop, company or service, even if they have trusted you, even via an introspection module, is forbidden. This includes through abusing alt accounts, redistributing paid software, scamming, ransomware, impersonation.
 
@@ -95,6 +90,9 @@ nav_order: 2
 
 **4.16** Public chat bots/services of any kind that are not explicitly opt-in are not allowed.
 
+**4.17** Do not use No Chat Reports' chat encryption feature in public chat. Using it in private messages is allowed however, as long as the receiving party is able to decode it.
+
+
 ## ***§5*** Evasion
 **5.1** Attempting to evade a previous punishment is not allowed
 
@@ -104,10 +102,10 @@ nav_order: 2
 
 **5.4** Harassing other players or staff regarding the reasoning for a mute or ban is not allowed
 
-**5.5** Arguing with the terms of the ban is not allowed.
+**5.5** Arguing with the terms of the mute or ban is not allowed.
 
 ## ***§6*** Alt accounts
-**6.1** It is allowed up to 2 accounts, that is one main account and one alt account.
+**6.1** It is allowed to have up to 2 accounts, that is one main account and one alt account.
 
 **6.2** Alt accounts must donate 100% of their income from the server, not doing so is considered theft.
 
