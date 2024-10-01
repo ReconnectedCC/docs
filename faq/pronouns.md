@@ -8,6 +8,8 @@ parent: FAQ
 
 We have a pronouns mod that can display your pronouns in the tab menu.
 
+You will need to relog in order for your pronouns to show up ingame after you've changed them.
+
 <img src="/img/pronouns/pronouns-tab.png">
 
 ## Setting your pronouns
