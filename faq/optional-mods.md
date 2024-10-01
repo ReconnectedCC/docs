@@ -12,7 +12,12 @@ Note that the optional mods have not been as thoroughly tested as our default mo
 ## Sodium
 
 {: .highlight}
-Sodium has not been added to the pack because of rendering issues with certain old iGPUs.
+Sodium has two versions that are shipped by the pack, one is compatible with Nvidium but incompatible with Iris and Distant Horizons, the other is incompatible with Nvidium but compatible with Iris and Distant Horizons
+
+<br>
+
+{: .highlight}
+The new version is enabled by default on the pack, as we think it could be stable enough. Please report any bugs you see.
 
 Sodium is a mod that improves the performance of Minecraft. It should be installed along with Indium, to provide proper rendering support for 3d prints.
 
