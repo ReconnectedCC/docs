@@ -49,7 +49,7 @@ And now rightclick where you want to move that corner to. If all went well you s
 
 # Editing properties of your claim
 
-To edit some properties of your claim (like claim flags, or adding players), use the /flan menu command. This will pop up a menu that allows you to customize various properties of your claim.
+To edit some properties of your claim (like claim flags, or adding players), use the /flan menu command while standing on top of your claim. This will pop up a menu that allows you to customize various properties of your claim.
 
 <img src="/img/claiming/menu.png">
 
