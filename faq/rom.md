@@ -8,7 +8,7 @@ parent: FAQ
 
 Here are the programs included in the ComputerCraft ROM on ReconnectedCC.
 
-The GitHub repo for the ReconnectedCC ROM can be found at [github.com/project-connecticut/rom](https://github.com/project-connecticut/rom)
+The GitHub repo for the ReconnectedCC ROM can be found at [https://github.com/ReconnectedCC/cc-rom](https://github.com/ReconnectedCC/cc-rom)
 
 ## Libraries
 ### bigfont.lua
