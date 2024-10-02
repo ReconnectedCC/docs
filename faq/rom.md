@@ -17,7 +17,7 @@ A library by Wojbie that allows you to write bigger text than the stock font
 ### switchcraft.lua
 An SC3 and SC2 compatible API, for backwards compatibility with older applications.
 
-### connecticut.lua
+### reconnected.lua
 An API specific to the ReconnectedCC server
 
 ## Programs
