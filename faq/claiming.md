@@ -9,7 +9,7 @@ This guide shows you how to claim your land.
 
 # Creating a claim
 
-To create a claim, get a Golden Hoe.
+To create a claim, get a Golden Hoe by crafting it or running /kits and selecting the claim kit (the golden hoe).
 Holding the Golden Hoe will show you the amount of claim blocks you can use.
 
 <img src="/img/claiming/hold_hoe.png">
@@ -27,7 +27,7 @@ Congratulations! You have now created your first claim!
 
 # Resizing a claim
 
-To resize your claim, get a Golden Hoe and a Stick.
+To resize your claim, get a Golden Hoe and a Stick by crafting them or running /kits and selecting the claim kit (the golden hoe).
 
 Rightclick with your Stick where your claim is to view your claim borders.
 
