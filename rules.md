@@ -67,7 +67,7 @@ nav_order: 2
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**4.7.1** Discussion of such language, when it is clear that it is not being used for the intent of harm is okay.
 
-**4.8** Explicit content including: self harm and suicide, gore, shock content, etc. is not allowed.
+**4.8** Explicit content including: self harm and suicide, erotic content, gore, shock content, etc. is not allowed.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**4.8.1** This includes in private messages to a player who did not consent to discussing them, or who no longer wishes to discuss them.
 
