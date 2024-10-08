@@ -77,7 +77,7 @@ nav_order: 2
 
 **4.9** Stealing items or money from a player, shop, company or service, even if they have trusted you, even via an introspection module, is forbidden. This includes through abusing alt accounts, scamming, impersonation.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**4.9.1** Piracy and stealing through exploitation of bugs and other exploits in player software is allowed.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**4.9.1** Piracy and stealing through exploitation of bugs and other exploits in player software is allowed, as long as player data isnt affected maliciously.
 
 **4.10** Do not beg for items, services, claims or money from players, companies or services. It is fine to ask a single player about their property once, but this shouldn't be repeated nor should it happen in bulk.
 
