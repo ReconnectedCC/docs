@@ -105,5 +105,6 @@ nav_order: 2
 **6.2** Alt accounts must donate 100% of their income from the server, not doing so is considered theft.
 
 ## Notes:
-- Anything that is not disallowed by the rules, is allowed.
-- When you do something that a rule has been added for, you will not be retroactively punished for it.
+- Staff interpret the rules. You cannot argue about special cases.
+- Actions not explicitly stated in the rules are special cases and fall under the discretion of the staff members.
+- You are not retroactively punished after being the reason for a new rule.
