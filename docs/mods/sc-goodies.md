@@ -1,7 +1,5 @@
 ---
 title: sc-goodies
-layout: home
-parent: Mods
 ---
 
 # sc-goodies

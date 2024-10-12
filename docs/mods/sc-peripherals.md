@@ -1,7 +1,5 @@
 ---
 title: sc-peripherals
-parent: Mods
-layout: home
 ---
 
 <script setup>

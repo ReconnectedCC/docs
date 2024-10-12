@@ -1,0 +1,41 @@
+site_name: ReconnectedCC
+
+theme:
+  name: material
+  logo: img/rCC.png
+  favicon: img/rCC.png
+  homepage: https://reconnected.cc
+  site_url: https://docs.reconnected.cc
+  palette:
+    scheme: slate
+    primary: red
+  features:
+    - navigation.footer
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.instant
+extra:
+  social:
+    - icon: fontawesome/brands/github 
+      link: https://github.com/ReconnectedCC
+  generator: true
+copyright: Copyright &copy; 2024 ReconnectedCC
+
+markdown_extensions:
+  - admonition
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.details
+
+plugins:
+  - search
+  - awesome-pages
