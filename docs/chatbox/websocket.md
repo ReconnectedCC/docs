@@ -440,6 +440,9 @@ The [event](#event-packet) received when a player posts a message in [Discord](h
 
 ### Chatbox chat event
 
+!!! warning
+    Not yet implemented
+
 The [event](#event-packet) received when another chatbox sends a message.
 
 | Name           | Type                               | Argument Description                                                     |
@@ -668,8 +671,8 @@ The [event](#event-packet) received when a player changes worlds.
 
 ### AFK event
 
-{: .warning }
-> Not yet implemented
+!!! warning
+    Not yet implemented
 
 The [event](#event-packet) received when a player goes AFK in-game.
 
@@ -701,6 +704,9 @@ The [event](#event-packet) received when a player goes AFK in-game.
     ```
 
 ### AFK return event
+
+!!! warning
+    Not yet implemented
 
 The [event](#event-packet) received when a player returns from being AFK in-game.
 
@@ -739,6 +745,9 @@ The [event](#event-packet) received when a player returns from being AFK in-game
 
 ### Server restart scheduled event
 
+!!! warning
+    Not yet implemented
+
 The [event](#event-packet) received when a server restart has been scheduled. At the time of `restartAt`, the server 
 will restart and the websocket will be disconnected with [`server_stopping` (4000)](#closing-packet).
 
@@ -771,6 +780,9 @@ and `restartAt` will be the time the restart will happen.
     ```
 
 ### Server restart cancelled event
+
+!!! warning
+    Not yet implemented
 
 The [event](#event-packet) received when a previously scheduled server restart has now been cancelled.
 
