@@ -1,0 +1,612 @@
+<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>ReconnectedChat API reference - v3.4.1</title><meta name="description" content="Documentation for ReconnectedChat API reference - v3.4.1"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="assets/style.css"/><link rel="stylesheet" href="assets/highlight.css"/><script async src="assets/search.js" id="search-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
+<div class="tsd-toolbar-contents container">
+<div class="table-cell" id="tsd-search" data-base=".">
+<div class="field"><label for="tsd-search-field" class="tsd-widget tsd-toolbar-icon search no-caption"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M15.7824 13.833L12.6666 10.7177C12.5259 10.5771 12.3353 10.499 12.1353 10.499H11.6259C12.4884 9.39596 13.001 8.00859 13.001 6.49937C13.001 2.90909 10.0914 0 6.50048 0C2.90959 0 0 2.90909 0 6.49937C0 10.0896 2.90959 12.9987 6.50048 12.9987C8.00996 12.9987 9.39756 12.4863 10.5008 11.6239V12.1332C10.5008 12.3332 10.5789 12.5238 10.7195 12.6644L13.8354 15.7797C14.1292 16.0734 14.6042 16.0734 14.8948 15.7797L15.7793 14.8954C16.0731 14.6017 16.0731 14.1267 15.7824 13.833ZM6.50048 10.499C4.29094 10.499 2.50018 8.71165 2.50018 6.49937C2.50018 4.29021 4.28781 2.49976 6.50048 2.49976C8.71001 2.49976 10.5008 4.28708 10.5008 6.49937C10.5008 8.70852 8.71314 10.499 6.50048 10.499Z" fill="var(--color-text)"></path></svg></label><input type="text" id="tsd-search-field" aria-label="Search"/></div>
+<div class="field">
+<div id="tsd-toolbar-links"></div></div>
+<ul class="results">
+<li class="state loading">Preparing search index...</li>
+<li class="state failure">The search index is not available</li></ul><a href="index.html" class="title">ReconnectedChat API reference - v3.4.1</a></div>
+<div class="table-cell" id="tsd-widgets"><a href="#" class="tsd-widget tsd-toolbar-icon menu no-caption" data-toggle="menu" aria-label="Menu"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1" y="3" width="14" height="2" fill="var(--color-text)"></rect><rect x="1" y="7" width="14" height="2" fill="var(--color-text)"></rect><rect x="1" y="11" width="14" height="2" fill="var(--color-text)"></rect></svg></a></div></div></header>
+<div class="container container-main">
+<div class="col-8 col-content">
+<div class="tsd-page-title">
+<h2>ReconnectedChat API reference - v3.4.1</h2></div>
+<div class="tsd-panel tsd-typography">
+<a href="#reconnectedchat-v3" id="reconnectedchat-v3" style="color: inherit; text-decoration: none;">
+  <h1>ReconnectedChat v3</h1>
+</a>
+<p><a href="https://docs.reconnected.cc/chatbox/">ReconnectedCC Chatbox</a> v2 module for Node.js written in TypeScript</p>
+<p><a href="https://www.npmjs.org/package/reconnectedchat"><img src="https://badge.fury.io/js/reconnectedchat.svg" alt="npm version"></a></p>
+
+<a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
+  <h2>Installation</h2>
+</a>
+<pre><code class="language-sh"><span class="hl-0">npm</span><span class="hl-1"> </span><span class="hl-2">i</span><span class="hl-1"> </span><span class="hl-2">reconnectedchat</span>
+</code></pre>
+
+<a href="#documentation" id="documentation" style="color: inherit; text-decoration: none;">
+  <h2>Documentation</h2>
+</a>
+<p>In-depth documentation can be found at <a href="https://docs.reconnected.cc/chatbox/">docs.reconnected.cc</a>:</p>
+<ul>
+<li><a href="https://docs.reconnected.cc/chatbox/reconnectedchat">Library documentation</a></li>
+<li><a href="https://docs.reconnected.cc/library/reconnectedchat/">API reference</a></li>
+<li><a href="https://docs.reconnected.cc/chatbox/websocket">Chatbox websocket API documentation</a></li>
+</ul>
+
+<a href="#example-usage" id="example-usage" style="color: inherit; text-decoration: none;">
+  <h2>Example usage</h2>
+</a>
+<p>This example will show you how to connect to the ReconnectedCC Chatbox API with a basic Hello World bot.</p>
+<ol>
+<li>Obtain a Chatbox token by running <code>/chatbox license</code> <a href="https://reconnected.cc">in-game</a>. You can click the token to
+copy it to
+your clipboard.</li>
+<li>Set up your project with <code>npm init</code>, and install reconnectedchat by running <code>npm i reconnectedchat</code>.<ul>
+<li>To make sure ESM modules are used, open <code>package.json</code> and set <code>&quot;type&quot;: &quot;module&quot;</code>.</li>
+</ul>
+</li>
+<li>Create a file called <code>index.js</code> with the following code:</li>
+</ol>
+<pre><code class="language-ts"><span class="hl-3">// Import ReconnectedChat</span><br/><span class="hl-4">import</span><span class="hl-1"> {</span><span class="hl-5">Client</span><span class="hl-1">} </span><span class="hl-4">from</span><span class="hl-1"> </span><span class="hl-2">&quot;reconnectedchat&quot;</span><span class="hl-1">;</span><br/><br/><span class="hl-3">// Create the Chatbox client</span><br/><span class="hl-6">const</span><span class="hl-1"> </span><span class="hl-7">sc</span><span class="hl-1"> = </span><span class="hl-6">new</span><span class="hl-1"> </span><span class="hl-0">Client</span><span class="hl-1">(</span><span class="hl-2">&quot;YOUR-CHATBOX-TOKEN&quot;</span><span class="hl-1">, {</span><br/><span class="hl-1">    </span><span class="hl-3">// Optional - set the default name and markdown formatting mode for all `.say()` and `.tell()` calls</span><br/><span class="hl-1">    </span><span class="hl-5">defaultName:</span><span class="hl-1"> </span><span class="hl-2">&quot;Hello World Bot&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">    </span><span class="hl-5">defaultFormattingMode:</span><span class="hl-1"> </span><span class="hl-2">&quot;markdown&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">});</span><br/><br/><br/><span class="hl-3">// Add event listener for when a backslash command is received</span><br/><span class="hl-5">sc</span><span class="hl-1">.</span><span class="hl-0">on</span><span class="hl-1">(</span><span class="hl-2">&quot;command&quot;</span><span class="hl-1">, </span><span class="hl-6">async</span><span class="hl-1"> (</span><span class="hl-5">cmd</span><span class="hl-1">) </span><span class="hl-6">=&gt;</span><span class="hl-1"> {</span><br/><span class="hl-1">    </span><span class="hl-3">// Only respond if the command is `\helloworld`</span><br/><span class="hl-1">    </span><span class="hl-4">if</span><span class="hl-1"> (</span><span class="hl-5">cmd</span><span class="hl-1">.</span><span class="hl-5">command</span><span class="hl-1"> === </span><span class="hl-2">&quot;helloworld&quot;</span><span class="hl-1">) {</span><br/><span class="hl-1">        </span><span class="hl-3">// Send message back to the user: &quot;Hello World!&quot;</span><br/><span class="hl-1">        </span><span class="hl-4">await</span><span class="hl-1"> </span><span class="hl-5">sc</span><span class="hl-1">.</span><span class="hl-0">tell</span><span class="hl-1">(</span><span class="hl-5">cmd</span><span class="hl-1">.</span><span class="hl-5">user</span><span class="hl-1">.</span><span class="hl-5">name</span><span class="hl-1">, </span><span class="hl-2">&quot;Hello World!&quot;</span><span class="hl-1">);</span><br/><span class="hl-1">    }</span><br/><span class="hl-1">});</span><br/><br/><span class="hl-3">// Event listener for when the client is connected to ReconnectedCC and ready to</span><br/><span class="hl-3">// receive messages and events</span><br/><span class="hl-5">sc</span><span class="hl-1">.</span><span class="hl-0">on</span><span class="hl-1">(</span><span class="hl-2">&quot;ready&quot;</span><span class="hl-1">, () </span><span class="hl-6">=&gt;</span><span class="hl-1"> {</span><br/><span class="hl-1">    </span><span class="hl-5">console</span><span class="hl-1">.</span><span class="hl-0">log</span><span class="hl-1">(</span><span class="hl-2">&quot;Connected!&quot;</span><span class="hl-1">);</span><br/><span class="hl-1">});</span><br/><br/><span class="hl-3">// Connect to ReconnectedCC</span><br/><span class="hl-5">sc</span><span class="hl-1">.</span><span class="hl-0">connect</span><span class="hl-1">();</span>
+</code></pre>
+<ol start="4">
+<li>Run your code! If you used JavaScript you can run it with <code>node index.js</code>. When it says &quot;Connected!&quot;, run
+<code>\helloworld</code> in-game, and the Chatbox should respond to you!</li>
+</ol>
+
+<a href="#events" id="events" style="color: inherit; text-decoration: none;">
+  <h2>Events</h2>
+</a>
+<p>You are able to listen after the following events, which directly map to the events sent by the
+<a href="https://docs.reconnected.cc/chatbox/websocket">Chatbox websocket API</a>:</p>
+<table>
+<thead>
+<tr>
+<th>Friendly name</th>
+<th>Name</th>
+<th>Trigger</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>In-game chat</td>
+<td><code>chat_ingame</code></td>
+<td>A player sent a message in-game</td>
+</tr>
+<tr>
+<td>Discord chat</td>
+<td><code>chat_discord</code></td>
+<td>A player sent a message from Discord</td>
+</tr>
+<tr>
+<td>Chatbox message</td>
+<td><code>chat_chatbox</code></td>
+<td>A chatbox sent a public message</td>
+</tr>
+<tr>
+<td>Chatbox command</td>
+<td><code>command</code></td>
+<td>A player sent a chatbox command in-game</td>
+</tr>
+<tr>
+<td>Join</td>
+<td><code>join</code></td>
+<td>A player joined the server</td>
+</tr>
+<tr>
+<td>Leave</td>
+<td><code>leave</code></td>
+<td>A player left the server</td>
+</tr>
+<tr>
+<td>Death</td>
+<td><code>death</code></td>
+<td>A player died</td>
+</tr>
+<tr>
+<td>World change</td>
+<td><code>world_change</code></td>
+<td>A player changed worlds</td>
+</tr>
+<tr>
+<td>AFK</td>
+<td><code>afk</code></td>
+<td>A player went AFK</td>
+</tr>
+<tr>
+<td>AFK return</td>
+<td><code>afk_return</code></td>
+<td>A player returned from being AFK</td>
+</tr>
+<tr>
+<td>Restart scheduled</td>
+<td><code>server_restart_scheduled</code></td>
+<td>The server will restart soon</td>
+</tr>
+<tr>
+<td>Restart cancelled</td>
+<td><code>server_restart_cancelled</code></td>
+<td>The scheduled server restart was cancelled</td>
+</tr>
+</tbody></table>
+<ul>
+<li>user - <code>User</code> that went AFK</li>
+</ul>
+
+<a href="#in-game-chat" id="in-game-chat" style="color: inherit; text-decoration: none;">
+  <h3>In-game chat</h3>
+</a>
+<p>(<a href="https://docs.reconnected.cc/chatbox/websocket#in-game-chat-event">Websocket API docs</a> &ndash;
+<a href="https://docs.reconnected.cc/library/reconnectedchat/interfaces/IngameChatMessage">API reference</a>)</p>
+<p>The event received when a player posts a message in public chat.</p>
+<ul>
+<li>text - <code>string</code> of the contents of the chat message</li>
+<li>rawText - <code>string</code> of the raw contents of the chat message</li>
+<li>renderedText - <code>RenderedTextObject</code> of the rendered text of the chat message</li>
+<li>user - <code>User</code> that sent the message</li>
+</ul>
+
+<a href="#discord-chat" id="discord-chat" style="color: inherit; text-decoration: none;">
+  <h3>Discord chat</h3>
+</a>
+<p>(<a href="https://docs.reconnected.cc/chatbox/websocket#discord-chat-event">Websocket API docs</a> &ndash;
+<a href="https://docs.reconnected.cc/library/reconnectedchat/interfaces/DiscordChatMessage">API reference</a>)</p>
+<p>The event received when a player posts a message in Discord.</p>
+<ul>
+<li>text - <code>string</code> of the contents of the chat message, without formatting codes</li>
+<li>rawText - <code>string</code> of the raw contents of the chat message, with its original formatting codes</li>
+<li>renderedText - <code>RenderedTextObject</code> of the rendered text of the chat message</li>
+<li>discordId - <code>string</code> of the Discord snowflake ID of the message</li>
+<li>discordUser - <code>DiscordUser</code> that sent the message</li>
+<li>edited - <code>boolean</code> if the message has been edited</li>
+</ul>
+
+<a href="#chatbox-message" id="chatbox-message" style="color: inherit; text-decoration: none;">
+  <h3>Chatbox message</h3>
+</a>
+<p>(<a href="https://docs.reconnected.cc/chatbox/websocket#chatbox-chat-event">Websocket API docs</a> &ndash;
+<a href="https://docs.reconnected.cc/library/reconnectedchat/interfaces/ChatboxChatMessage">API reference</a>)</p>
+<p>The event received when another chatbox sends a message.</p>
+<ul>
+<li>text - <code>string</code> of the contents of the message, without formatting codes</li>
+<li>rawText - <code>string</code> of the raw contents of the message, with its original formatting codes</li>
+<li>renderedText - <code>RenderedTextObject</code> of the rendered text of the message</li>
+<li>user - <code>User</code> of the owner of the chatbox</li>
+<li>name - <code>string</code> name of the chatbox, without formatting codes</li>
+<li>rawName - <code>string</code> name of the chatbox, with its original formatting codes</li>
+</ul>
+
+<a href="#chatbox-command" id="chatbox-command" style="color: inherit; text-decoration: none;">
+  <h3>Chatbox command</h3>
+</a>
+<p>(<a href="https://docs.reconnected.cc/chatbox/websocket#command-event">Websocket API docs</a> &ndash;
+<a href="https://docs.reconnected.cc/library/reconnectedchat/interfaces/ChatboxCommand">API reference</a>)</p>
+<p>The event received when a player runs a chatbox command (public backslash commands: <code>\command</code>, private owner-only
+caret/pipe commands: <code>^command</code>) in-game. The <code>command</code> capability is required to receive command events.</p>
+<ul>
+<li>user - <code>User</code> that ran the chatbox command</li>
+<li>command - The name of the command (the word immediately following the backslash/caret/pipe, excluding the
+backslash/caret/pipe). Example: \<strong>command</strong> arg1 arg2</li>
+<li>args - Array of space-separated <code>string</code> arguments after the command.</li>
+<li>ownerOnly - <code>boolean</code> if the command is an owner-only command (<code>^command</code>)</li>
+</ul>
+
+<a href="#join" id="join" style="color: inherit; text-decoration: none;">
+  <h3>Join</h3>
+</a>
+<p>(<a href="https://docs.reconnected.cc/chatbox/websocket#join-event">Websocket API docs</a> &ndash;
+<a href="https://docs.reconnected.cc/library/reconnectedchat/interfaces/Join">API reference</a>)</p>
+<p>The event received when a player joins the game.</p>
+<ul>
+<li>user - <code>User</code> that joined the server</li>
+</ul>
+
+<a href="#leave" id="leave" style="color: inherit; text-decoration: none;">
+  <h3>Leave</h3>
+</a>
+<p>(<a href="https://docs.reconnected.cc/chatbox/websocket#leave-event">Websocket API docs</a> &ndash;
+<a href="https://docs.reconnected.cc/library/reconnectedchat/interfaces/Leave">API reference</a>)</p>
+<p>The event received when a player leaves the game.</p>
+<ul>
+<li>user - <code>User</code> that left the server</li>
+</ul>
+
+<a href="#death" id="death" style="color: inherit; text-decoration: none;">
+  <h3>Death</h3>
+</a>
+<p>(<a href="https://docs.reconnected.cc/chatbox/websocket#death-event">Websocket API docs</a> &ndash;
+<a href="https://docs.reconnected.cc/library/reconnectedchat/interfaces/Death">API reference</a>)</p>
+<p>The event received when a player dies in-game.</p>
+<ul>
+<li>text - <code>string</code> of the death message contents, without formatting codes</li>
+<li>rawText - <code>string</code> of the death message contents, with its original formatting codes</li>
+<li>renderedText - <code>RenderedTextObject</code> of the death message</li>
+<li>user - <code>User</code> that died</li>
+<li>source - <code>User</code> | <code>null</code> that killed the user. Only set if they were killed by another player</li>
+</ul>
+
+<a href="#world-change" id="world-change" style="color: inherit; text-decoration: none;">
+  <h3>World change</h3>
+</a>
+<p>(<a href="https://docs.reconnected.cc/chatbox/websocket#world-change-event">Websocket API docs</a> &ndash;
+<a href="https://docs.reconnected.cc/library/reconnectedchat/interfaces/WorldChange">API reference</a>)</p>
+<p>The event received when a player changes worlds.</p>
+<ul>
+<li>user - <code>User</code> that changed worlds</li>
+<li>origin - <code>string</code> of the world the player moved from</li>
+<li>destination - <code>string</code> of the world the player is now in</li>
+</ul>
+
+<a href="#afk" id="afk" style="color: inherit; text-decoration: none;">
+  <h3>AFK</h3>
+</a>
+<p>(<a href="https://docs.reconnected.cc/chatbox/websocket#afk-event">Websocket API docs</a> &ndash;
+<a href="https://docs.reconnected.cc/library/reconnectedchat/interfaces/AFK">API reference</a>)</p>
+<p>The event received when a player goes AFK in-game.</p>
+<ul>
+<li>user - <code>User</code> that goes AFK</li>
+</ul>
+
+<a href="#afk-return" id="afk-return" style="color: inherit; text-decoration: none;">
+  <h3>AFK return</h3>
+</a>
+<p>(<a href="https://docs.reconnected.cc/chatbox/websocket#afk-return-event">Websocket API docs</a> &ndash;
+<a href="https://docs.reconnected.cc/library/reconnectedchat/interfaces/AFKReturn">API reference</a>)</p>
+<p>The event received when a player returns from being AFK in-game.</p>
+
+<a href="#server-restart-scheduled" id="server-restart-scheduled" style="color: inherit; text-decoration: none;">
+  <h3>Server restart scheduled</h3>
+</a>
+<p>(<a href="https://docs.reconnected.cc/chatbox/websocket#server-restart-scheduled-event">Websocket API docs</a> &ndash;
+<a href="https://docs.reconnected.cc/library/reconnectedchat/interfaces/ServerRestartScheduled">API reference</a>)</p>
+<p>The event received when a server restart has been scheduled. At the time of <code>restartAt</code>, the server will restart and the
+ReconnectedChat client will be disconnected.</p>
+<p>If a server restart was scheduled before the websocket connected, then the <code>server_restart_scheduled</code> event will be
+sent after the <code>hello</code>/<code>ready</code> events. In this case, <code>restartSeconds</code> will not be the time until the restart, but
+instead the time that was initially specified for the restart. <code>time</code> will still be the initial time the restart was
+scheduled, and <code>restartAt</code> will be the time the restart will happen.</p>
+<ul>
+<li>restartType - <code>string</code> that tells you what type of restart it is (<code>&quot;automatic&quot;</code> or <code>&quot;manual&quot;</code>)</li>
+<li>restartSeconds - <code>number</code> that tells you how many seconds until the restart</li>
+<li>restartAt - <code>Date</code> that tells you when the restart will happen</li>
+</ul>
+
+<a href="#server-restart-cancelled" id="server-restart-cancelled" style="color: inherit; text-decoration: none;">
+  <h3>Server restart cancelled</h3>
+</a>
+<p>(<a href="https://docs.reconnected.cc/chatbox/websocket#server-restart-cancelled-event">Websocket API docs</a> &ndash;
+<a href="https://docs.reconnected.cc/library/reconnectedchat/interfaces/ServerRestartCancelled">API reference</a>)</p>
+<p>The event received when a previously scheduled server restart has now been cancelled.</p>
+<ul>
+<li>restartType - <code>string</code> that tells you what type of restart it was (<code>&quot;automatic&quot;</code> or <code>&quot;manual&quot;</code>)</li>
+</ul>
+
+<a href="#rate-limits" id="rate-limits" style="color: inherit; text-decoration: none;">
+  <h2>Rate limits</h2>
+</a>
+<p>(<a href="https://docs.reconnected.cc/chatbox/websocket#rate-limits">Websocket API docs</a>)</p>
+<p>The Chatbox server has a ratelimit of 500ms per license, with up to 5 messages queued at once.</p>
+<p>When the methods <code>client.say</code> and <code>client.tell</code> are called, the data is enqueued internally before being sent to the
+server.</p>
+<p>This internal queue makes it safe to go well over the limits, because it processes each message every 500ms to avoid
+hitting the rate limit of the server.</p>
+
+<a href="#server--gt-client-packets" id="server--gt-client-packets" style="color: inherit; text-decoration: none;">
+  <h2>Server -&gt; Client packets</h2>
+</a>
+<p>(<a href="https://docs.reconnected.cc/chatbox/websocket#server-to-client-packets">Websocket API docs</a>)</p>
+<p>You are also able to listen after these packets that are sent by ReconnectedCC to the client.</p>
+<table>
+<thead>
+<tr>
+<th>Friendly name</th>
+<th>Name</th>
+<th>Trigger</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Hello packet</td>
+<td><code>ready</code></td>
+<td>When ReconnectedChat has successfully connected to ReconnectedCC</td>
+</tr>
+<tr>
+<td>Player list packet</td>
+<td><code>players</code></td>
+<td>When you connect, and when a player joins/leaves</td>
+</tr>
+<tr>
+<td>Error packet</td>
+<td><code>error</code></td>
+<td>When there is an error</td>
+</tr>
+<tr>
+<td>Closing packet</td>
+<td><code>closing</code></td>
+<td>When the server is closing the connection</td>
+</tr>
+</tbody></table>
+
+<a href="#hello-packet" id="hello-packet" style="color: inherit; text-decoration: none;">
+  <h3>Hello packet</h3>
+</a>
+<p>(<a href="https://docs.reconnected.cc/chatbox/websocket#hello-packet">Websocket API docs</a> &ndash;
+<a href="https://docs.reconnected.cc/library/reconnectedchat/interfaces/Hello">API reference</a>)</p>
+<ul>
+<li>guest - <code>boolean</code> that says if you are authenticated with the guest key</li>
+<li>licenseOwner - <code>string</code> that represents who owns the chatbox license</li>
+<li>licenseOwnerUser - <code>User</code> that represents who owns the chatbox license, or null if this is a guest connection</li>
+<li>capabilities - Array of <code>string</code>s that can tell you what capabilities you have</li>
+</ul>
+
+<a href="#players-packet" id="players-packet" style="color: inherit; text-decoration: none;">
+  <h3>Players packet</h3>
+</a>
+<p>(<a href="https://docs.reconnected.cc/chatbox/websocket#players-packet">Websocket API docs</a> &ndash;
+<a href="https://docs.reconnected.cc/library/reconnectedchat/interfaces/Players">API reference</a>)</p>
+<ul>
+<li>players - Array of <code>User</code>s that are currently online on the server.</li>
+</ul>
+
+<a href="#error-packet" id="error-packet" style="color: inherit; text-decoration: none;">
+  <h3>Error packet</h3>
+</a>
+<p>(<a href="https://docs.reconnected.cc/chatbox/websocket#error-packet">Websocket API docs</a> &ndash;
+<a href="https://docs.reconnected.cc/library/reconnectedchat/interfaces/Error">API reference</a>)</p>
+<ul>
+<li>error - <code>string</code> that tells you what type of error that
+occurred (<a href="https://docs.reconnected.cc/chatbox/websocket#error-packet">possible errors</a>).</li>
+<li>text - <code>string</code> that is a human-readable version of <code>error</code>.</li>
+</ul>
+
+<a href="#closing-packet" id="closing-packet" style="color: inherit; text-decoration: none;">
+  <h3>Closing packet</h3>
+</a>
+<p>(<a href="https://docs.reconnected.cc/chatbox/websocket#closing-packet">Websocket API docs</a> &ndash;
+<a href="https://docs.reconnected.cc/library/reconnectedchat/interfaces/Closing">API reference</a>)</p>
+<ul>
+<li>closeReason - <code>string</code> reason for closing the
+connection (<a href="https://docs.reconnected.cc/chatbox/websocket#closing-packet">possible values</a>).</li>
+<li>reason - <code>string</code> that is a human-readable version of <code>closeReason</code></li>
+</ul>
+
+<a href="#methods" id="methods" style="color: inherit; text-decoration: none;">
+  <h2>Methods</h2>
+</a>
+<p>You can run these methods on your <a href="https://docs.reconnected.cc/library/reconnectedchat/classes/Client"><code>Client</code></a>
+instance.</p>
+
+<a href="#clientsay" id="clientsay" style="color: inherit; text-decoration: none;">
+  <h3>client.say</h3>
+</a>
+<p>(<a href="https://docs.reconnected.cc/chatbox/websocket#say-packet">Websocket API docs</a> &ndash;
+<a href="https://docs.reconnected.cc/library/reconnectedchat/classes/Client#say">API reference</a>)</p>
+<ul>
+<li>Syntax: <code>await client.say(text, name, mode)</code></li>
+<li>Returns: Promise&lt;<a href="https://docs.reconnected.cc/library/reconnectedchat/interfaces/Success">Success</a>&gt;</li>
+</ul>
+<p>Sends a message to the in-game public chat. Returns a Promise that resolves to a
+<a href="https://docs.reconnected.cc/library/reconnectedchat/interfaces/Success">Success</a> object, which will tell you if the
+message
+was sent (<code>reason</code> is <code>&quot;message_sent&quot;</code>).</p>
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>text</code></td>
+<td><code>string</code></td>
+<td>The message to send.</td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td><code>string</code> (optional)</td>
+<td>The name of the chatbox to show. If no name is specified, it will default to the username of the license owner, or <code>client.defaultName</code>.</td>
+</tr>
+<tr>
+<td><code>mode</code></td>
+<td><code>FormattingMode</code> (optional)</td>
+<td>The formatting mode to use (<code>&quot;markdown&quot;</code>, <code>&quot;format&quot;</code> or <code>&quot;minimessage&quot;</code>). Defaults to <code>client.defaultFormattingMode</code> or <code>&quot;markdown&quot;</code>.</td>
+</tr>
+</tbody></table>
+
+<a href="#clienttell" id="clienttell" style="color: inherit; text-decoration: none;">
+  <h3>client.tell</h3>
+</a>
+<p>(<a href="https://docs.reconnected.cc/chatbox/websocket#tell-packet">Websocket API docs</a> &ndash;
+<a href="https://docs.reconnected.cc/library/reconnectedchat/classes/Client#tell">API reference</a>)</p>
+<ul>
+<li>Syntax: <code>await client.tell(user, text, name, mode)</code></li>
+<li>Returns: Promise&lt;<a href="https://docs.reconnected.cc/library/reconnectedchat/interfaces/Success">Success</a>&gt;</li>
+</ul>
+<p>Sends a private message to an in-game player. Returns a Promise that resolves to a
+<a href="https://docs.reconnected.cc/library/reconnectedchat/interfaces/Success">Success</a> object, which will tell you if the
+message
+was sent (<code>reason</code> is <code>&quot;message_sent&quot;</code>).</p>
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>user</code></td>
+<td><code>string</code>, <code>User</code></td>
+<td>The username, UUID or the <code>User</code> object of the user to send the message to.</td>
+</tr>
+<tr>
+<td><code>text</code></td>
+<td><code>string</code></td>
+<td>The message to send.</td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td><code>string</code> (optional)</td>
+<td>The name of the chatbox to show. If no name is specified, it will default to the username of the license owner, or <code>client.defaultName</code>.</td>
+</tr>
+<tr>
+<td><code>mode</code></td>
+<td><code>FormattingMode</code> (optional)</td>
+<td>The formatting mode to use (<code>&quot;markdown&quot;</code>, <code>&quot;format&quot;</code> or <code>&quot;minimessage&quot;</code>). Defaults to <code>client.defaultFormattingMode</code> or <code>&quot;markdown&quot;</code>.</td>
+</tr>
+</tbody></table>
+
+<a href="#clientconnect" id="clientconnect" style="color: inherit; text-decoration: none;">
+  <h3>client.connect</h3>
+</a>
+<p>(<a href="https://docs.reconnected.cc/library/reconnectedchat/classes/Client#connect">API reference</a>)</p>
+<ul>
+<li>Syntax: <code>client.connect()</code></li>
+</ul>
+<p>Connects to ReconnectedCC.</p>
+
+<a href="#clientclose" id="clientclose" style="color: inherit; text-decoration: none;">
+  <h3>client.close</h3>
+</a>
+<p>(<a href="https://docs.reconnected.cc/library/reconnectedchat/classes/Client#close">API reference</a>)</p>
+<ul>
+<li>Syntax: <code>client.close()</code></li>
+</ul>
+<p>Disconnects the connection to ReconnectedCC.</p>
+
+<a href="#clientreconnect" id="clientreconnect" style="color: inherit; text-decoration: none;">
+  <h3>client.reconnect</h3>
+</a>
+<p>(<a href="https://docs.reconnected.cc/library/reconnectedchat/classes/Client#reconnect">API reference</a>)</p>
+<ul>
+<li>Syntax: <code>client.reconnect()</code></li>
+</ul>
+<p>Reconnects to ReconnectedCC.</p>
+
+<a href="#data-types" id="data-types" style="color: inherit; text-decoration: none;">
+  <h2>Data types</h2>
+</a>
+
+<a href="#user-object" id="user-object" style="color: inherit; text-decoration: none;">
+  <h3>User object</h3>
+</a>
+<p>(<a href="https://docs.reconnected.cc/chatbox/websocket#user-object">Websocket API docs</a> &ndash;
+<a href="https://docs.reconnected.cc/library/reconnectedchat/interfaces/User">API reference</a>)</p>
+<p>The user object represents an in-game player.</p>
+<ul>
+<li>name - The Minecraft username of the player.</li>
+<li>uuid - The Minecraft UUID of the player, with hyphens.</li>
+<li>displayName - The user&#39;s name as it appears in chat. May differ from <code>name</code>.</li>
+<li>group - The rank of the player, usually <code>&quot;default&quot;</code>, <code>&quot;moderator&quot;</code> or <code>&quot;admin&quot;</code>.</li>
+<li>pronouns - The <a href="https://docs.reconnected.cc/faq/pronouns">pronouns</a> set by the user by running <code>/pronouns</code>. This may
+be
+<code>null</code> if the player has not set any preferred pronouns. Where reasonably possible, you should attempt to use the
+user&#39;s preferred pronouns, or avoid using pronouns entirely. If you are unable to do this, you should use the player&#39;s
+name instead.</li>
+<li>world - The world the player is in, or <code>null</code> if this information is not available. It will be a Minecraft namespaced
+registry key, for example:<ul>
+<li><code>minecraft:overworld</code> - The overworld</li>
+<li><code>minecraft:the_nether</code> - The Nether</li>
+<li><code>minecraft:the_end</code> - The End</li>
+</ul>
+</li>
+<li>afk - If the player is AFK</li>
+<li>alt - If the player is an alt account</li>
+<li>bot - If the player is a bot</li>
+<li>supporter - the current public tier of the player&#39;s supporter status. This will be <code>0</code> if the player is not a
+supporter or has opted out of showing their supporter tag, <code>1</code> for a Tier 1 supporter, <code>2</code> for a Tier 2 supporter, and
+<code>3</code> for a Tier 3 supporter.</li>
+</ul>
+
+<a href="#discorduser-object" id="discorduser-object" style="color: inherit; text-decoration: none;">
+  <h3>DiscordUser object</h3>
+</a>
+<p>(<a href="https://docs.reconnected.cc/chatbox/websocket#user-object">Websocket API docs</a> &ndash;
+<a href="https://docs.reconnected.cc/library/reconnectedchat/interfaces/DiscordUser">API reference</a>)</p>
+<p>The Discord user object represents a user on Discord.</p>
+<ul>
+<li>id - The Discord snowflake ID of the user</li>
+<li>name - The Discord name of the user</li>
+<li>displayName - The user&#39;s server nickname on Discord, or their username if it is not set</li>
+<li>discriminator - The user&#39;s discriminator on Discord</li>
+<li>avatar - URL to the avatar of the user</li>
+<li>roles - Array consisting of <a href="https://docs.reconnected.cc/library/reconnectedchat/interfaces/DiscordRole">roles</a>.</li>
+</ul>
+
+<a href="#renderedtextobject" id="renderedtextobject" style="color: inherit; text-decoration: none;">
+  <h3>RenderedTextObject</h3>
+</a>
+<p>(<a href="https://docs.reconnected.cc/chatbox/websocket#raw-json-text-object">Websocket API docs</a> &ndash;
+<a href="https://docs.reconnected.cc/library/reconnectedchat/interfaces/RenderedTextObject">API reference</a>)</p>
+<p>Minecraft&#39;s serialised <a href="https://minecraft.wiki/w/Raw_JSON_text_format">raw JSON text format</a>. See
+the <a href="https://docs.reconnected.cc/chatbox/websocket#raw-json-text-object">ReconnectedCC documentation</a> for more
+information on how this is used.</p>
+
+<a href="#formattingmode" id="formattingmode" style="color: inherit; text-decoration: none;">
+  <h3>FormattingMode</h3>
+</a>
+<p>(<a href="https://docs.reconnected.cc/library/reconnectedchat/types/FormattingMode">API reference</a>)</p>
+<p>The mode to use for outgoing chatbox messages (<code>.say()</code>, <code>.tell()</code>).</p>
+<ul>
+<li>markdown -
+Discord-like <a href="https://support.discord.com/hc/en-us/articles/210298617-Markdown-Text-101-Chat-Formatting-Bold-Italic-Underline-">Markdown syntax</a>.
+Supports URLs, but not colours.</li>
+<li>format - Minecraft-like <a href="https://minecraft.wiki/w/Formatting_codes">formatting codes</a> using ampersands (e.g. <code>&amp;e</code> for
+yellow). Supports colours, but not URLs.</li>
+<li>minimessage - HTML-like <a href="https://docs.advntr.dev/minimessage/format.html">tags</a> (e.g. <code>&lt;yellow&gt;&lt;/yellow&gt;</code> for yellow).
+Supports colours and hover events.</li>
+</ul>
+</div></div>
+<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+<div class="tsd-navigation settings">
+<details class="tsd-index-accordion"><summary class="tsd-accordion-summary">
+<h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4.93896 8.531L12 15.591L19.061 8.531L16.939 6.409L12 11.349L7.06098 6.409L4.93896 8.531Z" fill="var(--color-text)"></path></svg> Settings</h3></summary>
+<div class="tsd-accordion-details">
+<div class="tsd-filter-visibility">
+<h4 class="uppercase">Member Visibility</h4><form>
+<ul id="tsd-filter-options">
+<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-protected" name="protected"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Protected</span></label></li>
+<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-private" name="private"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Private</span></label></li>
+<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-inherited" name="inherited" checked/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Inherited</span></label></li>
+<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-external" name="external"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>External</span></label></li></ul></form></div>
+<div class="tsd-theme-toggle">
+<h4 class="uppercase">Theme</h4><select id="theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div>
+<nav class="tsd-navigation primary">
+<details class="tsd-index-accordion" open><summary class="tsd-accordion-summary">
+<h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4.93896 8.531L12 15.591L19.061 8.531L16.939 6.409L12 11.349L7.06098 6.409L4.93896 8.531Z" fill="var(--color-text)"></path></svg> Modules</h3></summary>
+<div class="tsd-accordion-details">
+<ul>
+<li class="current selected"><a href="modules.html">Reconnected<wbr/>Chat API reference -<wbr/> v3.4.1</a>
+<ul></ul></li></ul></div></details></nav>
+<nav class="tsd-navigation secondary menu-sticky">
+<ul>
+<li class="tsd-kind-class"><a href="classes/Client.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-class)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6" id="icon-128-path"></rect><path d="M11.898 16.1201C11.098 16.1201 10.466 15.8961 10.002 15.4481C9.53803 15.0001 9.30603 14.3841 9.30603 13.6001V9.64012C9.30603 8.85612 9.53803 8.24012 10.002 7.79212C10.466 7.34412 11.098 7.12012 11.898 7.12012C12.682 7.12012 13.306 7.34812 13.77 7.80412C14.234 8.25212 14.466 8.86412 14.466 9.64012H13.386C13.386 9.14412 13.254 8.76412 12.99 8.50012C12.734 8.22812 12.37 8.09212 11.898 8.09212C11.426 8.09212 11.054 8.22412 10.782 8.48812C10.518 8.75212 10.386 9.13212 10.386 9.62812V13.6001C10.386 14.0961 10.518 14.4801 10.782 14.7521C11.054 15.0161 11.426 15.1481 11.898 15.1481C12.37 15.1481 12.734 15.0161 12.99 14.7521C13.254 14.4801 13.386 14.0961 13.386 13.6001H14.466C14.466 14.3761 14.234 14.9921 13.77 15.4481C13.306 15.8961 12.682 16.1201 11.898 16.1201Z" fill="var(--color-text)" id="icon-128-text"></path></svg>Client</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/AFK.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-interface)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6" id="icon-256-path"></rect><path d="M9.51 16V15.016H11.298V8.224H9.51V7.24H14.19V8.224H12.402V15.016H14.19V16H9.51Z" fill="var(--color-text)" id="icon-256-text"></path></svg>AFK</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/AFKReturn.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>AFKReturn</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/BaseEvent.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>Base<wbr/>Event</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/ChatboxChatMessage.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>Chatbox<wbr/>Chat<wbr/>Message</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/ChatboxCommand.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>Chatbox<wbr/>Command</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/Closing.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>Closing</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/Data.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>Data</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/Death.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>Death</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/DiscordChatMessage.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>Discord<wbr/>Chat<wbr/>Message</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/DiscordRole.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>Discord<wbr/>Role</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/DiscordUser.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>Discord<wbr/>User</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/Hello.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>Hello</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/IngameChatMessage.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>Ingame<wbr/>Chat<wbr/>Message</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/Join.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>Join</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/Leave.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>Leave</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/Players.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>Players</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/RenderedTextObject.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>Rendered<wbr/>Text<wbr/>Object</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/RequestError.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>Request<wbr/>Error</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/ServerRestartCancelled.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>Server<wbr/>Restart<wbr/>Cancelled</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/ServerRestartScheduled.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>Server<wbr/>Restart<wbr/>Scheduled</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/Success.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>Success</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/User.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>User</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/WorldChange.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>World<wbr/>Change</a></li>
+<li class="tsd-kind-type-alias"><a href="types/Capability.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="var(--color-ts)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6" id="icon-4194304-path"></rect><path d="M11.31 16V8.224H8.91V7.24H14.79V8.224H12.39V16H11.31Z" fill="var(--color-text)" id="icon-4194304-text"></path></svg>Capability</a></li>
+<li class="tsd-kind-type-alias"><a href="types/FormattingMode.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg>Formatting<wbr/>Mode</a></li></ul></nav></div></div>
+<div class="container tsd-generator">
+<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></div>
+<div class="overlay"></div><script src="assets/main.js"></script></body></html>
