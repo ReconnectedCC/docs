@@ -12,7 +12,7 @@ ReconnectedCC is a ComputerCraft server that also has the sc-goodies and sc-peri
 
 Join by downloading the modpack at [https://pack.reconnected.cc/ReconnectedCC.zip](https://pack.reconnected.cc/ReconnectedCC.zip), and importing it into Prism Launcher
 
-We use [packwiz](https://packwiz.infra.link) to distribute our modpack, the server IP is in the modpack.
+We use [packwiz](https://packwiz.infra.link) to distribute our modpack, the server IP is embedded in the modpack.
 
 ## How do I report issues and bugs?
 
