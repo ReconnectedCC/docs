@@ -16,4 +16,4 @@ We use [packwiz](https://packwiz.infra.link) to distribute our modpack, the serv
 
 ## How do I report issues and bugs?
 
-Right now, the easiest way to report issues and bugs is through our [contact form](https://forms.gle/uRGiuwez9xfpqQVv9)
+Right now, the easiest way to report issues and bugs is through our Discord server, listed on our website.
