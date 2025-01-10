@@ -38,7 +38,7 @@ Bobby is a mod that improves the client side render distance by caching chunks i
 
 !!! notice
     Bobby is not enabled by default due to cached ComputerCraft monitors not rendering their display.
-    Furthermore, the data is stored locally and can get very large.
+    Also, the data is stored locally and can get very large.
 
 ## VulkanMod
 
