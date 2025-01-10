@@ -22,6 +22,7 @@ hide:
         1.  Nesting containers is considered an invalid item and is not allowed.
         2.  Creating items or blocks with excessive NBT data is not allowed.
     8.  Do not chain startup commands to other computers from a computer set up as a startup computer by staff.
+    9.  Do not use a chunkloader, intentionally load an area with an afk player for multiple days at a time, or use any other way to load chunks, even if it is intended by vanilla game design. You should use staff provided, Kromer backed chunkloaders, or request a /forceload by staff in the case of a public service.
 3.  ## Do not exploit bugs or cheat in any way
     1.  Exploiting any bug, new or old, is not allowed.
     2.  X-raying, wallhacking and similar hacks with texture packs or mods is not allowed. Plethora Block Scanners are allowed.
