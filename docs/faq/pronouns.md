@@ -36,5 +36,6 @@ Any of the pronouns can be used as a single pronoun, You can also pair up pronou
     To enter the they/them pronoun pair, run `/pronouns they them`
 
     To enter the other pronoun, run `/pronouns other`
-
+    
+!!! notice
     Custom pronouns may be requested by DMing a staff member.
