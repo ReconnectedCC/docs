@@ -16,8 +16,5 @@ You can compare the differences of the wallets in the table below:
 | Personal    | Send and receive               | Tied to a single player      | 0%             |
 | Shared      | Send and receive               | Sharable to multiple players | 0.5%           |
 
-## Taxes
-The tax per shared wallet is 0.5%
-
 ## Welfare
 Every hour a player plays on the server, the player is awarded a set amount of kromer.
