@@ -1,5 +1,15 @@
 # Kromer Architecture
 
+## Differences from Krist
+|                                      |                                                                                                                                                                                                                                      |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Name subnames                        | You are able to have a subname similar to how you are able to create a subdomain. `subname.name.kro` would become a valid name.                                                                                                      |
+| Personal wallet name                 | Every player gets their own wallet name based on their username. It's in the format of `u<username>.kro`.                                                                                                                            |
+| Recurring and scheduled payments     | Wallets are able to create recurring and scheduled payments to and from other wallets. This is handled on the kromer server itself.                                                                                                  |
+| Welfare isn't paid out from a wallet | Welfare won't be paid out from a central server wallet. Instead, welfare will be generating kromer, in order to get new currency into the economy. By varying the amount of kromer you earn we can control the economy and inflation |
+| Performance                          | Kromer's server is written in Rust, and is tested for performance. This means that Kromer's performance will be way better than other currencies written in typescript, including Krist.                                             |
+| Taxes                                | Shared wallets are taxed slightly, in order to control the economy and inflation and encourage business                                                                                                                              |
+
 ## Wallets
 Our wallets are generated serverside, and given out bound to a player.
 
@@ -18,3 +28,14 @@ You can compare the differences of the wallets in the table below:
 
 ## Welfare
 Every hour a player plays on the server, the player is awarded a set amount of kromer.
+
+## Krist compatibility
+Because of compatibility reasons, we are forced to make some hard choices in order to stay compatible with the Krist API.
+We plan on making a future Kromer only API in Kromer 3.0
+
+Here is a list of the "patches" we've needed to make in order to stay compatible.
+
+|                                 |                                                                                                                                                          |
+| ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Name Redirection                | Names are redirected internally from `name.kst` to `name.kro`                                                                                            |
+| Wallet private key cryptography | Because wallet name is derived from wallet private key in some shop software, we are limited to a singular key per wallet. This will be resolved in 3.0. |
