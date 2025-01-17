@@ -31,6 +31,7 @@ Because we wanted to prevent mining of any kind, we're making it impossible to m
 
 ## Welfare
 Every hour a player plays on the server, the player is awarded a set amount of kromer.
+The exact amount is yet to be determined
 
 ## Krist compatibility
 Because of compatibility reasons, we are forced to make some hard choices in order to stay compatible with the Krist API.
