@@ -13,7 +13,7 @@
 ## Wallets
 Our wallets are generated serverside.
 
-We do not have a single central wallet we distribute wealth with, wealth distribution is done by playtime. See `Welfare` for more
+We do not have a single central wallet we distribute wealth with, wealth distribution is done by playtime. See `Welfare` for more.
 
 There are two types of wallets:
 - Personal
@@ -34,7 +34,7 @@ Every hour a player plays on the server, the player is awarded a set amount of k
 
 ## Krist compatibility
 Because of compatibility reasons, we are forced to make some hard choices in order to stay compatible with the Krist API.
-We plan on making a future Kromer only API in Kromer 3.0
+We plan on making a future Kromer only API in Kromer 3.0.
 
 Here is a list of the "patches" we've needed to make in order to stay compatible.
 
