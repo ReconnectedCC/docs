@@ -12,4 +12,4 @@ The server ignores time spent AFK, and doesn't count it on top of your activetim
 
 You can view your active time with the `/activetime` command. This will show you your total active time tracked.
 
-There is also the `/activetimetop` command which shows a leaderboard of the players with the most time played on the server. 
+There is also the `/activetime leaderboard` command which shows a leaderboard of the players with the most time played on the server. 
