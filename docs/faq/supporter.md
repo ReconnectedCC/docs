@@ -17,6 +17,8 @@ You will receive a colored prefix to indicate your supporter tier.
 
 ![](/img/supporter/prefixes.png)
 
+You can run /fly in the lobby, and use /hat and /sleep everywhere
+
 Please note that more supporter perks are on the way.
 
 ## Commands
