@@ -61,6 +61,6 @@ hide:
 
 ## Notes
 
-- Staff interpret the rules. You cannot argue about special cases.
+- The staff team interprets the rules. You cannot argue about special cases.
 - Actions not explicitly stated in the rules are special cases and fall under the discretion of the staff members.
 - You are not retroactively punished after being the reason for a new rule.
