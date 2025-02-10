@@ -1,7 +1,0 @@
-{
-  "entryPoints": ["src/index.ts"],
-  "out": "docs",
-  "name": "ReconnectedChat API reference",
-  "includeVersion": true,
-  "excludeInternal": true
-}
