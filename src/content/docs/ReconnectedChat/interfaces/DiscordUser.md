@@ -5,7 +5,7 @@ prev: false
 title: "DiscordUser"
 ---
 
-Defined in: src/types/DiscordUser.ts:1
+Defined in: [src/types/DiscordUser.ts:1](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/types/DiscordUser.ts#L1)
 
 ## Properties
 
@@ -13,7 +13,7 @@ Defined in: src/types/DiscordUser.ts:1
 
 > **avatar**: `string`
 
-Defined in: src/types/DiscordUser.ts:19
+Defined in: [src/types/DiscordUser.ts:19](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/types/DiscordUser.ts#L19)
 
 URL to the user's avatar on Discord.
 
@@ -23,7 +23,7 @@ URL to the user's avatar on Discord.
 
 > **discriminator**: `string`
 
-Defined in: src/types/DiscordUser.ts:16
+Defined in: [src/types/DiscordUser.ts:16](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/types/DiscordUser.ts#L16)
 
 The user's discriminator on Discord.
 
@@ -33,7 +33,7 @@ The user's discriminator on Discord.
 
 > **displayName**: `string`
 
-Defined in: src/types/DiscordUser.ts:13
+Defined in: [src/types/DiscordUser.ts:13](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/types/DiscordUser.ts#L13)
 
 The user's server nickname on Discord, or their username if it is not
 set.
@@ -44,7 +44,7 @@ set.
 
 > **id**: `string`
 
-Defined in: src/types/DiscordUser.ts:6
+Defined in: [src/types/DiscordUser.ts:6](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/types/DiscordUser.ts#L6)
 
 The user's Discord snowflake (ID).
 
@@ -54,7 +54,7 @@ The user's Discord snowflake (ID).
 
 > **name**: `string`
 
-Defined in: src/types/DiscordUser.ts:9
+Defined in: [src/types/DiscordUser.ts:9](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/types/DiscordUser.ts#L9)
 
 The user's username on Discord.
 
@@ -64,7 +64,7 @@ The user's username on Discord.
 
 > **roles**: [`DiscordRole`](/ReconnectedChat/interfaces/discordrole/)[]
 
-Defined in: src/types/DiscordUser.ts:22
+Defined in: [src/types/DiscordUser.ts:22](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/types/DiscordUser.ts#L22)
 
 Array of roles the user has on Discord.
 
@@ -74,6 +74,6 @@ Array of roles the user has on Discord.
 
 > **type**: `"discord"`
 
-Defined in: src/types/DiscordUser.ts:3
+Defined in: [src/types/DiscordUser.ts:3](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/types/DiscordUser.ts#L3)
 
 The type of user. For Discord events, this is always `discord`.

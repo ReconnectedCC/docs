@@ -7,7 +7,7 @@ title: "FormattingMode"
 
 > **FormattingMode**: `"markdown"` \| `"format"` \| `"minimessage"`
 
-Defined in: src/types/RenderedTextObject.ts:26
+Defined in: [src/types/RenderedTextObject.ts:26](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/types/RenderedTextObject.ts#L26)
 
 The formatting mode to use when sending messages.
 

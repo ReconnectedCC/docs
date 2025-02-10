@@ -5,7 +5,7 @@ prev: false
 title: "RequestError"
 ---
 
-Defined in: src/packets/RequestError.ts:8
+Defined in: [src/packets/RequestError.ts:8](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/packets/RequestError.ts#L8)
 
 Sent by the server when an error occurs.
 
@@ -23,7 +23,7 @@ https://docs.reconnected.cc/chatbox/websocket.html#error-packet
 
 > **error**: `string`
 
-Defined in: src/packets/RequestError.ts:12
+Defined in: [src/packets/RequestError.ts:12](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/packets/RequestError.ts#L12)
 
 The type of error that occurred.
 
@@ -33,7 +33,7 @@ The type of error that occurred.
 
 > **id**: `undefined` \| `number`
 
-Defined in: src/packets/RequestError.ts:9
+Defined in: [src/packets/RequestError.ts:9](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/packets/RequestError.ts#L9)
 
 ***
 
@@ -41,7 +41,7 @@ Defined in: src/packets/RequestError.ts:9
 
 > **message**: `string`
 
-Defined in: src/packets/RequestError.ts:15
+Defined in: [src/packets/RequestError.ts:15](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/packets/RequestError.ts#L15)
 
 A human-readable message describing the error.
 
@@ -51,7 +51,7 @@ A human-readable message describing the error.
 
 > **ok**: `boolean`
 
-Defined in: src/packets/Data.ts:2
+Defined in: [src/packets/Data.ts:2](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/packets/Data.ts#L2)
 
 #### Inherited from
 
@@ -63,7 +63,7 @@ Defined in: src/packets/Data.ts:2
 
 > **type**: `string`
 
-Defined in: src/packets/Data.ts:3
+Defined in: [src/packets/Data.ts:3](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/packets/Data.ts#L3)
 
 #### Inherited from
 

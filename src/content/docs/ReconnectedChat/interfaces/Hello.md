@@ -5,7 +5,7 @@ prev: false
 title: "Hello"
 ---
 
-Defined in: src/packets/Hello.ts:4
+Defined in: [src/packets/Hello.ts:4](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/packets/Hello.ts#L4)
 
 ## Extends
 
@@ -17,7 +17,7 @@ Defined in: src/packets/Hello.ts:4
 
 > **capabilities**: `string`[]
 
-Defined in: src/packets/Hello.ts:8
+Defined in: [src/packets/Hello.ts:8](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/packets/Hello.ts#L8)
 
 ***
 
@@ -25,7 +25,7 @@ Defined in: src/packets/Hello.ts:8
 
 > **guest**: `boolean`
 
-Defined in: src/packets/Hello.ts:5
+Defined in: [src/packets/Hello.ts:5](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/packets/Hello.ts#L5)
 
 ***
 
@@ -33,7 +33,7 @@ Defined in: src/packets/Hello.ts:5
 
 > **licenseOwner**: `string`
 
-Defined in: src/packets/Hello.ts:6
+Defined in: [src/packets/Hello.ts:6](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/packets/Hello.ts#L6)
 
 ***
 
@@ -41,7 +41,7 @@ Defined in: src/packets/Hello.ts:6
 
 > `optional` **licenseOwnerUser**: `null` \| [`User`](/ReconnectedChat/interfaces/user/)
 
-Defined in: src/packets/Hello.ts:7
+Defined in: [src/packets/Hello.ts:7](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/packets/Hello.ts#L7)
 
 ***
 
@@ -49,7 +49,7 @@ Defined in: src/packets/Hello.ts:7
 
 > **ok**: `boolean`
 
-Defined in: src/packets/Data.ts:2
+Defined in: [src/packets/Data.ts:2](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/packets/Data.ts#L2)
 
 #### Inherited from
 
@@ -61,7 +61,7 @@ Defined in: src/packets/Data.ts:2
 
 > **type**: `string`
 
-Defined in: src/packets/Data.ts:3
+Defined in: [src/packets/Data.ts:3](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/packets/Data.ts#L3)
 
 #### Inherited from
 

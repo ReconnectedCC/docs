@@ -5,7 +5,7 @@ prev: false
 title: "Client"
 ---
 
-Defined in: src/Client.ts:14
+Defined in: [src/Client.ts:14](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/Client.ts#L14)
 
 ## Extends
 
@@ -17,7 +17,7 @@ Defined in: src/Client.ts:14
 
 > **new Client**(`token`, `options`?): [`Client`](/ReconnectedChat/classes/client/)
 
-Defined in: src/Client.ts:227
+Defined in: [src/Client.ts:227](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/Client.ts#L227)
 
 #### Parameters
 
@@ -27,11 +27,11 @@ Defined in: src/Client.ts:227
 
 ##### options?
 
-###### defaultFormattingMode
+###### defaultFormattingMode?
 
 [`FormattingMode`](/ReconnectedChat/type-aliases/formattingmode/)
 
-###### defaultName
+###### defaultName?
 
 `string`
 
@@ -45,7 +45,7 @@ Defined in: src/Client.ts:227
 
 > **capabilities**: [`Capability`](/ReconnectedChat/type-aliases/capability/)[]
 
-Defined in: src/Client.ts:24
+Defined in: [src/Client.ts:24](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/Client.ts#L24)
 
 List of capabilities this chatbox license can do. Typically, guest connections can only use `read`. Connections
 with a license will usually have `read`, `command` and `tell`.
@@ -56,7 +56,7 @@ with a license will usually have `read`, `command` and `tell`.
 
 > **defaultFormattingMode**: [`FormattingMode`](/ReconnectedChat/type-aliases/formattingmode/)
 
-Defined in: src/Client.ts:45
+Defined in: [src/Client.ts:45](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/Client.ts#L45)
 
 Default formatting mode for say and tell messages.
 Defaults to "markdown"
@@ -67,7 +67,7 @@ Defaults to "markdown"
 
 > **defaultName**: `undefined` \| `string`
 
-Defined in: src/Client.ts:39
+Defined in: [src/Client.ts:39](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/Client.ts#L39)
 
 Default name for chatbox messages
 
@@ -77,7 +77,7 @@ Default name for chatbox messages
 
 > **endpoint**: `string`
 
-Defined in: src/Client.ts:34
+Defined in: [src/Client.ts:34](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/Client.ts#L34)
 
 Endpoint of the Chatbox server. Must include `wss://` and the version route. Defaults to `wss://chat.reconnected.cc/v2/`.
 
@@ -87,7 +87,7 @@ Endpoint of the Chatbox server. Must include `wss://` and the version route. Def
 
 > **owner**: `string`
 
-Defined in: src/Client.ts:18
+Defined in: [src/Client.ts:18](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/Client.ts#L18)
 
 Minecraft username of the owner of the chatbox license
 
@@ -97,7 +97,7 @@ Minecraft username of the owner of the chatbox license
 
 > **players**: [`User`](/ReconnectedChat/interfaces/user/)[]
 
-Defined in: src/Client.ts:29
+Defined in: [src/Client.ts:29](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/Client.ts#L29)
 
 List of currently online players
 
@@ -107,7 +107,7 @@ List of currently online players
 
 > **running**: `boolean`
 
-Defined in: src/Client.ts:47
+Defined in: [src/Client.ts:47](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/Client.ts#L47)
 
 ***
 
@@ -115,7 +115,7 @@ Defined in: src/Client.ts:47
 
 > **waitTimeRestart**: `number` = `60000`
 
-Defined in: src/Client.ts:215
+Defined in: [src/Client.ts:215](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/Client.ts#L215)
 
 ***
 
@@ -284,7 +284,7 @@ v0.1.26
 
 > **close**(`soft`?): `void`
 
-Defined in: src/Client.ts:59
+Defined in: [src/Client.ts:59](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/Client.ts#L59)
 
 Close the connection to the Chatbox server
 
@@ -304,7 +304,7 @@ Keep running status as is
 
 > **close**(`soft`?): `void`
 
-Defined in: src/Client.ts:317
+Defined in: [src/Client.ts:317](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/Client.ts#L317)
 
 Close the connection to the Chatbox server
 
@@ -328,7 +328,7 @@ Keep running status as is
 
 > **connect**(`callback`?): `void`
 
-Defined in: src/Client.ts:53
+Defined in: [src/Client.ts:53](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/Client.ts#L53)
 
 Connect to the Chatbox server
 
@@ -348,7 +348,7 @@ Callback to run when the connection is open
 
 > **connect**(`callback`?): `void`
 
-Defined in: src/Client.ts:301
+Defined in: [src/Client.ts:301](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/Client.ts#L301)
 
 Connect to the Chatbox server
 
@@ -474,7 +474,7 @@ v6.0.0
 Defined in: node\_modules/@types/node/events.d.ts:774
 
 Returns the current max listener value for the `EventEmitter` which is either
-set by `emitter.setMaxListeners(n)` or defaults to [defaultMaxListeners](../../../../../../ReconnectedChat/classes/client/#defaultmaxlisteners).
+set by `emitter.setMaxListeners(n)` or defaults to [defaultMaxListeners](../../../ReconnectedChat/classes/client/#defaultmaxlisteners).
 
 #### Returns
 
@@ -598,7 +598,7 @@ v10.0.0
 
 > **on**(`event`, `listener`): `this`
 
-Defined in: src/Client.ts:109
+Defined in: [src/Client.ts:109](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/Client.ts#L109)
 
 Emitted when the Chatbox client is ready to send and receive messages.
 
@@ -620,7 +620,7 @@ Emitted when the Chatbox client is ready to send and receive messages.
 
 > **on**(`event`, `listener`): `this`
 
-Defined in: src/Client.ts:111
+Defined in: [src/Client.ts:111](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/Client.ts#L111)
 
 ##### Parameters
 
@@ -640,7 +640,7 @@ Defined in: src/Client.ts:111
 
 > **on**(`event`, `listener`): `this`
 
-Defined in: src/Client.ts:113
+Defined in: [src/Client.ts:113](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/Client.ts#L113)
 
 ##### Parameters
 
@@ -660,7 +660,7 @@ Defined in: src/Client.ts:113
 
 > **on**(`event`, `listener`): `this`
 
-Defined in: src/Client.ts:115
+Defined in: [src/Client.ts:115](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/Client.ts#L115)
 
 ##### Parameters
 
@@ -680,7 +680,7 @@ Defined in: src/Client.ts:115
 
 > **on**(`event`, `listener`): `this`
 
-Defined in: src/Client.ts:117
+Defined in: [src/Client.ts:117](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/Client.ts#L117)
 
 ##### Parameters
 
@@ -700,7 +700,7 @@ Defined in: src/Client.ts:117
 
 > **on**(`event`, `listener`): `this`
 
-Defined in: src/Client.ts:119
+Defined in: [src/Client.ts:119](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/Client.ts#L119)
 
 ##### Parameters
 
@@ -720,7 +720,7 @@ Defined in: src/Client.ts:119
 
 > **on**(`event`, `listener`): `this`
 
-Defined in: src/Client.ts:130
+Defined in: [src/Client.ts:130](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/Client.ts#L130)
 
 The event received when a player posts a message in public chat. The `read` capability is required to receive
 chat events.
@@ -745,7 +745,7 @@ chat events.
 
 > **on**(`event`, `listener`): `this`
 
-Defined in: src/Client.ts:137
+Defined in: [src/Client.ts:137](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/Client.ts#L137)
 
 The event received when a player posts a message in Discord. The `read` capability is required to receive chat
 events.
@@ -770,7 +770,7 @@ events.
 
 > **on**(`event`, `listener`): `this`
 
-Defined in: src/Client.ts:144
+Defined in: [src/Client.ts:144](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/Client.ts#L144)
 
 The event received when another chatbox sends a message. The `read` capability is required to receive chat
 events.
@@ -795,7 +795,7 @@ events.
 
 > **on**(`event`, `listener`): `this`
 
-Defined in: src/Client.ts:152
+Defined in: [src/Client.ts:152](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/Client.ts#L152)
 
 The event received when a player runs a chatbox command (public backslash commands: `\command`, private
 owner-only caret/pipe commands: `^command`) in-game. The `command` capability is required to receive command
@@ -821,7 +821,7 @@ events.
 
 > **on**(`event`, `listener`): `this`
 
-Defined in: src/Client.ts:158
+Defined in: [src/Client.ts:158](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/Client.ts#L158)
 
 The event received when a player joins the game.
 
@@ -845,7 +845,7 @@ The event received when a player joins the game.
 
 > **on**(`event`, `listener`): `this`
 
-Defined in: src/Client.ts:164
+Defined in: [src/Client.ts:164](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/Client.ts#L164)
 
 The event received when a player leaves the game.
 
@@ -869,7 +869,7 @@ The event received when a player leaves the game.
 
 > **on**(`event`, `listener`): `this`
 
-Defined in: src/Client.ts:170
+Defined in: [src/Client.ts:170](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/Client.ts#L170)
 
 The event received when a player dies in-game.
 
@@ -893,7 +893,7 @@ The event received when a player dies in-game.
 
 > **on**(`event`, `listener`): `this`
 
-Defined in: src/Client.ts:176
+Defined in: [src/Client.ts:176](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/Client.ts#L176)
 
 The event received when a player changes world.
 
@@ -917,7 +917,7 @@ The event received when a player changes world.
 
 > **on**(`event`, `listener`): `this`
 
-Defined in: src/Client.ts:182
+Defined in: [src/Client.ts:182](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/Client.ts#L182)
 
 The event received when a player goes AFK in-game.
 
@@ -941,7 +941,7 @@ The event received when a player goes AFK in-game.
 
 > **on**(`event`, `listener`): `this`
 
-Defined in: src/Client.ts:188
+Defined in: [src/Client.ts:188](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/Client.ts#L188)
 
 The event received when a player returns from being AFK in-game.
 
@@ -965,7 +965,7 @@ The event received when a player returns from being AFK in-game.
 
 > **on**(`event`, `listener`): `this`
 
-Defined in: src/Client.ts:197
+Defined in: [src/Client.ts:197](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/Client.ts#L197)
 
 The event received when a server restart has been scheduled. At the time of `restartAt`, the server will restart
 and the websocket will be disconnected.
@@ -994,7 +994,7 @@ https://docs.reconnected.cc/chatbox/websocket.html#server-restart-scheduled-even
 
 > **on**(`event`, `listener`): `this`
 
-Defined in: src/Client.ts:205
+Defined in: [src/Client.ts:205](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/Client.ts#L205)
 
 The event received when a previously scheduled server restart has now been cancelled.
 
@@ -1231,7 +1231,7 @@ v9.4.0
 
 > **reconnect**(`wait`?): `void`
 
-Defined in: src/Client.ts:65
+Defined in: [src/Client.ts:65](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/Client.ts#L65)
 
 Close and reconnect to the Chatbox server
 
@@ -1251,7 +1251,7 @@ Whether to wait before reconnecting.
 
 > **reconnect**(`wait`): `void`
 
-Defined in: src/Client.ts:327
+Defined in: [src/Client.ts:327](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/Client.ts#L327)
 
 Close and reconnect to the Chatbox server
 
@@ -1415,7 +1415,7 @@ v0.1.26
 
 > **say**(`text`, `name`?, `mode`?): `Promise`\<[`Success`](/ReconnectedChat/interfaces/success/)\>
 
-Defined in: src/Client.ts:85
+Defined in: [src/Client.ts:85](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/Client.ts#L85)
 
 Sends a message to the in-game public chat.
 
@@ -1458,7 +1458,7 @@ A [Success](/ReconnectedChat/reconnectedchat/interfaces/success/) object contain
 
 > **say**(`text`, `name`?, `mode`?): `Promise`\<[`Success`](/ReconnectedChat/interfaces/success/)\>
 
-Defined in: src/Client.ts:253
+Defined in: [src/Client.ts:253](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/Client.ts#L253)
 
 Sends a message to the in-game public chat.
 
@@ -1534,7 +1534,7 @@ v0.3.5
 
 > **tell**(`user`, `text`, `name`?, `mode`?): `Promise`\<[`Success`](/ReconnectedChat/interfaces/success/)\>
 
-Defined in: src/Client.ts:106
+Defined in: [src/Client.ts:106](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/Client.ts#L106)
 
 Sends a private message to an in-game player.
 
@@ -1583,7 +1583,7 @@ A [Success](/ReconnectedChat/reconnectedchat/interfaces/success/) object contain
 
 > **tell**(`user`, `text`, `name`?, `mode`?): `Promise`\<[`Success`](/ReconnectedChat/interfaces/success/)\>
 
-Defined in: src/Client.ts:273
+Defined in: [src/Client.ts:273](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/Client.ts#L273)
 
 Sends a private message to an in-game player.
 
@@ -1727,7 +1727,7 @@ import { getEventListeners, EventEmitter } from 'node:events';
 
 ##### emitter
 
-`EventEmitter` | `EventTarget`
+`EventEmitter`\<`DefaultEventMap`\> | `EventTarget`
 
 ##### name
 
@@ -1779,7 +1779,7 @@ import { getMaxListeners, setMaxListeners, EventEmitter } from 'node:events';
 
 ##### emitter
 
-`EventEmitter` | `EventTarget`
+`EventEmitter`\<`DefaultEventMap`\> | `EventTarget`
 
 #### Returns
 
@@ -2294,7 +2294,7 @@ A non-negative number. The maximum number of listeners per `EventTarget` event.
 
 ##### eventTargets?
 
-...(`EventEmitter` \| `EventTarget`)[]
+...(`EventEmitter`\<`DefaultEventMap`\> \| `EventTarget`)[]
 
 Zero or more {EventTarget} or {EventEmitter} instances. If none are specified, `n` is set as the default max for all newly created {EventTarget} and {EventEmitter}
 objects.
