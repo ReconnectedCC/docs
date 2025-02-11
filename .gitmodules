@@ -1,0 +1,3 @@
+[submodule "ReconnectedChat"]
+	path = ReconnectedChat
+	url = https://github.com/ReconnectedCC/ReconnectedChat.git
