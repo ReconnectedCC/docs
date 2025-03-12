@@ -53,7 +53,7 @@ hide:
         1. Gambling must *never* be done with (currency bought with) money that has value in the real world (FIAT, Crypto, etc.)
         2. Any odds must be clearly displayed on an ingame monitor, poster or sign and immediately updated when changed, and in the user interface where you gamble.
         3. When a gambling operator chooses to not use Kromer, regular items or Krist directly in the gambling machines, the following rules are applicable.
-            1. The exchange rate for the coins to ingame currency must be static and can not be changed.
+            1. The exchange rate for the coins to ingame currency may be changed, but within reason and non frequent.
             2. Any currency gained while gambling must be able to be paid out by the gambling operator to the player. For example, when you win a prize and you earn 100 coins, those 100 coins should be able to be paid out at all times to the player.
 5.  ## Evasion
     1.  Attempting to evade a previous punishment is not allowed
