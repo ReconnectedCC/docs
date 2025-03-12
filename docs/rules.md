@@ -51,7 +51,7 @@ hide:
     12. Do not use No Chat Reports' chat encryption feature in public chat. Using it in private messages is allowed however, as long as the receiving party is able to decode it.
     13. Any form of in game gambling must be fair to the players.
         1. Gambling must *never* involve money that has value in the real world (FIAT, Crypto, etc.) directly or indirectly.
-        2. Any odds must be clearly displayed on an ingame monitor, poster or sign and immediately updated when changed, and in the user interface where the player gambles. In the user interface where the player gambles, only the applicable odds may be shown to decrease clutter, but it is recommended to show all odds.
+        2. Any odds must be clearly displayed on an ingame monitor, poster or sign and immediately updated before the next player comes in, and in the user interface where the player gambles. In the user interface where the player gambles, only the applicable odds may be shown to decrease clutter, but it is recommended to show all odds.
         3. When a gambling operator chooses to not use Kromer, regular items or Krist directly in the gambling machines, and chooses to use a coin system with an exchange rate, the following rules are applicable.
             1. The exchange rate for the coins to ingame currency may be changed, but within reason and non frequent.
         4. If there isn't an exchange between non currency used while gambling and ingame currency, this should be properly communicated to players on an ingame monitor, poster or sign and in the user interface where the player gambles.
