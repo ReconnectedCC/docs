@@ -50,8 +50,8 @@ hide:
         1.  When advertising malicious software, it should be made very clear that it is malicious during every interaction.
     12. Do not use No Chat Reports' chat encryption feature in public chat. Using it in private messages is allowed however, as long as the receiving party is able to decode it.
     13. Any form of in game gambling must be fair to the players.
-        1. Gambling must *never* be done with (currency bought with) money that has value in the real world (FIAT, Crypto, etc.)
         2. Any odds must be clearly displayed on an ingame monitor, poster or sign and immediately updated when changed, and in the user interface where you gamble.
+        1. Gambling must *never* involve money that has value in the real world (FIAT, Crypto, etc.) directly or indirectly.
         3. When a gambling operator chooses to not use Kromer, regular items or Krist directly in the gambling machines, the following rules are applicable.
             1. The exchange rate for the coins to ingame currency may be changed, but within reason and non frequent.
             2. Any currency gained while gambling must be able to be paid out by the gambling operator to the player. For example, when you win a prize and you earn 100 coins, those 100 coins should be able to be paid out at all times to the player.
