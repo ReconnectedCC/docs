@@ -25,11 +25,12 @@ hide:
     9.  Do not use a chunkloader, intentionally load an area with an afk player for multiple days at a time, or use any other way to load chunks, even if it is intended by vanilla game design. You should use staff provided, Kromer backed chunkloaders, or request a /forceload by staff in the case of a public service.
 3.  ## Do not exploit bugs or cheat in any way
     1.  Exploiting any bug, new or old, is not allowed.
-    2.  X-raying, wallhacking and similar hacks with texture packs or mods is not allowed. Plethora Block Scanners are allowed.
+    2.  X-raying, wallhacking, zoom, player automation and similar hacks with texture packs or mods is not allowed. Plethora Block Scanners are allowed.
     3.  Using hacked clients or hack mods is not allowed.
         1.  Automating player behavior through Baritone isn't allowed, as this accesses information that a regular player can't access without the mod.
     4.  Any bug that has the potential if being exploited by other players, should be **silently** and **responsibly** disclosed to a member of staff.
     5.  Do not use a seed structure predictor to predict structures.
+    6.  The use of a mineflayer bot requires permission and code approval by staff
 4.  ## Do not be a nuisance to other players
     1.  Spamming any type of chats with repeated words, repeated messages, pinging users or any other unwanted behaviour that could be considered disruptive to chatting is not allowed.
     2.  Inviting players to other servers, sharing server links, etc is not allowed, unless explicitly allowed by a member of staff.
@@ -56,13 +57,13 @@ hide:
             1. The exchange rate for the coins to ingame currency may be changed, but within reason and non frequent.
         4. If there isn't an exchange between non currency used while gambling and ingame currency, this should be properly communicated to players on an ingame monitor, poster or sign and in the user interface where the player gambles.
         5. Any currency gained while gambling must be able to be paid out by the gambling operator to the player at all times.
-5.  ## Evasion
+6.  ## Evasion
     1.  Attempting to evade a previous punishment is not allowed
     2.  Staff interpret the rules, you cannot argue about special cases.
     3.  "Talking back" to staff or otherwise being rude or disrespectful is not allowed
     4.  Harassing other players or staff regarding the reasoning for a mute or ban is not allowed
     5.  Arguing with the terms of the mute or ban is not allowed.
-6.  ## Alt accounts
+7.  ## Alt accounts
     1.  It is allowed to have up to 2 accounts, that is one main account and one alt account.
     2.  Alt accounts must donate 100% of their income from the server, not doing so is considered theft.
 
