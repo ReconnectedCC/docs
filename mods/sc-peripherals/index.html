@@ -1,0 +1,3288 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../sc-goodies/">
+      
+      
+        <link rel="next" href="../../chatbox/">
+      
+      
+      <link rel="icon" href="../../img/rCC.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
+    
+    
+      
+        <title>sc-peripherals - ReconnectedCC</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.4af4bdda.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#sc-peripherals" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="ReconnectedCC" class="md-header__button md-logo" aria-label="ReconnectedCC" data-md-component="logo">
+      
+  <img src="../../img/rCC.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ReconnectedCC
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              sc-peripherals
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../rules/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Rules
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../faq/activetime/" class="md-tabs__link">
+          
+  
+  
+  FAQ
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../embedded-computer/" class="md-tabs__link">
+          
+  
+  
+  Mods
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../chatbox/" class="md-tabs__link">
+          
+  
+  
+  Chatbox
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../replethora/" class="md-tabs__link">
+          
+  
+  
+  Re:Plethora
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="ReconnectedCC" class="md-nav__button md-logo" aria-label="ReconnectedCC" data-md-component="logo">
+      
+  <img src="../../img/rCC.png" alt="logo">
+
+    </a>
+    ReconnectedCC
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rules/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Rules
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    FAQ
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            FAQ
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/activetime/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Active time
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Server API
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/claiming/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Claiming land
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/optional-mods/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Choosing Optional Mods
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/pronouns/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Pronouns
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/proxies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Proxies
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/rom/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ROM
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/supporter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Supporter
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Mods
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Mods
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../embedded-computer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Embedded Computer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sc-goodies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    sc-goodies
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    sc-peripherals
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    sc-peripherals
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#useful-links" class="md-nav__link">
+    <span class="md-ellipsis">
+      Useful links
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Useful links">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sc-peripherals_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      sc-peripherals
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3d-prints" class="md-nav__link">
+    <span class="md-ellipsis">
+      3D Prints
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#posters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Posters
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3d-printer" class="md-nav__link">
+    <span class="md-ellipsis">
+      3D Printer
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3D Printer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#differences-from-opencomputers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Differences from OpenComputers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3dj-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      .3dj format
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label=".3dj format">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fields
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#differences-from-3dm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Differences from 3dm
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wide-format-printer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wide Format Printer
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Wide Format Printer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2dj-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      .2dj format
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label=".2dj format">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fields_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fields
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2dja-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      .2dja format
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label=".2dja format">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fields_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fields
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#peripheral-api-3d-printer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Peripheral API - 3D Printer
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Peripheral API - 3D Printer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#printeraddshapeminxnumber-minynumber-minznumber-maxxnumber-maxynumber-maxznumber-texturestring-stateboolean-tintnumber" class="md-nav__link">
+    <span class="md-ellipsis">
+      printer.addShape(minX:number, minY:number, minZ:number, maxX:number, maxY:number, maxZ:number[, texture:string[, state:boolean[, tint:number]]])
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="printer.addShape(minX:number, minY:number, minZ:number, maxX:number, maxY:number, maxZ:number[, texture:string[, state:boolean[, tint:number]]])">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parameters
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#printeraddshapesshapestable" class="md-nav__link">
+    <span class="md-ellipsis">
+      printer.addShapes(shapes:table)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="printer.addShapes(shapes:table)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#shape-table-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shape table parameters
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#printercommitcountnumber-boolean" class="md-nav__link">
+    <span class="md-ellipsis">
+      printer.commit(count:number): boolean
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#printergetbuttonmode-boolean" class="md-nav__link">
+    <span class="md-ellipsis">
+      printer.getButtonMode(): boolean
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#printergetchameliumlevel-number-number" class="md-nav__link">
+    <span class="md-ellipsis">
+      printer.getChameliumLevel(): number, number
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#printergetinklevel-number-number" class="md-nav__link">
+    <span class="md-ellipsis">
+      printer.getInkLevel(): number, number
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#printergetlabel-string" class="md-nav__link">
+    <span class="md-ellipsis">
+      printer.getLabel(): string
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#printergetlightlevel-number" class="md-nav__link">
+    <span class="md-ellipsis">
+      printer.getLightLevel(): number
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#printergetmaxshapecount-number" class="md-nav__link">
+    <span class="md-ellipsis">
+      printer.getMaxShapeCount(): number
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#printergetredstonelevel-number" class="md-nav__link">
+    <span class="md-ellipsis">
+      printer.getRedstoneLevel(): number
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#printergetshapecount-number-number" class="md-nav__link">
+    <span class="md-ellipsis">
+      printer.getShapeCount(): number, number
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#printergettooltip-string" class="md-nav__link">
+    <span class="md-ellipsis">
+      printer.getTooltip(): string
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#printeriscollidable-boolean-boolean" class="md-nav__link">
+    <span class="md-ellipsis">
+      printer.isCollidable(): boolean, boolean
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#printerreset" class="md-nav__link">
+    <span class="md-ellipsis">
+      printer.reset()
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#printersetbuttonmodeisbuttonboolean" class="md-nav__link">
+    <span class="md-ellipsis">
+      printer.setButtonMode(isButton:boolean)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#printersetcollidablecollidewhenoffboolean-collidewhenonboolean" class="md-nav__link">
+    <span class="md-ellipsis">
+      printer.setCollidable(collideWhenOff:boolean, collideWhenOn:boolean)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#printersetlabellabelstring" class="md-nav__link">
+    <span class="md-ellipsis">
+      printer.setLabel([label:string])
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#printersetlightlevellevelnumber" class="md-nav__link">
+    <span class="md-ellipsis">
+      printer.setLightLevel(level:number)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#printersetredstonelevellevelnumber" class="md-nav__link">
+    <span class="md-ellipsis">
+      printer.setRedstoneLevel(level:number)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#printersetstatelightinglightwhenoffboolean-lightwhenonboolean" class="md-nav__link">
+    <span class="md-ellipsis">
+      printer.setStateLighting(lightWhenOff:boolean, lightWhenOn:boolean)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#printergetseatpos-number-number-number" class="md-nav__link">
+    <span class="md-ellipsis">
+      printer.getSeatPos(): number, number, number
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#printersetseatposxnumber-ynumber-znumber" class="md-nav__link">
+    <span class="md-ellipsis">
+      printer.setSeatPos(x:number, y:number, z:number)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#printersettooltiptooltipstring" class="md-nav__link">
+    <span class="md-ellipsis">
+      printer.setTooltip([tooltip:string])
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#printerstatus-string-numberboolean" class="md-nav__link">
+    <span class="md-ellipsis">
+      printer.status(): string, number|boolean
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="printer.status(): string, number|boolean">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returned-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Returned parameters
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#printerstop" class="md-nav__link">
+    <span class="md-ellipsis">
+      printer.stop()
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3d_printer_state-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      3d_printer_state event
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3d_printer_state event">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parameters
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3d_printer_complete-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      3d_printer_complete event
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3d_printer_complete event">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parameters
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#peripheral-api-wide-format-printer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Peripheral API - Wide Format Printer
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Peripheral API - Wide Format Printer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#posterprintersetpixelxnumber-ynumber-colornumber" class="md-nav__link">
+    <span class="md-ellipsis">
+      posterPrinter.setPixel(x:number, y:number, color:number)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#posterprinterblitpixelsxnumber-ynumber-pixelstable" class="md-nav__link">
+    <span class="md-ellipsis">
+      posterPrinter.blitPixels(x:number, y:number, pixels:table)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#posterprintersetpalettecolorindexnumber-rednumber-greennumber-bluenumber" class="md-nav__link">
+    <span class="md-ellipsis">
+      posterPrinter.setPaletteColor(index:number, red:number, green:number, blue:number)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#posterprinterblitpalettepalettetable" class="md-nav__link">
+    <span class="md-ellipsis">
+      posterPrinter.blitPalette(palette:table)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#posterprintercommitcountnumber-boolean" class="md-nav__link">
+    <span class="md-ellipsis">
+      posterPrinter.commit(count:number): boolean
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#posterprintergetinklevel-number-number" class="md-nav__link">
+    <span class="md-ellipsis">
+      posterPrinter.getInkLevel(): number, number
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#posterprintergetlabel-string" class="md-nav__link">
+    <span class="md-ellipsis">
+      posterPrinter.getLabel(): string
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#posterprintergettooltip-string" class="md-nav__link">
+    <span class="md-ellipsis">
+      posterPrinter.getTooltip(): string
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#posterprinterreset" class="md-nav__link">
+    <span class="md-ellipsis">
+      posterPrinter.reset()
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#posterprintersetlabellabelstring" class="md-nav__link">
+    <span class="md-ellipsis">
+      posterPrinter.setLabel([label:string])
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#posterprintersettooltiptooltipstring" class="md-nav__link">
+    <span class="md-ellipsis">
+      posterPrinter.setTooltip([tooltip:string])
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#posterprinterstatus-string-numberboolean" class="md-nav__link">
+    <span class="md-ellipsis">
+      posterPrinter.status(): string, number|boolean
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="posterPrinter.status(): string, number|boolean">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returned-parameters_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Returned parameters
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#posterprinterstop" class="md-nav__link">
+    <span class="md-ellipsis">
+      posterPrinter.stop()
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#poster_printer_state-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      poster_printer_state event
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="poster_printer_state event">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parameters
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#poster_printer_complete-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      poster_printer_complete event
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="poster_printer_complete event">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parameters
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Chatbox
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Chatbox
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chatbox/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chatbox
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chatbox/computercraft/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ComputerCraft API
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chatbox/websocket/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Websocket API
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Re:Plethora
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Re:Plethora
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../replethora/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Re:Plethora
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../replethora/block-scanner/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Block scanner
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../replethora/entity-sensor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entity sensor
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../replethora/introspection-module/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introspection module
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../replethora/keyboard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Keyboard
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../replethora/kinetic-module/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kinetic augment
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../replethora/laser/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Frickin' laser beam
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../replethora/neural-interface/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    The Neural Interface
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../replethora/overlay-glasses/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overlay glasses
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#useful-links" class="md-nav__link">
+    <span class="md-ellipsis">
+      Useful links
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Useful links">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sc-peripherals_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      sc-peripherals
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3d-prints" class="md-nav__link">
+    <span class="md-ellipsis">
+      3D Prints
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#posters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Posters
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3d-printer" class="md-nav__link">
+    <span class="md-ellipsis">
+      3D Printer
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3D Printer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#differences-from-opencomputers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Differences from OpenComputers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3dj-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      .3dj format
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label=".3dj format">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fields
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#differences-from-3dm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Differences from 3dm
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wide-format-printer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wide Format Printer
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Wide Format Printer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2dj-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      .2dj format
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label=".2dj format">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fields_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fields
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2dja-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      .2dja format
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label=".2dja format">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fields_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fields
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#peripheral-api-3d-printer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Peripheral API - 3D Printer
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Peripheral API - 3D Printer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#printeraddshapeminxnumber-minynumber-minznumber-maxxnumber-maxynumber-maxznumber-texturestring-stateboolean-tintnumber" class="md-nav__link">
+    <span class="md-ellipsis">
+      printer.addShape(minX:number, minY:number, minZ:number, maxX:number, maxY:number, maxZ:number[, texture:string[, state:boolean[, tint:number]]])
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="printer.addShape(minX:number, minY:number, minZ:number, maxX:number, maxY:number, maxZ:number[, texture:string[, state:boolean[, tint:number]]])">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parameters
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#printeraddshapesshapestable" class="md-nav__link">
+    <span class="md-ellipsis">
+      printer.addShapes(shapes:table)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="printer.addShapes(shapes:table)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#shape-table-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shape table parameters
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#printercommitcountnumber-boolean" class="md-nav__link">
+    <span class="md-ellipsis">
+      printer.commit(count:number): boolean
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#printergetbuttonmode-boolean" class="md-nav__link">
+    <span class="md-ellipsis">
+      printer.getButtonMode(): boolean
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#printergetchameliumlevel-number-number" class="md-nav__link">
+    <span class="md-ellipsis">
+      printer.getChameliumLevel(): number, number
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#printergetinklevel-number-number" class="md-nav__link">
+    <span class="md-ellipsis">
+      printer.getInkLevel(): number, number
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#printergetlabel-string" class="md-nav__link">
+    <span class="md-ellipsis">
+      printer.getLabel(): string
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#printergetlightlevel-number" class="md-nav__link">
+    <span class="md-ellipsis">
+      printer.getLightLevel(): number
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#printergetmaxshapecount-number" class="md-nav__link">
+    <span class="md-ellipsis">
+      printer.getMaxShapeCount(): number
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#printergetredstonelevel-number" class="md-nav__link">
+    <span class="md-ellipsis">
+      printer.getRedstoneLevel(): number
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#printergetshapecount-number-number" class="md-nav__link">
+    <span class="md-ellipsis">
+      printer.getShapeCount(): number, number
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#printergettooltip-string" class="md-nav__link">
+    <span class="md-ellipsis">
+      printer.getTooltip(): string
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#printeriscollidable-boolean-boolean" class="md-nav__link">
+    <span class="md-ellipsis">
+      printer.isCollidable(): boolean, boolean
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#printerreset" class="md-nav__link">
+    <span class="md-ellipsis">
+      printer.reset()
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#printersetbuttonmodeisbuttonboolean" class="md-nav__link">
+    <span class="md-ellipsis">
+      printer.setButtonMode(isButton:boolean)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#printersetcollidablecollidewhenoffboolean-collidewhenonboolean" class="md-nav__link">
+    <span class="md-ellipsis">
+      printer.setCollidable(collideWhenOff:boolean, collideWhenOn:boolean)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#printersetlabellabelstring" class="md-nav__link">
+    <span class="md-ellipsis">
+      printer.setLabel([label:string])
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#printersetlightlevellevelnumber" class="md-nav__link">
+    <span class="md-ellipsis">
+      printer.setLightLevel(level:number)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#printersetredstonelevellevelnumber" class="md-nav__link">
+    <span class="md-ellipsis">
+      printer.setRedstoneLevel(level:number)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#printersetstatelightinglightwhenoffboolean-lightwhenonboolean" class="md-nav__link">
+    <span class="md-ellipsis">
+      printer.setStateLighting(lightWhenOff:boolean, lightWhenOn:boolean)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#printergetseatpos-number-number-number" class="md-nav__link">
+    <span class="md-ellipsis">
+      printer.getSeatPos(): number, number, number
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#printersetseatposxnumber-ynumber-znumber" class="md-nav__link">
+    <span class="md-ellipsis">
+      printer.setSeatPos(x:number, y:number, z:number)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#printersettooltiptooltipstring" class="md-nav__link">
+    <span class="md-ellipsis">
+      printer.setTooltip([tooltip:string])
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#printerstatus-string-numberboolean" class="md-nav__link">
+    <span class="md-ellipsis">
+      printer.status(): string, number|boolean
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="printer.status(): string, number|boolean">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returned-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Returned parameters
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#printerstop" class="md-nav__link">
+    <span class="md-ellipsis">
+      printer.stop()
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3d_printer_state-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      3d_printer_state event
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3d_printer_state event">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parameters
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3d_printer_complete-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      3d_printer_complete event
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3d_printer_complete event">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parameters
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#peripheral-api-wide-format-printer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Peripheral API - Wide Format Printer
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Peripheral API - Wide Format Printer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#posterprintersetpixelxnumber-ynumber-colornumber" class="md-nav__link">
+    <span class="md-ellipsis">
+      posterPrinter.setPixel(x:number, y:number, color:number)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#posterprinterblitpixelsxnumber-ynumber-pixelstable" class="md-nav__link">
+    <span class="md-ellipsis">
+      posterPrinter.blitPixels(x:number, y:number, pixels:table)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#posterprintersetpalettecolorindexnumber-rednumber-greennumber-bluenumber" class="md-nav__link">
+    <span class="md-ellipsis">
+      posterPrinter.setPaletteColor(index:number, red:number, green:number, blue:number)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#posterprinterblitpalettepalettetable" class="md-nav__link">
+    <span class="md-ellipsis">
+      posterPrinter.blitPalette(palette:table)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#posterprintercommitcountnumber-boolean" class="md-nav__link">
+    <span class="md-ellipsis">
+      posterPrinter.commit(count:number): boolean
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#posterprintergetinklevel-number-number" class="md-nav__link">
+    <span class="md-ellipsis">
+      posterPrinter.getInkLevel(): number, number
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#posterprintergetlabel-string" class="md-nav__link">
+    <span class="md-ellipsis">
+      posterPrinter.getLabel(): string
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#posterprintergettooltip-string" class="md-nav__link">
+    <span class="md-ellipsis">
+      posterPrinter.getTooltip(): string
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#posterprinterreset" class="md-nav__link">
+    <span class="md-ellipsis">
+      posterPrinter.reset()
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#posterprintersetlabellabelstring" class="md-nav__link">
+    <span class="md-ellipsis">
+      posterPrinter.setLabel([label:string])
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#posterprintersettooltiptooltipstring" class="md-nav__link">
+    <span class="md-ellipsis">
+      posterPrinter.setTooltip([tooltip:string])
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#posterprinterstatus-string-numberboolean" class="md-nav__link">
+    <span class="md-ellipsis">
+      posterPrinter.status(): string, number|boolean
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="posterPrinter.status(): string, number|boolean">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returned-parameters_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Returned parameters
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#posterprinterstop" class="md-nav__link">
+    <span class="md-ellipsis">
+      posterPrinter.stop()
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#poster_printer_state-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      poster_printer_state event
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="poster_printer_state event">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parameters
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#poster_printer_complete-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      poster_printer_complete event
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="poster_printer_complete event">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parameters
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<script setup>
+import ColorName from "../components/ColorName.vue";
+</script>
+
+<h1 id="sc-peripherals">sc-peripherals<a class="headerlink" href="#sc-peripherals" title="Permanent link">&para;</a></h1>
+<p>{: .note}
+Quick link to .3dm to .3dj converter: <a href="https://3dj.lem.sh/">https://3dj.lem.sh/</a></p>
+<p><a href="https://github.com/SwitchCraftCC/sc-peripherals">sc-peripherals</a> is a Fabric 1.20 
+<a href="https://github.com/cc-tweaked/cc-tweaked">CC: Tweaked</a> peripheral mod for the SwitchCraft server. It adds a 3D printer
+in the style of <a href="https://github.com/MightyPirates/OpenComputers">OpenComputers</a>, and a Wide Format Printer that prints 
+custom posters to display in item frames.</p>
+<ul>
+<li><code>.3dj</code> models are printed in-game by running <code>print3d &lt;filename.3dj&gt;</code> on a computer with a 3D Printer peripheral.
+  Legacy OC 3D models can be converted using the <a href="https://3dj.lem.sh">.3dm to .3dj converter</a>.</li>
+<li><code>.2dj</code>/<code>.2dja</code> images are printed in-game by running <code>poster &lt;filename.2dj(a)&gt;</code> on a computer with a Wide Format Printer
+  peripheral.</li>
+</ul>
+<p><img alt="sc-peripherals" src="/img/sc-peripherals.png" /></p>
+<h2 id="useful-links">Useful links<a class="headerlink" href="#useful-links" title="Permanent link">&para;</a></h2>
+<h4 id="sc-peripherals_1">sc-peripherals<a class="headerlink" href="#sc-peripherals_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://github.com/project-connecticut/sc-peripherals">sc-peripherals on GitHub</a></li>
+</ul>
+<h4 id="3d-prints">3D Prints<a class="headerlink" href="#3d-prints" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://3dj.lem.sh">OpenComputers .3dm to .3dj converter</a> (Official)</li>
+<li><a href="https://www.blockbench.net/plugins/sam3dj">Blockbench plugin for exporting to .3dj</a> (by <a href="https://github.com/1Turtle">Sammy (1Turtle)</a>)</li>
+<li><a href="https://3dj.znepb.me">Online Blockbench to .3dj converter</a> (by <a href="https://github.com/znepb">znepb</a>)</li>
+<li><a href="https://github.com/SwitchCraftCC/3dprints">SwitchCraft 3D Prints</a> - Example 3D prints in the style of BiblioCraft</li>
+</ul>
+<h4 id="posters">Posters<a class="headerlink" href="#posters" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://gist.github.com/SwitchCraft3/e6a59dab9a04807f5d035e4e72720524">Reference image to .2dj converter in Python</a> (Official)</li>
+<li><a href="https://poster.madefor.cc/">Image to .2dj/.2dja converter</a> (by <a href="https://github.com/MasonGulu">ShreksHellraiser (MasonGulu)</a>)</li>
+<li><a href="https:/github.com/PatriikPlays/img2poster">Image to .2dj converter written in Rust</a> (by <a href="https://github.com/PatriikPlays">GPLv3 (PatriikPlays)</a>)</li>
+</ul>
+<h2 id="3d-printer">3D Printer<a class="headerlink" href="#3d-printer" title="Permanent link">&para;</a></h2>
+<p><img src="/img/printer.png" alt="3D Printer" title="3D Printer"
+  style="float: right; margin-left: 16px" /></p>
+<p>The 3D Printer is a <a href="#peripheral-api-3d-printer">peripheral</a> that can be used to print 3D models in-game. It takes
+ink cartridges and chamelium to print models, which can be printed with the <code>print3d</code> program for files in the <code>.3dj</code>
+format.</p>
+<h3 id="differences-from-opencomputers">Differences from OpenComputers<a class="headerlink" href="#differences-from-opencomputers" title="Permanent link">&para;</a></h3>
+<ul>
+<li>The 3D Printer and Ink Cartridge are simpler to craft<ul>
+<li>The Ink Cartridge recipe is crafted as a filled cartridge to begin with, but a refill recipe is still provided</li>
+</ul>
+</li>
+<li>3D Printers do not require the use of energy</li>
+<li>3D Printers have externally-visible progress bars for chamelium and ink levels</li>
+<li>First-class ComputerCraft peripheral API support</li>
+<li><code>print3d</code> program included in the ROM by default via a data pack in the mod<ul>
+<li>Printing can be safely terminated by the user, and it will automatically stop after the current item is finished</li>
+<li><code>print3d stop</code> command to stop a printer via the CLI</li>
+<li>Uses <a href="#_3dj-format">3dj format</a> instead of 3dm (converter here: <a href="https://3dj.lem.sh/">https://3dj.lem.sh/</a>)</li>
+</ul>
+</li>
+<li>Default maximum shape count (configurable) for each state of a print raised from 24 to 128</li>
+<li>The default maximum light level in printed models is now 7 instead of 8 - this is now equivalent to a redstone torch<ul>
+<li>Prints can still be crafted with 8 pieces of glowstone dust to reach maximum brightness level</li>
+</ul>
+</li>
+<li>3D prints are waterloggable</li>
+<li>The included "white" texture name changed from <code>opencomputers:blocks/white</code> to <code>sc-peripherals:block/white</code></li>
+<li>Print models are more efficiently cached, so chunks with lots of identical prints will only bake the print model once<ul>
+<li>Note that this is not the be-all and end-all of performance, there may still be a lot of vertex data to upload to
+  the chunk</li>
+</ul>
+</li>
+<li>Prints can be crafted with beacon base blocks, honey blocks, and glowstone dust or blocks for additional features.</li>
+</ul>
+<h3 id="3dj-format">.3dj format<a class="headerlink" href="#3dj-format" title="Permanent link">&para;</a></h3>
+<p>The 3dj format was created as a more versatile alternative for processing and storing 3D models compared to the old
+OpenComputers 3dm format. It uses JSON instead of Lua tables, so it is easier to work with programmatically.</p>
+<p>There is an online .3dm to .3dj converter here: <a href="https://3dj.lem.sh/">https://3dj.lem.sh/</a></p>
+<h4 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h4>
+<p>All arguments except for <code>shapesOff</code>, <code>shapesOn</code>, and <code>bounds</code> are optional.</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;...&quot;</span><span class="p">,</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nt">&quot;tooltip&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;...&quot;</span><span class="p">,</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nt">&quot;isButton&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">  </span><span class="nt">&quot;collideWhenOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">  </span><span class="nt">&quot;collideWhenOff&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">  </span><span class="nt">&quot;lightLevel&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">  </span><span class="nt">&quot;redstoneLevel&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">  </span><span class="nt">&quot;shapesOff&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;bounds&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">16</span><span class="p">,</span><span class="w"> </span><span class="mi">16</span><span class="p">,</span><span class="w"> </span><span class="mi">16</span><span class="p">],</span><span class="w"> </span><span class="nt">&quot;texture&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;tint&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;FFFFFF&quot;</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;bounds&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">16</span><span class="p">,</span><span class="w"> </span><span class="mi">16</span><span class="p">,</span><span class="w"> </span><span class="mi">16</span><span class="p">],</span><span class="w"> </span><span class="nt">&quot;texture&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;tint&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;FFFFFF&quot;</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;bounds&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">16</span><span class="p">,</span><span class="w"> </span><span class="mi">16</span><span class="p">,</span><span class="w"> </span><span class="mi">16</span><span class="p">],</span><span class="w"> </span><span class="nt">&quot;texture&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;tint&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;FFFFFF&quot;</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">  </span><span class="p">],</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">  </span><span class="nt">&quot;shapesOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;bounds&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">16</span><span class="p">,</span><span class="w"> </span><span class="mi">16</span><span class="p">,</span><span class="w"> </span><span class="mi">16</span><span class="p">],</span><span class="w"> </span><span class="nt">&quot;texture&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;tint&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;FFFFFF&quot;</span><span class="w"> </span><span class="p">}</span><span class="w">  </span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">  </span><span class="p">]</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="p">}</span>
+</span></code></pre></div>
+<h4 id="fields">Fields<a class="headerlink" href="#fields" title="Permanent link">&para;</a></h4>
+<ul>
+<li><code>label</code>: (optional, string) The name of the 3D print, maximum 48 characters.</li>
+<li><code>tooltip</code>: (optional, string) The tooltip of the 3D print in the inventory, maximum 256 characters.</li>
+<li><code>isButton</code>: (optional, boolean) Whether the 3D print acts as a button when right-clicked. If true, the print will
+  automatically switch to the 'off' state after 20 ticks when right-clicked. If false, right-clicking will toggle the
+  state.</li>
+<li><code>collideWhenOff</code>: (optional, boolean) Whether the 3D print is collidable when in the 'off' state.</li>
+<li><code>collideWhenOn</code>: (optional, boolean) Whether the 3D print is collidable when in the 'on' state.</li>
+<li><code>lightLevel</code>: (optional, number) The light level of the 3D print. Must be between 0 or 15, but values above 7 will
+  be clamped to 7 unless the print is later crafted with glowstone dust.</li>
+<li><code>lightWhenOff</code>: (optional, boolean) Whether the 3D print emits light when in the 'off' state.</li>
+<li><code>lightWhenOn</code>: (optional, boolean) Whether the 3D print emits light when in the 'on' state.</li>
+<li><code>redstoneLevel</code>: (optional, number) The redstone level of the 3D print. Must be between 0 or 15.</li>
+<li><code>seatPos</code>: (optional, array of numbers) The position of the seat on the 3D print. If not null or undefined, must be a
+  array containing three numbers between 0.1 and 0.9, e.g. <code>[0.5, 0.5, 0.5]</code>, where 0.5 is the center of the block. When 
+  not null or undefined, the print will be a seat that can be sat on by right-clicking.</li>
+<li><code>shapesOff</code>: (<strong>required</strong>, array of objects) The shapes of the 3D print when in the 'off' state. Each object in the array
+  must have a <code>bounds</code> property with the bounds of the shape, an optional <code>texture</code> property with the texture of the shape,
+  and an optional <code>tint</code> property with the tint of the shape, which may be a number or a hex string (<code>RRGGBB</code>).</li>
+<li><code>bounds</code>: (<strong>required</strong>, array of numbers) The bounds of the shape, in the format
+    <code>[minX, minY, minZ, maxX, maxY, maxZ]</code>. Numbers must be between 0 and 16 inclusive (16 is the edge of the block).</li>
+<li><code>texture</code>: (optional, string) The texture of the shape, including the namespace. For example,
+    <code>minecraft:block/stone</code> or <code>sc-peripherals:block/white</code>. Use the texture analyzer item to find the texture of a
+    block in the world. The <code>sc-peripherals:block/white</code> texture is available as a blank texture for tinting. If
+    texture is not specified or empty string resulting shape is not rendered.</li>
+<li><code>tint</code>: (optional, number or string) The tint of the shape, as a hex string in the format <code>RRGGBB</code>, or a single
+    decimal value.</li>
+<li><code>shapesOn</code>: (<strong>required</strong>, array of objects) Same as <code>shapesOff</code>, but for the 'on' state. To disallow state changes
+  and have no 'on' state, pass an empty array.</li>
+</ul>
+<h4 id="differences-from-3dm">Differences from 3dm<a class="headerlink" href="#differences-from-3dm" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Uses JSON instead of Lua tables</li>
+<li><code>emitRedstone</code> renamed to <code>redstoneLevel</code></li>
+<li><code>collidable</code> array is now two separate <code>collideWhenOff</code>, <code>collideWhenOn</code> boolean fields (default to true)</li>
+<li><code>buttonMode</code> renamed to <code>isButton</code></li>
+<li><code>shapes</code> array has been separated into <code>shapesOff</code>, <code>shapesOn</code><ul>
+<li><code>state</code> field removed</li>
+<li><code>tint</code> in a shape may now be a number or a hex string (<code>RRGGBB</code>)</li>
+</ul>
+</li>
+</ul>
+<h2 id="wide-format-printer">Wide Format Printer<a class="headerlink" href="#wide-format-printer" title="Permanent link">&para;</a></h2>
+<p><img src="/img/poster_printer.png" alt="Wide Format Printer" title="Wide Format Printer" 
+  style="float: right; margin-left: 16px" /></p>
+<p>The Wide Format Printer is a <a href="#peripheral-api-wide-format-printer">peripheral</a> that can print posters, which are 
+map-like items that can be displayed in item frames with custom images. A poster is 128x128 pixels and has a 
+customizable 64-color palette (including one transparent color). Like 3D prints, posters can have a custom label and 
+tooltip.</p>
+<p>The Wide Format Printer requires ink cartridges and paper to print posters.</p>
+<h3 id="2dj-format">.2dj format<a class="headerlink" href="#2dj-format" title="Permanent link">&para;</a></h3>
+<p>A 2dj file is a JSON file with the following structure:</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">{</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w">   </span><span class="s2">&quot;...&quot;</span><span class="p">,</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">  </span><span class="nt">&quot;tooltip&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;...&quot;</span><span class="p">,</span><span class="w"> </span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">  </span><span class="nt">&quot;palette&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">  </span><span class="nt">&quot;pixels&quot;</span><span class="p">:</span><span class="w">  </span><span class="p">[],</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">  </span><span class="nt">&quot;width&quot;</span><span class="p">:</span><span class="w">   </span><span class="mi">128</span><span class="p">,</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">  </span><span class="nt">&quot;height&quot;</span><span class="p">:</span><span class="w">  </span><span class="mi">128</span><span class="w"> </span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="p">}</span>
+</span></code></pre></div>
+<h4 id="fields_1">Fields<a class="headerlink" href="#fields_1" title="Permanent link">&para;</a></h4>
+<p><code>label</code>: (optional) The name of the poster, max 48 characters<br>
+<code>tooltip</code>: (optional) The tooltip of the poster in the inventory, max 256 characters<br>
+<code>pallete</code>: Up to 63 colors encoded as 0xRRGGBB integers, the transparent index 0 should not be included <br>
+<code>pixels</code>: 16384 (128*128) array of palette indices. 0 is transparent, 1 is the first palette color, etc.<br>
+<code>width</code>: Width of the poster in pixels, not currently used<br>
+<code>height</code>: Height of the poster in pixels, not currently used</p>
+<p>Poster palettes are limited to 63 colors plus one transparent color. The first color in the palette (index 0) is
+fully transparent, and the remaining 63 colors (index 1 onward) are fully opaque but customizable. By default, the
+posters use the same palette as <a href="https://minecraft.wiki/w/Map_item_format#Base_colors">vanilla maps</a>, e.g.
+0 is NONE, 1 is <ColorName color="rgb(127, 178, 56)">GRASS</ColorName>, 
+2 is <ColorName color="rgb(247, 233, 163)">SAND</ColorName>, etc.</p>
+<p><a href="https://p.sc3.io/umAmBHM3p2">Example .2dj file</a></p>
+<h3 id="2dja-format">.2dja format<a class="headerlink" href="#2dja-format" title="Permanent link">&para;</a></h3>
+<p>A 2dja file is primarily a collection of 2dj files, encoded with the following structure:</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">{</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;...&quot;</span><span class="p">,</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">  </span><span class="nt">&quot;width&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">     </span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span><span class="nt">&quot;height&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">    </span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">  </span><span class="nt">&quot;pages&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">      </span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">    </span><span class="p">{</span><span class="w">  </span><span class="p">},</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">    </span><span class="p">{</span><span class="w">  </span><span class="p">},</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">    </span><span class="p">{</span><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">  </span><span class="p">]</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="p">}</span>
+</span></code></pre></div>
+<h4 id="fields_2">Fields<a class="headerlink" href="#fields_2" title="Permanent link">&para;</a></h4>
+<p><code>title</code>: (optional) The name of the collection of posters, not currently used<br>
+<code>width</code>: (optional) Count of posters in a row, not currently used<br>
+<code>height</code>: (optional) Count of posters in a column, not currently used<br>
+<code>pages</code>: Array of 2dj files, length should be width * height if specified</p>
+<h2 id="peripheral-api-3d-printer">Peripheral API - 3D Printer<a class="headerlink" href="#peripheral-api-3d-printer" title="Permanent link">&para;</a></h2>
+<p>A 3D Printer can be wrapped as a peripheral with the name <code>3d_printer</code>, e.g.:</p>
+<div class="language-lua highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kd">local</span><span class="w"> </span><span class="nv">printer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">peripheral</span><span class="p">.</span><span class="nf">wrap</span><span class="p">(</span><span class="s2">&quot;3d_printer&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<p>The 3D Printer has a local buffer of what to print, referred to here as the "model". A model has two shape sets
+(collections of "shapes", which are cuboids with a texture and tint), a set for the "on" state and a set for the "off" state. After adding
+the shapes to the model 
+with <a href="#printer-addshape-minx-number-miny-number-minz-number-maxx-number-maxy-number-maxz-number-texture-string-state-boolean-tint-number"><code>printer.addShape(...)</code></a> 
+or <a href="#printer-addshapes-sahpes-table"><code>printer.addShapes({ ... })</code></a> (recommended), it can be printed by committing it 
+with <a href="#printer-commit-count-number-boolean"><code>printer.commit(count)</code></a>. </p>
+<p>The printer will remember the model, so subsequent copies can be printed by committing again, or a new model can be
+printed by resetting the printer with <a href="#printer-reset"><code>printer.reset()</code></a>.</p>
+<p>The two shape sets (off and on) have a limit of 128 shapes each, for a total of 256 shapes per model. The default state 
+is "off". </p>
+<p>{: .note}
+For a practical example of the 3D Printer API, refer to the built-in 
+<a href="https://github.com/SwitchCraftCC/sc-peripherals/blob/HEAD/src/main/resources/data/computercraft/lua/rom/programs/print3d.lua">print3d program</a>.</p>
+<h3 id="printeraddshapeminxnumber-minynumber-minznumber-maxxnumber-maxynumber-maxznumber-texturestring-stateboolean-tintnumber"><code>printer.addShape(minX:number, minY:number, minZ:number, maxX:number, maxY:number, maxZ:number[, texture:string[, state:boolean[, tint:number]]])</code><a class="headerlink" href="#printeraddshapeminxnumber-minynumber-minznumber-maxxnumber-maxynumber-maxznumber-texturestring-stateboolean-tintnumber" title="Permanent link">&para;</a></h3>
+<p><br></p>
+<p>{: .warning}
+Using <a href="#printer-addshapes-shapes-table"><code>printer.addShapes</code></a> is preferred as it is significantly faster. Each individual
+<code>addShape</code> call will take at least 1 tick.</p>
+<p>Adds a single shape (cuboid) to the model. The shape dimensions must be between 0 and 16 (inclusive) and the shape must 
+not have a volume of 0. A maximum of 128 shapes can be added to a shape set.</p>
+<h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>minX</code></td>
+<td><code>number</code></td>
+<td>The minimum X coordinate of this shape, between 0 and 16 (inclusive)</td>
+</tr>
+<tr>
+<td><code>minY</code></td>
+<td><code>number</code></td>
+<td>The minimum Y coordinate of this shape, between 0 and 16 (inclusive)</td>
+</tr>
+<tr>
+<td><code>minZ</code></td>
+<td><code>number</code></td>
+<td>The minimum Z coordinate of this shape, between 0 and 16 (inclusive)</td>
+</tr>
+<tr>
+<td><code>maxX</code></td>
+<td><code>number</code></td>
+<td>The maximum X coordinate of this shape, between 0 and 16 (inclusive)</td>
+</tr>
+<tr>
+<td><code>maxY</code></td>
+<td><code>number</code></td>
+<td>The maximum Y coordinate of this shape, between 0 and 16 (inclusive)</td>
+</tr>
+<tr>
+<td><code>maxZ</code></td>
+<td><code>number</code></td>
+<td>The maximum Z coordinate of this shape, between 0 and 16 (inclusive)</td>
+</tr>
+<tr>
+<td><code>texture</code></td>
+<td><code>string</code> (optional)</td>
+<td>The texture identifier of this shape. Must be in the format <code>modid:path/texture</code>, e.g. <code>minecraft:block/sandstone</code>. You can right-click on any block with a Texture Analyzer to find the name of its textures.</td>
+</tr>
+<tr>
+<td><code>state</code></td>
+<td><code>boolean</code> (optional)</td>
+<td>The shape set to put this shape in, <code>false</code> for the "off" state and <code>true</code> for the "on" state. Defaults to <code>false</code>.</td>
+</tr>
+<tr>
+<td><code>tint</code></td>
+<td><code>number</code> (optional)</td>
+<td>The color to tint this shape. Must be of the form <code>0xRRGGBB</code>. Defaults to <code>0xFFFFFF</code> (white).</td>
+</tr>
+</tbody>
+</table>
+<h3 id="printeraddshapesshapestable"><code>printer.addShapes(shapes:table)</code><a class="headerlink" href="#printeraddshapesshapestable" title="Permanent link">&para;</a></h3>
+<p>Adds multiple shapes to the model. The shapes may be added to either shape set (or both in one batch) by specifying the
+<code>state</code> parameter. A maximum of 128 shapes can be added to a shape set, and 256 shapes to the model as a whole.</p>
+<p>A shape passed to this function is a mixed table, where the first 6 elements are numbers are the bounds of the shape,
+and <code>texture</code>, <code>state</code> and <code>tint</code> may be provided as named keys.</p>
+<p>An example shapes table:</p>
+<div class="language-lua highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kd">local</span><span class="w"> </span><span class="nv">shapes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span><span class="c1">-- Off state</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">16</span><span class="p">,</span><span class="w"> </span><span class="mi">8</span><span class="p">,</span><span class="w">  </span><span class="mi">16</span><span class="p">,</span><span class="w"> </span><span class="nv">texture</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;minecraft:block/stone&quot;</span><span class="p">,</span><span class="w">     </span><span class="nv">state</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"> </span><span class="nv">tint</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0xFF0000</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">8</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">16</span><span class="p">,</span><span class="w"> </span><span class="mi">16</span><span class="p">,</span><span class="w"> </span><span class="mi">16</span><span class="p">,</span><span class="w"> </span><span class="nv">texture</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;minecraft:block/sandstone&quot;</span><span class="p">,</span><span class="w"> </span><span class="nv">state</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"> </span><span class="nv">tint</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0xFFFFFF</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">  </span><span class="c1">-- On state</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">16</span><span class="p">,</span><span class="w"> </span><span class="mi">8</span><span class="p">,</span><span class="w">  </span><span class="mi">16</span><span class="p">,</span><span class="w"> </span><span class="nv">texture</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;minecraft:block/stone&quot;</span><span class="p">,</span><span class="w">     </span><span class="nv">state</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">  </span><span class="nv">tint</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x0000FF</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">8</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">16</span><span class="p">,</span><span class="w"> </span><span class="mi">16</span><span class="p">,</span><span class="w"> </span><span class="mi">16</span><span class="p">,</span><span class="w"> </span><span class="nv">texture</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;minecraft:block/sandstone&quot;</span><span class="p">,</span><span class="w"> </span><span class="nv">state</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">  </span><span class="nv">tint</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0xFFFFFF</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="p">}</span>
+</span></code></pre></div>
+<h4 id="shape-table-parameters">Shape table parameters<a class="headerlink" href="#shape-table-parameters" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><code>number</code></td>
+<td>The minimum X coordinate of this shape, between 0 and 16 (inclusive)</td>
+</tr>
+<tr>
+<td>2</td>
+<td><code>number</code></td>
+<td>The minimum Y coordinate of this shape, between 0 and 16 (inclusive)</td>
+</tr>
+<tr>
+<td>3</td>
+<td><code>number</code></td>
+<td>The minimum Z coordinate of this shape, between 0 and 16 (inclusive)</td>
+</tr>
+<tr>
+<td>4</td>
+<td><code>number</code></td>
+<td>The maximum X coordinate of this shape, between 0 and 16 (inclusive)</td>
+</tr>
+<tr>
+<td>5</td>
+<td><code>number</code></td>
+<td>The maximum Y coordinate of this shape, between 0 and 16 (inclusive)</td>
+</tr>
+<tr>
+<td>6</td>
+<td><code>number</code></td>
+<td>The maximum Z coordinate of this shape, between 0 and 16 (inclusive)</td>
+</tr>
+<tr>
+<td><code>texture</code></td>
+<td><code>string</code> (optional)</td>
+<td>The texture identifier of this shape. Must be in the format <code>modid:path/texture</code>, e.g. <code>minecraft:block/sandstone</code>. You can right-click on any block with a Texture Analyzer to find the name of its textures.</td>
+</tr>
+<tr>
+<td><code>state</code></td>
+<td><code>boolean</code> (optional)</td>
+<td>The shape set to put this shape in, <code>false</code> for the "off" state and <code>true</code> for the "on" state. Defaults to <code>false</code>.</td>
+</tr>
+<tr>
+<td><code>tint</code></td>
+<td><code>number</code> (optional)</td>
+<td>The color to tint this shape. Must be of the form <code>0xRRGGBB</code>. Defaults to <code>0xFFFFFF</code> (white).</td>
+</tr>
+</tbody>
+</table>
+<h3 id="printercommitcountnumber-boolean"><code>printer.commit(count:number): boolean</code><a class="headerlink" href="#printercommitcountnumber-boolean" title="Permanent link">&para;</a></h3>
+<p>Asynchronously begins printing the specified number of prints. </p>
+<p><code>count</code> must be greater than 0. Once a job has been committed, the printer will continue trying to print that number of
+items even if it runs out of ink or chamelium - it will simply wait for more resources to be added. If there is a
+different print in the printer's output slot, the job will still be committed, but printing will not begin until the
+other item is removed.</p>
+<h3 id="printergetbuttonmode-boolean"><code>printer.getButtonMode(): boolean</code><a class="headerlink" href="#printergetbuttonmode-boolean" title="Permanent link">&para;</a></h3>
+<p>Returns whether this print model is in button mode. This can be changed with 
+<a href="#printer-setbuttonmode-isbutton-boolean"><code>printer.setButtonMode()</code></a>.</p>
+<h3 id="printergetchameliumlevel-number-number"><code>printer.getChameliumLevel(): number, number</code><a class="headerlink" href="#printergetchameliumlevel-number-number" title="Permanent link">&para;</a></h3>
+<p>Returns the amount of chamelium currently in the printer, and the maximum amount of chamelium the printer can store
+(currently 256000).</p>
+<h3 id="printergetinklevel-number-number"><code>printer.getInkLevel(): number, number</code><a class="headerlink" href="#printergetinklevel-number-number" title="Permanent link">&para;</a></h3>
+<p>Returns the amount of ink currently in the printer, and the maximum amount of ink the printer can store
+(currently 100000).</p>
+<h3 id="printergetlabel-string"><code>printer.getLabel(): string</code><a class="headerlink" href="#printergetlabel-string" title="Permanent link">&para;</a></h3>
+<p>Returns the label of this print model (the name shown on the item). This can be changed with
+<a href="#printer-setlabel-label-string"><code>printer.setLabel()</code></a>.</p>
+<h3 id="printergetlightlevel-number"><code>printer.getLightLevel(): number</code><a class="headerlink" href="#printergetlightlevel-number" title="Permanent link">&para;</a></h3>
+<p>Returns the light level of this print model. On the model, this will be between 0 and 7 (inclusive). This can be changed
+with <a href="#printer-setlightlevel-level-number"><code>printer.setLightLevel()</code></a>. Higher light levels can be achieved by crafting 
+the resulting print with glowstone dust.</p>
+<h3 id="printergetmaxshapecount-number"><code>printer.getMaxShapeCount(): number</code><a class="headerlink" href="#printergetmaxshapecount-number" title="Permanent link">&para;</a></h3>
+<p>Returns the maximum shape count per shape set (128).</p>
+<h3 id="printergetredstonelevel-number"><code>printer.getRedstoneLevel(): number</code><a class="headerlink" href="#printergetredstonelevel-number" title="Permanent link">&para;</a></h3>
+<p>Returns the light level of this print model. This will be between 0 and 15 (inclusive). This can be changed
+with <a href="#printer-setredstonelevel-level-number"><code>printer.setRedstoneLevel()</code></a>.</p>
+<h3 id="printergetshapecount-number-number"><code>printer.getShapeCount(): number, number</code><a class="headerlink" href="#printergetshapecount-number-number" title="Permanent link">&para;</a></h3>
+<p>Returns the number of shapes for the "off" shape set and the "on" shape set, respectively.</p>
+<h3 id="printergettooltip-string"><code>printer.getTooltip(): string</code><a class="headerlink" href="#printergettooltip-string" title="Permanent link">&para;</a></h3>
+<p>Returns the tooltip (description) of the print item.</p>
+<h3 id="printeriscollidable-boolean-boolean"><code>printer.isCollidable(): boolean, boolean</code><a class="headerlink" href="#printeriscollidable-boolean-boolean" title="Permanent link">&para;</a></h3>
+<p>Returns whether print model is collidable in the "off" state and "on" state respectively.</p>
+<h3 id="printerreset"><code>printer.reset()</code><a class="headerlink" href="#printerreset" title="Permanent link">&para;</a></h3>
+<p>Resets the current print buffer to start a new shape. Does not stop any ongoing print jobs.</p>
+<h3 id="printersetbuttonmodeisbuttonboolean"><code>printer.setButtonMode(isButton:boolean)</code><a class="headerlink" href="#printersetbuttonmodeisbuttonboolean" title="Permanent link">&para;</a></h3>
+<p>Sets whether the print model is in button mode.</p>
+<h3 id="printersetcollidablecollidewhenoffboolean-collidewhenonboolean"><code>printer.setCollidable(collideWhenOff:boolean, collideWhenOn:boolean)</code><a class="headerlink" href="#printersetcollidablecollidewhenoffboolean-collidewhenonboolean" title="Permanent link">&para;</a></h3>
+<p>Sets whether the print model is collidable in the "off" state and "on" state respectively.</p>
+<h3 id="printersetlabellabelstring"><code>printer.setLabel([label:string])</code><a class="headerlink" href="#printersetlabellabelstring" title="Permanent link">&para;</a></h3>
+<p>Sets the label (item name) of the print item.</p>
+<h3 id="printersetlightlevellevelnumber"><code>printer.setLightLevel(level:number)</code><a class="headerlink" href="#printersetlightlevellevelnumber" title="Permanent link">&para;</a></h3>
+<p>Sets the light level of the print model. This must be between 0 and 7 (inclusive). Higher light levels can be achieved 
+by crafting the resulting print with glowstone dust.</p>
+<h3 id="printersetredstonelevellevelnumber"><code>printer.setRedstoneLevel(level:number)</code><a class="headerlink" href="#printersetredstonelevellevelnumber" title="Permanent link">&para;</a></h3>
+<p>Sets the redstone level of the print model. This must be between 0 and 15 (inclusive).</p>
+<h3 id="printersetstatelightinglightwhenoffboolean-lightwhenonboolean"><code>printer.setStateLighting(lightWhenOff:boolean, lightWhenOn:boolean)</code><a class="headerlink" href="#printersetstatelightinglightwhenoffboolean-lightwhenonboolean" title="Permanent link">&para;</a></h3>
+<p>Sets whether the print model is emitting light in the "off" state and "on" state respectively.</p>
+<h3 id="printergetseatpos-number-number-number"><code>printer.getSeatPos(): number, number, number</code><a class="headerlink" href="#printergetseatpos-number-number-number" title="Permanent link">&para;</a></h3>
+<p>Returns the position of the seat on the print model. If the print model is not a seat, this will return <code>nil, nil, nil</code>.</p>
+<h3 id="printersetseatposxnumber-ynumber-znumber"><code>printer.setSeatPos(x:number, y:number, z:number)</code><a class="headerlink" href="#printersetseatposxnumber-ynumber-znumber" title="Permanent link">&para;</a></h3>
+<p>Sets the position of the seat on the print model. The positions must be between 0.1 and 0.9 for each axis, or <code>nil</code> to
+remove the seat.</p>
+<h3 id="printersettooltiptooltipstring"><code>printer.setTooltip([tooltip:string])</code><a class="headerlink" href="#printersettooltiptooltipstring" title="Permanent link">&para;</a></h3>
+<p>Sets the tooltip (description) of the print item.</p>
+<h3 id="printerstatus-string-numberboolean"><code>printer.status(): string, number|boolean</code><a class="headerlink" href="#printerstatus-string-numberboolean" title="Permanent link">&para;</a></h3>
+<p>Returns the status and print progress of the printer.</p>
+<h4 id="returned-parameters">Returned parameters<a class="headerlink" href="#returned-parameters" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>status</code></td>
+<td><code>string</code></td>
+<td><ul><li><code>busy</code> - The printer is currently printing an item.</li><li><code>idle</code> - The printer is not currently printing anything.</li></ul></td>
+</tr>
+<tr>
+<td><code>progress</code></td>
+<td><code>number</code> or <code>boolean</code></td>
+<td>If the printer is <code>busy</code>, then the progress of the <em>current item</em> in ticks, between 0 and 100 (5 seconds).<br />If the printer is <code>idle</code>, then <code>true</code> if it is ready to print (output slot is not blocked) or <code>false</code> if not.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="printerstop"><code>printer.stop()</code><a class="headerlink" href="#printerstop" title="Permanent link">&para;</a></h3>
+<p>Requests the printer to stop the print job after the current item.</p>
+<h3 id="3d_printer_state-event"><code>3d_printer_state</code> event<a class="headerlink" href="#3d_printer_state-event" title="Permanent link">&para;</a></h3>
+<p>The <code>3d_printer_state</code> event is emitted whenever a print job starts, stops, or the print model is changed.</p>
+<h4 id="parameters_1">Parameters<a class="headerlink" href="#parameters_1" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>status</code></td>
+<td><code>string</code></td>
+<td>The current print status, see <a href="#printer-status-string-number-boolean"><code>printer.status()</code></a> for possible values.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="3d_printer_complete-event"><code>3d_printer_complete</code> event<a class="headerlink" href="#3d_printer_complete-event" title="Permanent link">&para;</a></h3>
+<p>The <code>3d_printer_complete</code> event is emitted when a print item has been printed, i.e. once for each <code>count</code> in a committed
+print job.</p>
+<h4 id="parameters_2">Parameters<a class="headerlink" href="#parameters_2" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>remaining</code></td>
+<td><code>number</code></td>
+<td>The number of items remaining in the print job.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="peripheral-api-wide-format-printer">Peripheral API - Wide Format Printer<a class="headerlink" href="#peripheral-api-wide-format-printer" title="Permanent link">&para;</a></h2>
+<p>A Wide Format Printer can be wrapped as a peripheral with the name <code>poster_printer</code>, e.g.:</p>
+<div class="language-lua highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kd">local</span><span class="w"> </span><span class="nv">posterPrinter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">peripheral</span><span class="p">.</span><span class="nf">wrap</span><span class="p">(</span><span class="s2">&quot;poster_printer&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<p>The Wide Format Printer has a local buffer of what to print, referred to here as the "poster". A poster has a table of 
+palette colors (63 colors, as index 0 is always transparent) and a table of pixels (16384 entries, 128*128). After
+blitting pixels to the poster with 
+<a href="#posterprinter-blitpixels-x-number-y-number-pixels-table"><code>posterPrinter.blitPixels(...)</code></a> and setting the palette with
+<a href="#posterprinter-blitpalette-palette-table"><code>posterPrinter.blitPalette(...)</code></a>, the poster can be printed with 
+<a href="#posterprinter-commit-count-number-boolean"><code>posterPrinter.commit(count)</code></a>.</p>
+<p>The printer will remember the poster data, so subsequent copies can be printed by committing again, or a new poster can
+be printed by resetting the printer with <a href="#posterprinter-reset"><code>posterPrinter.reset()</code></a>.</p>
+<p>{: .note }
+For a practical example of the Wide Format Printer API, refer to the built-in <a href="https://github.com/SwitchCraftCC/sc-peripherals/blob/HEAD/src/main/resources/data/computercraft/lua/rom/programs/poster.lua">poster program</a>.</p>
+<h3 id="posterprintersetpixelxnumber-ynumber-colornumber"><code>posterPrinter.setPixel(x:number, y:number, color:number)</code><a class="headerlink" href="#posterprintersetpixelxnumber-ynumber-colornumber" title="Permanent link">&para;</a></h3>
+<p><br></p>
+<p>{: .warning } 
+Using <a href="#posterprinter-blitpixels-x-number-y-number-pixels-table"><code>posterPrinter.blitPixels</code></a> is preferred as it is significantly faster. Each individual <code>setPixel</code> call will take at least 1 tick.</p>
+<p>Sets the color of a single pixel in the poster. The color refers to the palette index and must be between 0 and 63 
+(inclusive). Palette index 0 is always transparent. The pixel coordinates must be between 1 and 128 (inclusive).</p>
+<h3 id="posterprinterblitpixelsxnumber-ynumber-pixelstable"><code>posterPrinter.blitPixels(x:number, y:number, pixels:table)</code><a class="headerlink" href="#posterprinterblitpixelsxnumber-ynumber-pixelstable" title="Permanent link">&para;</a></h3>
+<p>Sets multiple pixels in the poster. The pixels table must be a one-dimensional table of pixel colors, of maximum size
+16384 (128 * 128). The pixel colors refer to the palette index and must be between 0 and 63 (inclusive). Palette index 0 
+is always transparent.</p>
+<p>Pixels will wrap onto the next row (starting at <code>x</code> = 1) if the table is larger than the remaining space in the row. 
+This means you can set the entire poster at once by calling <code>blitPixels(1, 1, pixels)</code>, where <code>pixels</code> is a table of 
+16384 entries.</p>
+<h3 id="posterprintersetpalettecolorindexnumber-rednumber-greennumber-bluenumber"><code>posterPrinter.setPaletteColor(index:number, red:number, green:number, blue:number)</code><a class="headerlink" href="#posterprintersetpalettecolorindexnumber-rednumber-greennumber-bluenumber" title="Permanent link">&para;</a></h3>
+<p><br></p>
+<p>{: .warning}
+Using <a href="#posterprinter-blitpalette-palette-table"><code>posterPrinter.blitPalette</code></a> is preferred as it is significantly
+faster. Each individual <code>setPaletteColor</code> call will take at least 1 tick.</p>
+<p>Sets a single color in the poster palette. The palette index must be between 1 and 63 (inclusive). The color components
+must be between 0 and 255 (inclusive). Palette index 0 is always transparent, and cannot be changed.</p>
+<h3 id="posterprinterblitpalettepalettetable"><code>posterPrinter.blitPalette(palette:table)</code><a class="headerlink" href="#posterprinterblitpalettepalettetable" title="Permanent link">&para;</a></h3>
+<p>Sets the palette of the poster. The palette table must be a one-dimensional table of colors, of maximum size 63. The
+first entry in the table is index 1, as index 0 is always transparent. This means you can pass a one-indexed Lua table
+directly as a palette. A color is represented as a 24-bit integer, where the first 8 bits are the red component, the 
+next 8 bits are the green component, and the last 8 bits are the blue component. For example, <code>0xFF0000</code> is red, 
+<code>0x00FF00</code> is green, and <code>0x0000FF</code> is blue.</p>
+<p>Example:</p>
+<div class="language-lua highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nv">posterPrinter</span><span class="p">.</span><span class="nf">blitPalette</span><span class="p">({</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">    </span><span class="mh">0xFF0000</span><span class="p">,</span><span class="w"> </span><span class="c1">-- idx 1, Red</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">    </span><span class="mh">0x00FF00</span><span class="p">,</span><span class="w"> </span><span class="c1">-- idx 2, Green</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">    </span><span class="mh">0x0000FF</span><span class="p">,</span><span class="w"> </span><span class="c1">-- idx 3, Blue</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">    </span><span class="c1">-- ... up to 63 entries</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="p">})</span>
+</span></code></pre></div>
+<h3 id="posterprintercommitcountnumber-boolean"><code>posterPrinter.commit(count:number): boolean</code><a class="headerlink" href="#posterprintercommitcountnumber-boolean" title="Permanent link">&para;</a></h3>
+<p>Asynchronously begins printing the specified number of posters.</p>
+<p><code>count</code> must be greater than 0. Once a job has been committed, the printer will continue trying to print that number of
+items even if it runs out of ink or paper - it will simply wait for more resources to be added. If there is a
+different poster in the printer's output slot, the job will still be committed, but printing will not begin until the
+other item is removed.</p>
+<h3 id="posterprintergetinklevel-number-number"><code>posterPrinter.getInkLevel(): number, number</code><a class="headerlink" href="#posterprintergetinklevel-number-number" title="Permanent link">&para;</a></h3>
+<p>Returns the amount of ink currently in the printer, and the maximum amount of ink the printer can store
+(currently 100000).</p>
+<h3 id="posterprintergetlabel-string"><code>posterPrinter.getLabel(): string</code><a class="headerlink" href="#posterprintergetlabel-string" title="Permanent link">&para;</a></h3>
+<p>Returns the label of this poster item (the name shown on the item). This can be changed with
+<a href="#posterprinter-setlabel-label-string"><code>posterPrinter.setLabel()</code></a>.</p>
+<h3 id="posterprintergettooltip-string"><code>posterPrinter.getTooltip(): string</code><a class="headerlink" href="#posterprintergettooltip-string" title="Permanent link">&para;</a></h3>
+<p>Returns the tooltip (description) of the poster item.</p>
+<h3 id="posterprinterreset"><code>posterPrinter.reset()</code><a class="headerlink" href="#posterprinterreset" title="Permanent link">&para;</a></h3>
+<p>Resets the current print buffer to start a new poster. Does not stop any ongoing print jobs.</p>
+<h3 id="posterprintersetlabellabelstring"><code>posterPrinter.setLabel([label:string])</code><a class="headerlink" href="#posterprintersetlabellabelstring" title="Permanent link">&para;</a></h3>
+<p>Sets the label (item name) of the poster item.</p>
+<h3 id="posterprintersettooltiptooltipstring"><code>posterPrinter.setTooltip([tooltip:string])</code><a class="headerlink" href="#posterprintersettooltiptooltipstring" title="Permanent link">&para;</a></h3>
+<p>Sets the tooltip (description) of the poster item.</p>
+<h3 id="posterprinterstatus-string-numberboolean"><code>posterPrinter.status(): string, number|boolean</code><a class="headerlink" href="#posterprinterstatus-string-numberboolean" title="Permanent link">&para;</a></h3>
+<p>Returns the status and print progress of the printer.</p>
+<h4 id="returned-parameters_1">Returned parameters<a class="headerlink" href="#returned-parameters_1" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>status</code></td>
+<td><code>string</code></td>
+<td><ul><li><code>busy</code> - The printer is currently printing an item.</li><li><code>idle</code> - The printer is not currently printing anything.</li></ul></td>
+</tr>
+<tr>
+<td><code>progress</code></td>
+<td><code>number</code> or <code>boolean</code></td>
+<td>If the printer is <code>busy</code>, then the progress of the <em>current item</em> in ticks, between 0 and 100 (5 seconds).<br />If the printer is <code>idle</code>, then <code>true</code> if it is ready to print (output slot is not blocked) or <code>false</code> if not.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="posterprinterstop"><code>posterPrinter.stop()</code><a class="headerlink" href="#posterprinterstop" title="Permanent link">&para;</a></h3>
+<p>Requests the printer to stop the print job after the current item.</p>
+<h3 id="poster_printer_state-event"><code>poster_printer_state</code> event<a class="headerlink" href="#poster_printer_state-event" title="Permanent link">&para;</a></h3>
+<p>The <code>poster_printer_state</code> event is emitted whenever a print job starts, stops, or the poster data is changed.</p>
+<h4 id="parameters_3">Parameters<a class="headerlink" href="#parameters_3" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>status</code></td>
+<td><code>string</code></td>
+<td>The current print status, see <a href="#posterprinter-status-string-number-boolean"><code>posterPrinter.status()</code></a> for possible values.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="poster_printer_complete-event"><code>poster_printer_complete</code> event<a class="headerlink" href="#poster_printer_complete-event" title="Permanent link">&para;</a></h3>
+<p>The <code>poster_printer_complete</code> event is emitted when a poster item has been printed, i.e. once for each <code>count</code> in a 
+committed print job.</p>
+<h4 id="parameters_4">Parameters<a class="headerlink" href="#parameters_4" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>remaining</code></td>
+<td><code>number</code></td>
+<td>The number of items remaining in the print job.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../sc-goodies/" class="md-footer__link md-footer__link--prev" aria-label="Previous: sc-goodies">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                sc-goodies
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../chatbox/" class="md-footer__link md-footer__link--next" aria-label="Next: Chatbox">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Chatbox
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 ReconnectedCC
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/ReconnectedCC" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.footer", "navigation.tracking", "navigation.tabs", "navigation.instant"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+    
+  </body>
+</html>
