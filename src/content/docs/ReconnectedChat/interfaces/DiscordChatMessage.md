@@ -5,7 +5,7 @@ prev: false
 title: "DiscordChatMessage"
 ---
 
-Defined in: src/events/DiscordChatMessage.ts:5
+Defined in: [src/events/DiscordChatMessage.ts:5](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/events/DiscordChatMessage.ts#L5)
 
 The event received when a player posts a message in Discord.
 
@@ -19,7 +19,7 @@ The event received when a player posts a message in Discord.
 
 > **discordId**: `string`
 
-Defined in: src/events/DiscordChatMessage.ts:16
+Defined in: [src/events/DiscordChatMessage.ts:16](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/events/DiscordChatMessage.ts#L16)
 
 The Discord snowflake ID of this message.
 
@@ -29,7 +29,7 @@ The Discord snowflake ID of this message.
 
 > **discordUser**: [`DiscordUser`](/ReconnectedChat/interfaces/discorduser/)
 
-Defined in: src/events/DiscordChatMessage.ts:19
+Defined in: [src/events/DiscordChatMessage.ts:19](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/events/DiscordChatMessage.ts#L19)
 
 The Discord user who sent the message.
 
@@ -39,7 +39,7 @@ The Discord user who sent the message.
 
 > **edited**: `boolean`
 
-Defined in: src/events/DiscordChatMessage.ts:22
+Defined in: [src/events/DiscordChatMessage.ts:22](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/events/DiscordChatMessage.ts#L22)
 
 `true` if this event represents an edit to the original message.
 
@@ -49,7 +49,7 @@ Defined in: src/events/DiscordChatMessage.ts:22
 
 > **event**: `string`
 
-Defined in: src/events/BaseEvent.ts:5
+Defined in: [src/events/BaseEvent.ts:5](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/events/BaseEvent.ts#L5)
 
 #### Inherited from
 
@@ -61,7 +61,7 @@ Defined in: src/events/BaseEvent.ts:5
 
 > **id**: `number`
 
-Defined in: src/events/BaseEvent.ts:4
+Defined in: [src/events/BaseEvent.ts:4](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/events/BaseEvent.ts#L4)
 
 #### Inherited from
 
@@ -73,7 +73,7 @@ Defined in: src/events/BaseEvent.ts:4
 
 > **ok**: `boolean`
 
-Defined in: src/packets/Data.ts:2
+Defined in: [src/packets/Data.ts:2](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/packets/Data.ts#L2)
 
 #### Inherited from
 
@@ -85,7 +85,7 @@ Defined in: src/packets/Data.ts:2
 
 > **rawText**: `string`
 
-Defined in: src/events/DiscordChatMessage.ts:10
+Defined in: [src/events/DiscordChatMessage.ts:10](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/events/DiscordChatMessage.ts#L10)
 
 The message contents, with its original Markdown formatting codes.
 
@@ -95,7 +95,7 @@ The message contents, with its original Markdown formatting codes.
 
 > **renderedText**: [`RenderedTextObject`](/ReconnectedChat/interfaces/renderedtextobject/)
 
-Defined in: src/events/DiscordChatMessage.ts:13
+Defined in: [src/events/DiscordChatMessage.ts:13](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/events/DiscordChatMessage.ts#L13)
 
 The message contents, serialised with formatting as Minecraft JSON text.
 
@@ -105,7 +105,7 @@ The message contents, serialised with formatting as Minecraft JSON text.
 
 > **text**: `string`
 
-Defined in: src/events/DiscordChatMessage.ts:7
+Defined in: [src/events/DiscordChatMessage.ts:7](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/events/DiscordChatMessage.ts#L7)
 
 The message contents, without Markdown formatting codes.
 
@@ -115,7 +115,7 @@ The message contents, without Markdown formatting codes.
 
 > **time**: `Date`
 
-Defined in: src/events/BaseEvent.ts:6
+Defined in: [src/events/BaseEvent.ts:6](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/events/BaseEvent.ts#L6)
 
 #### Inherited from
 
@@ -127,7 +127,7 @@ Defined in: src/events/BaseEvent.ts:6
 
 > **type**: `string`
 
-Defined in: src/packets/Data.ts:3
+Defined in: [src/packets/Data.ts:3](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/packets/Data.ts#L3)
 
 #### Inherited from
 

@@ -5,7 +5,7 @@ prev: false
 title: "AFK"
 ---
 
-Defined in: src/events/AFK.ts:4
+Defined in: [src/events/AFK.ts:4](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/events/AFK.ts#L4)
 
 ## Extends
 
@@ -17,7 +17,7 @@ Defined in: src/events/AFK.ts:4
 
 > **event**: `string`
 
-Defined in: src/events/BaseEvent.ts:5
+Defined in: [src/events/BaseEvent.ts:5](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/events/BaseEvent.ts#L5)
 
 #### Inherited from
 
@@ -29,7 +29,7 @@ Defined in: src/events/BaseEvent.ts:5
 
 > **id**: `number`
 
-Defined in: src/events/BaseEvent.ts:4
+Defined in: [src/events/BaseEvent.ts:4](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/events/BaseEvent.ts#L4)
 
 #### Inherited from
 
@@ -41,7 +41,7 @@ Defined in: src/events/BaseEvent.ts:4
 
 > **ok**: `boolean`
 
-Defined in: src/packets/Data.ts:2
+Defined in: [src/packets/Data.ts:2](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/packets/Data.ts#L2)
 
 #### Inherited from
 
@@ -53,7 +53,7 @@ Defined in: src/packets/Data.ts:2
 
 > **time**: `Date`
 
-Defined in: src/events/BaseEvent.ts:6
+Defined in: [src/events/BaseEvent.ts:6](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/events/BaseEvent.ts#L6)
 
 #### Inherited from
 
@@ -65,7 +65,7 @@ Defined in: src/events/BaseEvent.ts:6
 
 > **type**: `string`
 
-Defined in: src/packets/Data.ts:3
+Defined in: [src/packets/Data.ts:3](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/packets/Data.ts#L3)
 
 #### Inherited from
 
@@ -77,6 +77,6 @@ Defined in: src/packets/Data.ts:3
 
 > **user**: [`User`](/ReconnectedChat/interfaces/user/)
 
-Defined in: src/events/AFK.ts:6
+Defined in: [src/events/AFK.ts:6](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/events/AFK.ts#L6)
 
 The in-game player who went AFK.

@@ -5,7 +5,7 @@ prev: false
 title: "ServerRestartScheduled"
 ---
 
-Defined in: src/events/ServerRestartScheduled.ts:3
+Defined in: [src/events/ServerRestartScheduled.ts:3](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/events/ServerRestartScheduled.ts#L3)
 
 ## Extends
 
@@ -17,7 +17,7 @@ Defined in: src/events/ServerRestartScheduled.ts:3
 
 > **event**: `string`
 
-Defined in: src/events/BaseEvent.ts:5
+Defined in: [src/events/BaseEvent.ts:5](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/events/BaseEvent.ts#L5)
 
 #### Inherited from
 
@@ -29,7 +29,7 @@ Defined in: src/events/BaseEvent.ts:5
 
 > **id**: `number`
 
-Defined in: src/events/BaseEvent.ts:4
+Defined in: [src/events/BaseEvent.ts:4](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/events/BaseEvent.ts#L4)
 
 #### Inherited from
 
@@ -41,7 +41,7 @@ Defined in: src/events/BaseEvent.ts:4
 
 > **ok**: `boolean`
 
-Defined in: src/packets/Data.ts:2
+Defined in: [src/packets/Data.ts:2](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/packets/Data.ts#L2)
 
 #### Inherited from
 
@@ -53,7 +53,7 @@ Defined in: src/packets/Data.ts:2
 
 > **restartAt**: `Date`
 
-Defined in: src/events/ServerRestartScheduled.ts:11
+Defined in: [src/events/ServerRestartScheduled.ts:11](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/events/ServerRestartScheduled.ts#L11)
 
 The time that the server will restart.
 
@@ -63,7 +63,7 @@ The time that the server will restart.
 
 > **restartSeconds**: `number`
 
-Defined in: src/events/ServerRestartScheduled.ts:8
+Defined in: [src/events/ServerRestartScheduled.ts:8](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/events/ServerRestartScheduled.ts#L8)
 
 The number of seconds specified until the server restart.
 
@@ -73,7 +73,7 @@ The number of seconds specified until the server restart.
 
 > **restartType**: `"automatic"` \| `"manual"`
 
-Defined in: src/events/ServerRestartScheduled.ts:5
+Defined in: [src/events/ServerRestartScheduled.ts:5](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/events/ServerRestartScheduled.ts#L5)
 
 The type of restart. Will be `automatic` or `manual`.
 
@@ -83,7 +83,7 @@ The type of restart. Will be `automatic` or `manual`.
 
 > **time**: `Date`
 
-Defined in: src/events/ServerRestartScheduled.ts:14
+Defined in: [src/events/ServerRestartScheduled.ts:14](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/events/ServerRestartScheduled.ts#L14)
 
 The time that this restart was scheduled.
 
@@ -97,7 +97,7 @@ The time that this restart was scheduled.
 
 > **type**: `string`
 
-Defined in: src/packets/Data.ts:3
+Defined in: [src/packets/Data.ts:3](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/packets/Data.ts#L3)
 
 #### Inherited from
 

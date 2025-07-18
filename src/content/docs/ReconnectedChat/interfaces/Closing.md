@@ -5,7 +5,7 @@ prev: false
 title: "Closing"
 ---
 
-Defined in: src/packets/Closing.ts:8
+Defined in: [src/packets/Closing.ts:8](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/packets/Closing.ts#L8)
 
 When your websocket connection is being closed by the server, you may receive a Closing packet.
 
@@ -23,7 +23,7 @@ https://docs.reconnected.cc/chatbox/websocket.html#closing-packet
 
 > **closeReason**: `string`
 
-Defined in: src/packets/Closing.ts:10
+Defined in: [src/packets/Closing.ts:10](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/packets/Closing.ts#L10)
 
 The reason your connection is being closed.
 
@@ -33,7 +33,7 @@ The reason your connection is being closed.
 
 > **ok**: `boolean`
 
-Defined in: src/packets/Data.ts:2
+Defined in: [src/packets/Data.ts:2](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/packets/Data.ts#L2)
 
 #### Inherited from
 
@@ -45,7 +45,7 @@ Defined in: src/packets/Data.ts:2
 
 > **reason**: `string`
 
-Defined in: src/packets/Closing.ts:13
+Defined in: [src/packets/Closing.ts:13](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/packets/Closing.ts#L13)
 
 A human-readable message describing the close reason.
 
@@ -55,7 +55,7 @@ A human-readable message describing the close reason.
 
 > **type**: `string`
 
-Defined in: src/packets/Data.ts:3
+Defined in: [src/packets/Data.ts:3](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/packets/Data.ts#L3)
 
 #### Inherited from
 

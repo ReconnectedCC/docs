@@ -5,7 +5,7 @@ prev: false
 title: "User"
 ---
 
-Defined in: src/types/User.ts:1
+Defined in: [src/types/User.ts:1](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/types/User.ts#L1)
 
 ## Properties
 
@@ -13,7 +13,7 @@ Defined in: src/types/User.ts:1
 
 > `optional` **afk**: `boolean`
 
-Defined in: src/types/User.ts:39
+Defined in: [src/types/User.ts:39](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/types/User.ts#L39)
 
 Whether the player is currently AFK.
 
@@ -23,7 +23,7 @@ Whether the player is currently AFK.
 
 > **alt**: `boolean`
 
-Defined in: src/types/User.ts:42
+Defined in: [src/types/User.ts:42](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/types/User.ts#L42)
 
 Whether the player is an alt account.
 
@@ -33,7 +33,7 @@ Whether the player is an alt account.
 
 > **bot**: `boolean`
 
-Defined in: src/types/User.ts:45
+Defined in: [src/types/User.ts:45](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/types/User.ts#L45)
 
 Whether the player is a bot account.
 
@@ -43,7 +43,7 @@ Whether the player is a bot account.
 
 > **displayName**: `string`
 
-Defined in: src/types/User.ts:33
+Defined in: [src/types/User.ts:33](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/types/User.ts#L33)
 
 The player's name as it appears in chat. May differ from `name`.
 
@@ -53,7 +53,7 @@ The player's name as it appears in chat. May differ from `name`.
 
 > **group**: `string`
 
-Defined in: src/types/User.ts:7
+Defined in: [src/types/User.ts:7](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/types/User.ts#L7)
 
 The rank of the player. Usually `default`, `moderator`, or `admin`, but 
 the server may send anything.
@@ -64,7 +64,7 @@ the server may send anything.
 
 > **name**: `string`
 
-Defined in: src/types/User.ts:36
+Defined in: [src/types/User.ts:36](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/types/User.ts#L36)
 
 The player's Minecraft username.
 
@@ -74,7 +74,7 @@ The player's Minecraft username.
 
 > **pronouns**: `null` \| `string`
 
-Defined in: src/types/User.ts:17
+Defined in: [src/types/User.ts:17](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/types/User.ts#L17)
 
 The [pronouns](https://docs.reconnected.cc/faq/pronouns.html) set by the user by running `/pronouns`. This may be `null`
 if the player has not set any preferred pronouns. Where reasonably possible, you should attempt to use the user's
@@ -93,7 +93,7 @@ name instead.
 
 > **supporter**: `number`
 
-Defined in: src/types/User.ts:52
+Defined in: [src/types/User.ts:52](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/types/User.ts#L52)
 
 The current public tier of the player's supporter status. This will be `0` if the player is not a supporter or
 has opted out of showing their supporter tag, `1` for a Tier 1 supporter, `2` for a Tier 2 supporter, and `3` for
@@ -105,7 +105,7 @@ a Tier 3 supporter.
 
 > **type**: `"ingame"`
 
-Defined in: src/types/User.ts:3
+Defined in: [src/types/User.ts:3](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/types/User.ts#L3)
 
 The type of user. For in-game events, this is always `ingame`.
 
@@ -115,7 +115,7 @@ The type of user. For in-game events, this is always `ingame`.
 
 > **uuid**: `string`
 
-Defined in: src/types/User.ts:30
+Defined in: [src/types/User.ts:30](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/types/User.ts#L30)
 
 The UUID of the player, including hyphens.
 
@@ -125,7 +125,7 @@ The UUID of the player, including hyphens.
 
 > **world**: `null` \| `string`
 
-Defined in: src/types/User.ts:27
+Defined in: [src/types/User.ts:27](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/types/User.ts#L27)
 
 The world the player is in, or `null` if this information is not 
 available. It will be a Minecraft namespaced registry key, for example:
