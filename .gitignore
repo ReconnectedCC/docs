@@ -1,7 +1,7 @@
 # build output
 dist/
 .vscode/
-.yarn/
+
 # generated types
 .astro/
 
