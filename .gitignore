@@ -1,7 +1,7 @@
 # build output
 dist/
 .vscode/
-
+src/content/docs/reconnectedchat/
 # generated types
 .astro/
 
