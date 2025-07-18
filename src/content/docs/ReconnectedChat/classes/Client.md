@@ -480,7 +480,7 @@ v6.0.0
 Defined in: node\_modules/@types/node/events.d.ts:774
 
 Returns the current max listener value for the `EventEmitter` which is either
-set by `emitter.setMaxListeners(n)` or defaults to [defaultMaxListeners](/ReconnectedChat/classes/client/#defaultmaxlisteners).
+set by `emitter.setMaxListeners(n)` or defaults to [defaultMaxListeners](../../../ReconnectedChat/classes/client/#defaultmaxlisteners).
 
 #### Returns
 

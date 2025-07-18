@@ -11,8 +11,9 @@ ReconnectedCC uses a server-side chatbox system (instead of peripherals). This h
 * Chatboxes can receive messages from Discord and other chatboxes
 * Improved moderation capabilities for staff
 
-The ComputerCraft-compatible [Lua API](/chatbox/computercraft) is built into the rom, and can be used straight away with a 
-single command.
+The ComputerCraft-compatible [Lua API](/chatbox/computercraft) is built into the rom, and can be used straight away with a single command.
+
+ReconnectedCC's chatbox implementation is completely backwards compatible with SC2's and SC3's chatbox API.
 
 ## Original
 

@@ -5,7 +5,7 @@ description: Learn how to claim land on the server and how to manage it.
 
 ## Creating a claim
 
-To create a claim, get a Golden Hoe by crafting it or running `/kits` and selecting the claim kit (the golden hoe).
+To create a claim, get a Golden Hoe by crafting it or running `/kit claim ck` and selecting the claim kit (the golden hoe).
 Holding the Golden Hoe will show you the amount of claim blocks you can use.
 
 ![](../../../assets/claiming/hold_hoe.png)
@@ -19,7 +19,7 @@ What you see should look like this:
 
 ## Resizing a claim
 
-To resize your claim, get a Golden Hoe and a Stick by crafting them or running `/kits` and selecting the claim kit (the golden hoe).
+To resize your claim, get a Golden Hoe and a Stick by crafting them or running `/kit claim ck` and selecting the claim kit (the golden hoe).
 
 Right-click with your Stick where your claim is to view your claim borders.
 
