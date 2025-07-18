@@ -29,7 +29,7 @@ Defined in: [src/Client.ts:227](https://github.com/ReconnectedCC/ReconnectedChat
 
 ###### defaultFormattingMode?
 
-[`FormattingMode`](/ReconnectedChat/type-aliases/formattingmode/)
+[`FormattingMode`](/reconnectedchat/type-aliases/formattingmode/)
 
 ###### defaultName?
 
@@ -43,7 +43,7 @@ Defined in: [src/Client.ts:227](https://github.com/ReconnectedCC/ReconnectedChat
 
 ### capabilities
 
-> **capabilities**: [`Capability`](/ReconnectedChat/type-aliases/capability/)[]
+> **capabilities**: [`Capability`](/reconnectedchat/type-aliases/capability/)[]
 
 Defined in: [src/Client.ts:24](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/Client.ts#L24)
 
@@ -54,7 +54,7 @@ with a license will usually have `read`, `command` and `tell`.
 
 ### defaultFormattingMode
 
-> **defaultFormattingMode**: [`FormattingMode`](/ReconnectedChat/type-aliases/formattingmode/)
+> **defaultFormattingMode**: [`FormattingMode`](/reconnectedchat/type-aliases/formattingmode/)
 
 Defined in: [src/Client.ts:45](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/Client.ts#L45)
 
@@ -95,7 +95,7 @@ Minecraft username of the owner of the chatbox license
 
 ### players
 
-> **players**: [`User`](/ReconnectedChat/interfaces/user/)[]
+> **players**: [`User`](/reconnectedchat/interfaces/user/)[]
 
 Defined in: [src/Client.ts:29](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/Client.ts#L29)
 
@@ -137,7 +137,7 @@ v13.4.0, v12.16.0
 
 ### captureRejectionSymbol
 
-> `readonly` `static` **captureRejectionSymbol**: *typeof* [`captureRejectionSymbol`](/ReconnectedChat/classes/client/#capturerejectionsymbol)
+> `readonly` `static` **captureRejectionSymbol**: *typeof* [`captureRejectionSymbol`](/reconnectedchat/classes/client/#capturerejectionsymbol)
 
 Defined in: node\_modules/@types/node/events.d.ts:452
 
@@ -201,7 +201,7 @@ v0.11.2
 
 ### errorMonitor
 
-> `readonly` `static` **errorMonitor**: *typeof* [`errorMonitor`](/ReconnectedChat/classes/client/#errormonitor)
+> `readonly` `static` **errorMonitor**: *typeof* [`errorMonitor`](/reconnectedchat/classes/client/#errormonitor)
 
 Defined in: node\_modules/@types/node/events.d.ts:445
 
@@ -480,7 +480,7 @@ v6.0.0
 Defined in: node\_modules/@types/node/events.d.ts:774
 
 Returns the current max listener value for the `EventEmitter` which is either
-set by `emitter.setMaxListeners(n)` or defaults to [defaultMaxListeners](../../../ReconnectedChat/classes/client/#defaultmaxlisteners).
+set by `emitter.setMaxListeners(n)` or defaults to [defaultMaxListeners](/reconnectedchat/classes/client/#defaultmaxlisteners).
 
 #### Returns
 
@@ -1435,7 +1435,7 @@ v0.1.26
 
 #### Call Signature
 
-> **say**(`text`, `name?`, `mode?`): `Promise`\<[`Success`](/ReconnectedChat/interfaces/success/)\>
+> **say**(`text`, `name?`, `mode?`): `Promise`\<[`Success`](/reconnectedchat/interfaces/success/)\>
 
 Defined in: [src/Client.ts:85](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/Client.ts#L85)
 
@@ -1447,7 +1447,7 @@ Sends a message to the in-game public chat.
 
 The message to send.
 
-`string` | [`User`](/ReconnectedChat/interfaces/user/)
+`string` | [`User`](/reconnectedchat/interfaces/user/)
 
 ###### name?
 
@@ -1458,7 +1458,7 @@ The name of the chatbox to show. If no name is specified, it will default to the
 
 ###### mode?
 
-[`FormattingMode`](/ReconnectedChat/type-aliases/formattingmode/)
+[`FormattingMode`](/reconnectedchat/type-aliases/formattingmode/)
 
 The formatting mode to use. You can use these formatting modes:
   - `markdown` - Discord-like [Markdown syntax](https://support.discord.com/hc/en-us/articles/210298617-Markdown-Text-101-Chat-Formatting-Bold-Italic-Underline-).
@@ -1472,13 +1472,13 @@ The formatting mode to use. You can use these formatting modes:
 
 ##### Returns
 
-`Promise`\<[`Success`](/ReconnectedChat/interfaces/success/)\>
+`Promise`\<[`Success`](/reconnectedchat/interfaces/success/)\>
 
-A [Success](/ReconnectedChat/interfaces/success/) object containing if the message was sent.
+A [Success](/reconnectedchat/interfaces/success/) object containing if the message was sent.
 
 #### Call Signature
 
-> **say**(`text`, `name?`, `mode?`): `Promise`\<[`Success`](/ReconnectedChat/interfaces/success/)\>
+> **say**(`text`, `name?`, `mode?`): `Promise`\<[`Success`](/reconnectedchat/interfaces/success/)\>
 
 Defined in: [src/Client.ts:253](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/Client.ts#L253)
 
@@ -1501,7 +1501,7 @@ The name of the chatbox to show. If no name is specified, it will default to the
 
 ###### mode?
 
-[`FormattingMode`](/ReconnectedChat/type-aliases/formattingmode/) = `...`
+[`FormattingMode`](/reconnectedchat/type-aliases/formattingmode/) = `...`
 
 The formatting mode to use. You can use these formatting modes:
   - `markdown` - Discord-like [Markdown syntax](https://support.discord.com/hc/en-us/articles/210298617-Markdown-Text-101-Chat-Formatting-Bold-Italic-Underline-).
@@ -1515,9 +1515,9 @@ The formatting mode to use. You can use these formatting modes:
 
 ##### Returns
 
-`Promise`\<[`Success`](/ReconnectedChat/interfaces/success/)\>
+`Promise`\<[`Success`](/reconnectedchat/interfaces/success/)\>
 
-A [Success](/ReconnectedChat/interfaces/success/) object containing if the message was sent.
+A [Success](/reconnectedchat/interfaces/success/) object containing if the message was sent.
 
 ***
 
@@ -1554,7 +1554,7 @@ v0.3.5
 
 #### Call Signature
 
-> **tell**(`user`, `text`, `name?`, `mode?`): `Promise`\<[`Success`](/ReconnectedChat/interfaces/success/)\>
+> **tell**(`user`, `text`, `name?`, `mode?`): `Promise`\<[`Success`](/reconnectedchat/interfaces/success/)\>
 
 Defined in: [src/Client.ts:106](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/Client.ts#L106)
 
@@ -1566,7 +1566,7 @@ Sends a private message to an in-game player.
 
 The username or UUID of the user to send the message to.
 
-`string` | [`User`](/ReconnectedChat/interfaces/user/)
+`string` | [`User`](/reconnectedchat/interfaces/user/)
 
 ###### text
 
@@ -1583,7 +1583,7 @@ The name of the chatbox to show. If no name is specified, it will default to the
 
 ###### mode?
 
-[`FormattingMode`](/ReconnectedChat/type-aliases/formattingmode/)
+[`FormattingMode`](/reconnectedchat/type-aliases/formattingmode/)
 
 The formatting mode to use. You can use these formatting modes:
   - `markdown` - Discord-like [Markdown syntax](https://support.discord.com/hc/en-us/articles/210298617-Markdown-Text-101-Chat-Formatting-Bold-Italic-Underline-).
@@ -1597,13 +1597,13 @@ The formatting mode to use. You can use these formatting modes:
 
 ##### Returns
 
-`Promise`\<[`Success`](/ReconnectedChat/interfaces/success/)\>
+`Promise`\<[`Success`](/reconnectedchat/interfaces/success/)\>
 
-A [Success](/ReconnectedChat/interfaces/success/) object containing if the message was sent.
+A [Success](/reconnectedchat/interfaces/success/) object containing if the message was sent.
 
 #### Call Signature
 
-> **tell**(`user`, `text`, `name?`, `mode?`): `Promise`\<[`Success`](/ReconnectedChat/interfaces/success/)\>
+> **tell**(`user`, `text`, `name?`, `mode?`): `Promise`\<[`Success`](/reconnectedchat/interfaces/success/)\>
 
 Defined in: [src/Client.ts:273](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/Client.ts#L273)
 
@@ -1615,7 +1615,7 @@ Sends a private message to an in-game player.
 
 The username or UUID of the user to send the message to.
 
-`string` | [`User`](/ReconnectedChat/interfaces/user/)
+`string` | [`User`](/reconnectedchat/interfaces/user/)
 
 ###### text
 
@@ -1632,7 +1632,7 @@ The name of the chatbox to show. If no name is specified, it will default to the
 
 ###### mode?
 
-[`FormattingMode`](/ReconnectedChat/type-aliases/formattingmode/) = `...`
+[`FormattingMode`](/reconnectedchat/type-aliases/formattingmode/) = `...`
 
 The formatting mode to use. You can use these formatting modes:
   - `markdown` - Discord-like [Markdown syntax](https://support.discord.com/hc/en-us/articles/210298617-Markdown-Text-101-Chat-Formatting-Bold-Italic-Underline-).
@@ -1646,9 +1646,9 @@ The formatting mode to use. You can use these formatting modes:
 
 ##### Returns
 
-`Promise`\<[`Success`](/ReconnectedChat/interfaces/success/)\>
+`Promise`\<[`Success`](/reconnectedchat/interfaces/success/)\>
 
-A [Success](/ReconnectedChat/interfaces/success/) object containing if the message was sent.
+A [Success](/reconnectedchat/interfaces/success/) object containing if the message was sent.
 
 ***
 

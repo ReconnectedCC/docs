@@ -11,7 +11,7 @@ The event received when a player posts a message in public chat.
 
 ## Extends
 
-- [`BaseEvent`](/ReconnectedChat/interfaces/baseevent/)
+- [`BaseEvent`](/reconnectedchat/interfaces/baseevent/)
 
 ## Properties
 
@@ -23,7 +23,7 @@ Defined in: [src/events/BaseEvent.ts:5](https://github.com/ReconnectedCC/Reconne
 
 #### Inherited from
 
-[`BaseEvent`](/ReconnectedChat/interfaces/baseevent/).[`event`](/ReconnectedChat/interfaces/baseevent/#event)
+[`BaseEvent`](/reconnectedchat/interfaces/baseevent/).[`event`](/reconnectedchat/interfaces/baseevent/#event)
 
 ***
 
@@ -35,7 +35,7 @@ Defined in: [src/events/BaseEvent.ts:4](https://github.com/ReconnectedCC/Reconne
 
 #### Inherited from
 
-[`BaseEvent`](/ReconnectedChat/interfaces/baseevent/).[`id`](/ReconnectedChat/interfaces/baseevent/#id)
+[`BaseEvent`](/reconnectedchat/interfaces/baseevent/).[`id`](/reconnectedchat/interfaces/baseevent/#id)
 
 ***
 
@@ -47,7 +47,7 @@ Defined in: [src/packets/Data.ts:2](https://github.com/ReconnectedCC/Reconnected
 
 #### Inherited from
 
-[`BaseEvent`](/ReconnectedChat/interfaces/baseevent/).[`ok`](/ReconnectedChat/interfaces/baseevent/#ok)
+[`BaseEvent`](/reconnectedchat/interfaces/baseevent/).[`ok`](/reconnectedchat/interfaces/baseevent/#ok)
 
 ***
 
@@ -63,7 +63,7 @@ The message contents, with its original formatting codes.
 
 ### renderedText
 
-> **renderedText**: [`RenderedTextObject`](/ReconnectedChat/interfaces/renderedtextobject/)
+> **renderedText**: [`RenderedTextObject`](/reconnectedchat/interfaces/renderedtextobject/)
 
 Defined in: [src/events/IngameChatMessage.ts:13](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/events/IngameChatMessage.ts#L13)
 
@@ -89,7 +89,7 @@ Defined in: [src/events/BaseEvent.ts:6](https://github.com/ReconnectedCC/Reconne
 
 #### Inherited from
 
-[`BaseEvent`](/ReconnectedChat/interfaces/baseevent/).[`time`](/ReconnectedChat/interfaces/baseevent/#time)
+[`BaseEvent`](/reconnectedchat/interfaces/baseevent/).[`time`](/reconnectedchat/interfaces/baseevent/#time)
 
 ***
 
@@ -101,13 +101,13 @@ Defined in: [src/packets/Data.ts:3](https://github.com/ReconnectedCC/Reconnected
 
 #### Inherited from
 
-[`BaseEvent`](/ReconnectedChat/interfaces/baseevent/).[`type`](/ReconnectedChat/interfaces/baseevent/#type)
+[`BaseEvent`](/reconnectedchat/interfaces/baseevent/).[`type`](/reconnectedchat/interfaces/baseevent/#type)
 
 ***
 
 ### user
 
-> **user**: [`User`](/ReconnectedChat/interfaces/user/)
+> **user**: [`User`](/reconnectedchat/interfaces/user/)
 
 Defined in: [src/events/IngameChatMessage.ts:16](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/events/IngameChatMessage.ts#L16)
 

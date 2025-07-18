@@ -24,11 +24,11 @@ export default defineConfig({
             label: "ReconnectedChat Library",
             collapsed: true,
           },
-          output: "ReconnectedChat",
+          output: "reconnectedchat",
         }),
 
         starlightLinksValidator({
-          exclude: ["/ReconnectedChat/**/*", "reconnectedchat/classes/client/"],
+          //exclude: ["/ReconnectedChat/**/*", "reconnectedchat/classes/client/"],
           errorOnRelativeLinks: false,
         }),
         starlightLlmsTxt(),

@@ -9,7 +9,7 @@ Defined in: [src/packets/Hello.ts:4](https://github.com/ReconnectedCC/Reconnecte
 
 ## Extends
 
-- [`Data`](/ReconnectedChat/interfaces/data/)
+- [`Data`](/reconnectedchat/interfaces/data/)
 
 ## Properties
 
@@ -39,7 +39,7 @@ Defined in: [src/packets/Hello.ts:6](https://github.com/ReconnectedCC/Reconnecte
 
 ### licenseOwnerUser?
 
-> `optional` **licenseOwnerUser**: `null` \| [`User`](/ReconnectedChat/interfaces/user/)
+> `optional` **licenseOwnerUser**: `null` \| [`User`](/reconnectedchat/interfaces/user/)
 
 Defined in: [src/packets/Hello.ts:7](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/packets/Hello.ts#L7)
 
@@ -53,7 +53,7 @@ Defined in: [src/packets/Data.ts:2](https://github.com/ReconnectedCC/Reconnected
 
 #### Inherited from
 
-[`Data`](/ReconnectedChat/interfaces/data/).[`ok`](/ReconnectedChat/interfaces/data/#ok)
+[`Data`](/reconnectedchat/interfaces/data/).[`ok`](/reconnectedchat/interfaces/data/#ok)
 
 ***
 
@@ -65,4 +65,4 @@ Defined in: [src/packets/Data.ts:3](https://github.com/ReconnectedCC/Reconnected
 
 #### Inherited from
 
-[`Data`](/ReconnectedChat/interfaces/data/).[`type`](/ReconnectedChat/interfaces/data/#type)
+[`Data`](/reconnectedchat/interfaces/data/).[`type`](/reconnectedchat/interfaces/data/#type)

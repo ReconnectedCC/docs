@@ -9,22 +9,22 @@ Defined in: [src/events/BaseEvent.ts:3](https://github.com/ReconnectedCC/Reconne
 
 ## Extends
 
-- [`Data`](/ReconnectedChat/interfaces/data/)
+- [`Data`](/reconnectedchat/interfaces/data/)
 
 ## Extended by
 
-- [`AFK`](/ReconnectedChat/interfaces/afk/)
-- [`AFKReturn`](/ReconnectedChat/interfaces/afkreturn/)
-- [`ChatboxChatMessage`](/ReconnectedChat/interfaces/chatboxchatmessage/)
-- [`ChatboxCommand`](/ReconnectedChat/interfaces/chatboxcommand/)
-- [`Death`](/ReconnectedChat/interfaces/death/)
-- [`WorldChange`](/ReconnectedChat/interfaces/worldchange/)
-- [`DiscordChatMessage`](/ReconnectedChat/interfaces/discordchatmessage/)
-- [`IngameChatMessage`](/ReconnectedChat/interfaces/ingamechatmessage/)
-- [`Join`](/ReconnectedChat/interfaces/join/)
-- [`Leave`](/ReconnectedChat/interfaces/leave/)
-- [`ServerRestartCancelled`](/ReconnectedChat/interfaces/serverrestartcancelled/)
-- [`ServerRestartScheduled`](/ReconnectedChat/interfaces/serverrestartscheduled/)
+- [`AFK`](/reconnectedchat/interfaces/afk/)
+- [`AFKReturn`](/reconnectedchat/interfaces/afkreturn/)
+- [`ChatboxChatMessage`](/reconnectedchat/interfaces/chatboxchatmessage/)
+- [`ChatboxCommand`](/reconnectedchat/interfaces/chatboxcommand/)
+- [`Death`](/reconnectedchat/interfaces/death/)
+- [`WorldChange`](/reconnectedchat/interfaces/worldchange/)
+- [`DiscordChatMessage`](/reconnectedchat/interfaces/discordchatmessage/)
+- [`IngameChatMessage`](/reconnectedchat/interfaces/ingamechatmessage/)
+- [`Join`](/reconnectedchat/interfaces/join/)
+- [`Leave`](/reconnectedchat/interfaces/leave/)
+- [`ServerRestartCancelled`](/reconnectedchat/interfaces/serverrestartcancelled/)
+- [`ServerRestartScheduled`](/reconnectedchat/interfaces/serverrestartscheduled/)
 
 ## Properties
 
@@ -52,7 +52,7 @@ Defined in: [src/packets/Data.ts:2](https://github.com/ReconnectedCC/Reconnected
 
 #### Inherited from
 
-[`Data`](/ReconnectedChat/interfaces/data/).[`ok`](/ReconnectedChat/interfaces/data/#ok)
+[`Data`](/reconnectedchat/interfaces/data/).[`ok`](/reconnectedchat/interfaces/data/#ok)
 
 ***
 
@@ -72,4 +72,4 @@ Defined in: [src/packets/Data.ts:3](https://github.com/ReconnectedCC/Reconnected
 
 #### Inherited from
 
-[`Data`](/ReconnectedChat/interfaces/data/).[`type`](/ReconnectedChat/interfaces/data/#type)
+[`Data`](/reconnectedchat/interfaces/data/).[`type`](/reconnectedchat/interfaces/data/#type)

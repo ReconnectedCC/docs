@@ -9,12 +9,12 @@ Defined in: [src/packets/Data.ts:1](https://github.com/ReconnectedCC/Reconnected
 
 ## Extended by
 
-- [`BaseEvent`](/ReconnectedChat/interfaces/baseevent/)
-- [`Closing`](/ReconnectedChat/interfaces/closing/)
-- [`RequestError`](/ReconnectedChat/interfaces/requesterror/)
-- [`Hello`](/ReconnectedChat/interfaces/hello/)
-- [`Players`](/ReconnectedChat/interfaces/players/)
-- [`Success`](/ReconnectedChat/interfaces/success/)
+- [`BaseEvent`](/reconnectedchat/interfaces/baseevent/)
+- [`Closing`](/reconnectedchat/interfaces/closing/)
+- [`RequestError`](/reconnectedchat/interfaces/requesterror/)
+- [`Hello`](/reconnectedchat/interfaces/hello/)
+- [`Players`](/reconnectedchat/interfaces/players/)
+- [`Success`](/reconnectedchat/interfaces/success/)
 
 ## Properties
 

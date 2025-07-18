@@ -62,7 +62,7 @@ The user's username on Discord.
 
 ### roles
 
-> **roles**: [`DiscordRole`](/ReconnectedChat/interfaces/discordrole/)[]
+> **roles**: [`DiscordRole`](/reconnectedchat/interfaces/discordrole/)[]
 
 Defined in: [src/types/DiscordUser.ts:22](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/types/DiscordUser.ts#L22)
 

@@ -9,7 +9,7 @@ Defined in: [src/packets/Players.ts:4](https://github.com/ReconnectedCC/Reconnec
 
 ## Extends
 
-- [`Data`](/ReconnectedChat/interfaces/data/)
+- [`Data`](/reconnectedchat/interfaces/data/)
 
 ## Properties
 
@@ -21,13 +21,13 @@ Defined in: [src/packets/Data.ts:2](https://github.com/ReconnectedCC/Reconnected
 
 #### Inherited from
 
-[`Data`](/ReconnectedChat/interfaces/data/).[`ok`](/ReconnectedChat/interfaces/data/#ok)
+[`Data`](/reconnectedchat/interfaces/data/).[`ok`](/reconnectedchat/interfaces/data/#ok)
 
 ***
 
 ### players
 
-> **players**: [`User`](/ReconnectedChat/interfaces/user/)[]
+> **players**: [`User`](/reconnectedchat/interfaces/user/)[]
 
 Defined in: [src/packets/Players.ts:6](https://github.com/ReconnectedCC/ReconnectedChat/blob/11808a4ccf9a9a1ccda66cd61ef3e2ee6db98c33/src/packets/Players.ts#L6)
 
@@ -49,4 +49,4 @@ Defined in: [src/packets/Data.ts:3](https://github.com/ReconnectedCC/Reconnected
 
 #### Inherited from
 
-[`Data`](/ReconnectedChat/interfaces/data/).[`type`](/ReconnectedChat/interfaces/data/#type)
+[`Data`](/reconnectedchat/interfaces/data/).[`type`](/reconnectedchat/interfaces/data/#type)

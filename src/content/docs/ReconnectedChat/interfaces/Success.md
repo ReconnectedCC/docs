@@ -11,7 +11,7 @@ Sent by the server when a message is sent or queued successfully.
 
 ## Extends
 
-- [`Data`](/ReconnectedChat/interfaces/data/)
+- [`Data`](/reconnectedchat/interfaces/data/)
 
 ## Properties
 
@@ -31,7 +31,7 @@ Defined in: [src/packets/Data.ts:2](https://github.com/ReconnectedCC/Reconnected
 
 #### Inherited from
 
-[`Data`](/ReconnectedChat/interfaces/data/).[`ok`](/ReconnectedChat/interfaces/data/#ok)
+[`Data`](/reconnectedchat/interfaces/data/).[`ok`](/reconnectedchat/interfaces/data/#ok)
 
 ***
 
@@ -54,4 +54,4 @@ Defined in: [src/packets/Data.ts:3](https://github.com/ReconnectedCC/Reconnected
 
 #### Inherited from
 
-[`Data`](/ReconnectedChat/interfaces/data/).[`type`](/ReconnectedChat/interfaces/data/#type)
+[`Data`](/reconnectedchat/interfaces/data/).[`type`](/reconnectedchat/interfaces/data/#type)
