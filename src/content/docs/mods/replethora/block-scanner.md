@@ -1,9 +1,12 @@
-# Block scanner
+---
+title: Block scanner
+---
+
 The block scanner provides a way to query information about surrounding blocks. Useful for discovering ores, or just snooping in on your neighbours.
 
 **Module: `plethora:scanner` ([view methods](https://plethora.madefor.cc/methods.html#module-methods-plethora:scanner))**
 
-Usable in:	
+Usable in:
 
 - Manipulator
 

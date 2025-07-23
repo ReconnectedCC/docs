@@ -1,4 +1,7 @@
-# Keyboard
+---
+title: Keyboard
+---
+
 The trouble with computers, is that it's very easy to spend all the time looking at a screen and not notice all the things going on around you: the grass, the trees, the creeper behind you. Monitors help in their own way, but there's only so much you can hope to achieve by punching a screen. Thankfully we have a solution: the keyboard. Simply bind it to any computer, and type away wherever you are. Enjoy the luxury of the big screen!
 
 ![The keyboard being used with a monitor.](/img/replethora/keyboard_monitor.png)

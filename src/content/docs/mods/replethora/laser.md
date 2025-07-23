@@ -1,9 +1,12 @@
-# Frickin' laser beam
+---
+title: Frickin' laser beam
+---
+
 The frickin' laser beam fires a bolt of superheated plasma, a softnose laser, or some other handwavey science. This powerful projectile can deal incredible damage to mobs and blocks alike.
 
 **Module:	`plethora:laser` ([view methods](https://plethora.madefor.cc/methods.html#module-methods-plethora:laser))**
 
-Usable in:	
+Usable in:
 
 - Manipulator
 

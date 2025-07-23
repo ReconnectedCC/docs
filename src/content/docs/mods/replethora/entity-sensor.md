@@ -1,10 +1,12 @@
-# Entity sensor
+---
+title: Entity Sensor
+---
 
 The entity sensor provides a way to query information about surrounding entities. There are so many ways this could go wrong…
 
 **Module: `plethora:sensor` ([view methods](https://plethora.madefor.cc/methods.html#module-methods-plethora:sensor))**
 
-Usable in:	
+Usable in:
 
 - Manipulator
 

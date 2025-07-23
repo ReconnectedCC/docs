@@ -1,9 +1,12 @@
-# Kinetic augment
+---
+title: Kinetic augment
+---
+
 The kinetic augment is the latest breakthrough in biocybernetics. It grants a computer direct access to the nervous system of a player or mob.
 
 **Module: `plethora:kinetic` ([view methods](https://plethora.madefor.cc/methods.html#module-methods-plethora:kinetic))**
 
-Usable in:	
+Usable in:
 
 - Minecart computer
 

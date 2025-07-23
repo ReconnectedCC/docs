@@ -1,7 +1,6 @@
 ---
 title: Embedded Computer
 ---
-# Embedded Computer
 
 The Embedded Computer mod adds the following blocks
 - Embedded Computer

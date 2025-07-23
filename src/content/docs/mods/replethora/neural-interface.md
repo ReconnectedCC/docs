@@ -1,4 +1,7 @@
-# The Neural Interface
+---
+title: The Neural Interface
+---
+
 The neural interface is a wearable computer with support for peripherals and modules alike. The key difference between this and the manipulator is that modules have direct access to the wearer. The use of this becomes apparent when you consider the kinetic augment, which provides methods to control the wearer.
 
 To get started, craft a neural interface and a neural connector. You can place the neural interface in your helmet slot or right click another entity to place it in theirs.

@@ -1,4 +1,7 @@
-# Introspection module
+---
+title: Introspection module
+---
+
 The introspection module allows accessing the inventory of a player, also providing the ability to get basic information about yourself.
 
 **Module: `plethora:introspection` ([view methods](https://plethora.madefor.cc/methods.html#module-methods-plethora:introspection))**

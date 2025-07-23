@@ -1,9 +1,12 @@
-# Overlay glasses
+---
+title: Overlay glasses
+---
+
 The overlay glasses provide a powerful way of displaying information to the user, be it as a heads-up display or an in-world augmented-reality system.
 
 **Module:	`plethora:glasses` ([view methods](https://plethora.madefor.cc/methods.html#module-methods-plethora:glasses))**
 
-Usable in:	
+Usable in:
 
 - Neural interface
 
