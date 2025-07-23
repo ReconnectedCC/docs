@@ -1,0 +1,108 @@
+---
+title: OpusOS and Milo
+description: Guide on how to install and use OpusOS and Milo
+---
+
+import { Aside } from '@astrojs/starlight/components';
+
+*This guide was adapted from [the original text](https://p.sc3.io/enAqFNAfy9) by PC_Cat.*
+
+Opus OS is an old OS for ComputerCraft, which has been updated to 1.13+ by 6_4 and iuzx. Despite it's age, it is still the golden standard for a proper OS for CC, with a lot of features. It is also the base for Milo, which is a program for crafting and managing a storage network. Milo also has a wireless remote which transfers items directly to the player.
+
+IMPORTANT: Milo is made by kepler155c
+They deserve a **lot** of credit.
+
+## Requirements for base milo
+- Advanced Crafting Turtle
+- Modem network with storage (enderstorage, chest, any inventory)
+
+## Installation
+### Installing OpusOS (NEW Repository, Recommended)
+
+1. Run `pastebin run E3b6K3Wp`
+2. Follow the wizard. Make sure to install `develop-1.8`.
+
+### Installing OpusOS (OLD Repository)
+
+1. Run `pastebin run UzGHLbNC`
+2. Follow the wizard. Make sure to install `develop-1.8`.
+3. When done, go to Apps -> shell and run the following:
+```lua
+edit /sys/modules/opus/packages.lua
+```
+4. Scroll to line 59.
+5. Replace `kepler155c` on that line, into `iuzx0`. Save the file.
+6. Exit shell
+
+### Installing Milo
+
+After installing OpusOS, you can install Milo.
+
+1. Open the package manager (System -> Packages)
+2. Install Milo
+3. Restart
+
+<Aside type="tip">
+There are a lot of other packages you can install, feel free to explore, but be mindful of the space on your Computer.
+</Aside>
+
+## Getting started
+### Automatic setup of storage
+
+1. Go to Apps -> Shell
+2. Run `storageGen`
+3. Find the devices you want to be storage, and double-click, until it lights yellow.
+4. Press next and finish the prompts
+5. Restart
+
+### Learning new recipes
+
+1. Get the resources you need to craft one of x
+2. Learn -> Crafting recipe
+3. Put the recipe of the item in the 3x3 grid in the start of the 4x4 turtle inventory
+4. Press "Done".
+
+### Setting up monitors
+
+You can display information on monitors, like the storage contents, the crafting queue, task time, etc.
+
+1. On the second line of your turtle monitor, find the `>>` at the right side of the navbar, and press it.
+2. Press `Setup`
+3. Find the monitor you want to display stuff on, and double click
+4. Follow the prompts.
+
+<Aside type="tip">
+You can have multiple monitors, and display different things on them.
+</Aside>
+
+### Setting up trash
+
+Sometimes your storage gets filled with items you don't want. You can set up a trashbin to automatically delete items.
+
+1. Get yourself an enderstorage, and encode it with public red/red/red (or any other advertised frequency)
+2. Attach the enderstorage to the modem network
+3. On the second line of your turtle monitor, find the `>>` at the right side of the navbar, and press it.
+4. Press `Setup`
+5. Find the newly attached enderstorage
+6. Select type to trashbin
+7. Follow the prompts
+8. You can now set a maximum amount of an item, by right clicking an item, and setting the max value.
+
+<Aside type="caution">
+This approach works only under some assumptions, it relies on a recycling service provided by another player, the items may not be discarded and instead stored by any other player hooked onto the same frequency, if you want to discard them by yourself, you may use a dropper pointed at lava and point milo at it as trashbin.
+</Aside>
+
+## FAQ
+
+### What does A/I/C mean
+The A, I or C in the bottom right corner is the display filter.
+This is what the different modes mean:
+
+- A : All items
+- C : Craftable items
+- I : Inventory items
+
+### Help, I manually took items out of the storage
+If you took items out of the storages, without using milo, you need to press the `>>` on the top right side of the turtle monitor, then press "Rescan". This will take some time.
+
+~~Beware the apioforms. They strike at night. You will never see them coming.~~
