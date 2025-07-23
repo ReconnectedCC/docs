@@ -1388,24 +1388,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ReconnectedCC_Docs@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "ReconnectedCC_Docs@workspace:."
-  dependencies:
-    "@astrojs/check": "npm:^0.9.4"
-    "@astrojs/starlight": "npm:0.35.1"
-    astro: "npm:5.12.0"
-    pagefind: "npm:^1.3.0"
-    sharp: "npm:^0.32.5"
-    starlight-links-validator: "npm:^0.17.0"
-    starlight-llms-txt: "npm:^0.5.1"
-    starlight-typedoc: "npm:^0.21.3"
-    typedoc: "npm:^0.28.7"
-    typedoc-plugin-markdown: "npm:^4.7.0"
-    typescript: "npm:^5.7.3"
-  languageName: unknown
-  linkType: soft
-
 "abbrev@npm:^3.0.0":
   version: 3.0.1
   resolution: "abbrev@npm:3.0.1"
@@ -4921,6 +4903,24 @@ __metadata:
   checksum: 10c0/c2ed4c0e8cf8a09aedcd47c5d016d47f6e1ff6c2d4b220e2abaf1b77713bf404756af2ea3ea7999aec5862e8825aff035edceb370c7fd8603a7e9da03bd6987e
   languageName: node
   linkType: hard
+
+"reconnectedcc_docs@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "reconnectedcc_docs@workspace:."
+  dependencies:
+    "@astrojs/check": "npm:^0.9.4"
+    "@astrojs/starlight": "npm:0.35.1"
+    astro: "npm:5.12.0"
+    pagefind: "npm:^1.3.0"
+    sharp: "npm:^0.32.5"
+    starlight-links-validator: "npm:^0.17.0"
+    starlight-llms-txt: "npm:^0.5.1"
+    starlight-typedoc: "npm:^0.21.3"
+    typedoc: "npm:^0.28.7"
+    typedoc-plugin-markdown: "npm:^4.7.0"
+    typescript: "npm:^5.7.3"
+  languageName: unknown
+  linkType: soft
 
 "regex-recursion@npm:^6.0.2":
   version: 6.0.2
