@@ -1,8 +1,6 @@
 ---
-title: Re:Plethora
+title: Getting Started
 ---
-
-# Getting started with Re:Plethora
 
 Re:Plethora is our in house fork of Plethora, with some added features, including:
 
