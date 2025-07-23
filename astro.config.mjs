@@ -59,7 +59,10 @@ export default defineConfig({
           label: "Chatbox",
           autogenerate: { directory: "chatbox" },
         },
-
+        {
+          label: "Kromer",
+          autogenerate: { directory: "kromer" },
+        },
         typeDocSidebarGroup,
       ],
     }),
