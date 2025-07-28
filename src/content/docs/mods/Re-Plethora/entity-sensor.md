@@ -18,7 +18,7 @@ Usable in:
 
 - Turtle
 
-![Block Scanner](/img/replethora/entity_sensor.png)
+![Block Scanner](../../../../assets/replethora/entity_sensor.png)
 
 ## Basic usage
 The entity sensor provides many nifty methods, but .sense() is definitely the one to get started with. After all, it’s what the sensor does best! This finds all entities within 32 blocks of the sensor and reports some very basic information about them.

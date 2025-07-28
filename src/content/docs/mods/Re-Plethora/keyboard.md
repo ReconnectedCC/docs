@@ -4,12 +4,12 @@ title: Keyboard
 
 The trouble with computers, is that it's very easy to spend all the time looking at a screen and not notice all the things going on around you: the grass, the trees, the creeper behind you. Monitors help in their own way, but there's only so much you can hope to achieve by punching a screen. Thankfully we have a solution: the keyboard. Simply bind it to any computer, and type away wherever you are. Enjoy the luxury of the big screen!
 
-![The keyboard being used with a monitor.](/img/replethora/keyboard_monitor.png)
+![The keyboard being used with a monitor.](../../../../assets/replethora/keyboard_monitor.png)
 
 ## Using with computers
 Getting started with a keyboard couldn’t be easier: simply walk up to the computer you want to type at and shift + right-click it whilst holding the keyboard. You’ll notice that the keyboard now reports where it is bound to:
 
-![A keyboard bound to a computer.](/img/replethora/keyboard_bound.png)
+![A keyboard bound to a computer.](../../../../assets/replethora/keyboard_bound.png)
 
 
 One can now use the keyboard anywhere in the world to type at this computer: simply right click it and tap away! Once you have finished typing, press escape to resume normal play.

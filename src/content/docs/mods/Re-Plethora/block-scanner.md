@@ -18,7 +18,7 @@ Usable in:
 
 - Turtle
 
-![Block Scanner](/img/replethora/block_scanner.png)
+![Block Scanner](../../../../assets/replethora/block_scanner.png)
 
 
 ## Basic usage

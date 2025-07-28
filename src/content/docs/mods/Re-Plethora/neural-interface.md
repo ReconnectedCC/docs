@@ -6,7 +6,7 @@ The neural interface is a wearable computer with support for peripherals and mod
 
 To get started, craft a neural interface and a neural connector. You can place the neural interface in your helmet slot or right click another entity to place it in theirs.
 
-![A player wearing a neural interface](/img/replethora/neuralinterface_ui.png)
+![A player wearing a neural interface](../../../../assets/replethora/neuralinterface_ui.png)
 !!! warning
     Placing neural interfaces on entities is currently not implemented. The documentation is kept for historical reasons.
 
@@ -24,9 +24,9 @@ All modules which can be placed in a manipulator can also be placed in a neural 
 
 
 
-![The peripheral view of a neural interface](/img/replethora/neuralinterface_view_peripherals.png)
+![The peripheral view of a neural interface](../../../../assets/replethora/neuralinterface_view_peripherals.png)
 
-![The module view of a neural interface](/img/replethora/neuralinterface_view_modules.png)
+![The module view of a neural interface](../../../../assets/replethora/neuralinterface_view_modules.png)
 
 ## The introspection module
 The introspection module provides access to the inventory of the wearing entity, as well as useful information such as the entity name and id.

@@ -6,13 +6,13 @@ import { Aside } from '@astrojs/starlight/components';
 
 [sc-goodies](https://github.com/SwitchCraftCC/sc-goodies) is a Fabric 1.20 content mod for the SwitchCraft server. It
 contains a variety of features specifically designed for SwitchCraft, many of which were inspired by previous 1.12 mods
-on SwitchCraft 2 such as cpw's [ironchest](https://github.com/cpw/ironchest), ChickenBones' 
+on SwitchCraft 2 such as cpw's [ironchest](https://github.com/cpw/ironchest), ChickenBones'
 [EnderStorage](https://github.com/TheCBProject/EnderStorage), and Vazkii's [Quark](https://github.com/VazkiiMods/Quark).
 It has been ported to Fabric 1.21 for this server
 
 ## Useful links
 
-- [sc-goodies on GitHub](https://github.com/project-connecticut/sc-goodies)
+- [sc-goodies on GitHub](https://github.com/reconnectedcc/sc-goodies)
 
 ## Iron Storage
 
@@ -20,17 +20,17 @@ Higher-capacity variants of chests, barrels, and shulker boxes are added to the 
 
 <ul>
   <li>
-    <img src="../../../assets/sc-goodies/iron_storage.png" alt="Iron Chest, Barrel, and Shulker Box" 
+    <img src="../../../assets/sc-goodies/iron_storage.png" alt="Iron Chest, Barrel, and Shulker Box"
       title="Iron Chest, Barrel, and Shulker Box" className="h-8 inline-block align-bottom" />
     Iron - 54 slots (9x6)
   </li>
   <li>
-    <img src="../../../assets/sc-goodies/gold_storage.png" alt="Gold Chest, Barrel, and Shulker Box" 
+    <img src="../../../assets/sc-goodies/gold_storage.png" alt="Gold Chest, Barrel, and Shulker Box"
       title="Gold Chest, Barrel, and Shulker Box" className="h-8 inline-block align-bottom" />
     Gold - 81 slots (9x9)
   </li>
   <li>
-    <img src="../../../assets/sc-goodies/diamond_storage.png" alt="Diamond Chest, Barrel, and Shulker Box" 
+    <img src="../../../assets/sc-goodies/diamond_storage.png" alt="Diamond Chest, Barrel, and Shulker Box"
       title="Diamond Chest, Barrel, and Shulker Box" className="h-8 inline-block align-bottom" />
     Diamond - 108 slots (12x9)
   </li>
@@ -47,24 +47,24 @@ shulker boxes.
   <li><img src="../../../assets/sc-goodies/gold_diamond_chest_upgrade.png"/> Gold to Diamond Storage Upgrade</li>
 </ul>
 
-Iron Chests do not become double chests - they are always single chests. Otherwise, these upgraded storage variants 
+Iron Chests do not become double chests - they are always single chests. Otherwise, these upgraded storage variants
 behave identically to their vanilla counterparts. Hoppers and comparators can be used, shulker boxes can be dyed, and
 all can be wrapped as ComputerCraft peripherals.
 
 ### Barrel Hammer
-<img src="../../../assets/sc-goodies/barrel_hammer.png" alt="Barrel Hammer" title="Barrel Hammer" 
+<img src="../../../assets/sc-goodies/barrel_hammer.png" alt="Barrel Hammer" title="Barrel Hammer"
   style="float: right; margin-left: 16px" />
 
 Chests can be converted to barrels (and vice-versa) by shift+right-clicking them with a barrel hammer. This makes it
-easy to convert storage types while still keeping all items inside. The Barrel Hammer has a durability of 64 and can be 
+easy to convert storage types while still keeping all items inside. The Barrel Hammer has a durability of 64 and can be
 repaired with an iron ingot.
 
 ## Ender Storage
 <img src="../../../assets/sc-goodies/ender_storage.png" alt="Ender Storage" title="Ender Storage"
   style="float: right; margin-left: 16px" />
 
-Ender Storage allows players to store their items in a special chest that features a changeable color coded frequency. 
-Any chest with the same frequency will share inventory, enabling item transfer over any distance and even across 
+Ender Storage allows players to store their items in a special chest that features a changeable color coded frequency.
+Any chest with the same frequency will share inventory, enabling item transfer over any distance and even across
 dimensions. The frequency can be changed by right-clicking the three slots on top of the chest with a dye. As there are
 16 colors, there are 4096 possible frequencies.
 
@@ -73,11 +73,11 @@ You can also change the frequencies and personal status of an Ender Storage with
 ### Personal frequencies
 
 If a player right-clicks the handle of the Ender Storage with a Diamond, it becomes a
-Personal Ender Storage chest. The contents of this chest are unique to the player who placed the diamond, and only that 
+Personal Ender Storage chest. The contents of this chest are unique to the player who placed the diamond, and only that
 player can change its frequency. The diamond can be recovered by shift+right-clicking the chest with an empty hand.
 
 For security reasons, the frequency of a Personal Ender Storage chest cannot be changed by ComputerCraft by default. To
-allow this behavior, right-click the handle of the chest with an Emerald. This will 
+allow this behavior, right-click the handle of the chest with an Emerald. This will
 enable ComputerCraft to change the frequency of the chest.
 
 <Aside type="danger">
@@ -85,7 +85,7 @@ If you use an emerald on a Personal Ender Storage chest, **any** player with phy
 </Aside>
 
 <Aside>
-Public (non-personal) Ender Storage chests do not need an emerald to be changed by ComputerCraft. 
+Public (non-personal) Ender Storage chests do not need an emerald to be changed by ComputerCraft.
 </Aside>
 
 ### Crafting recipes
@@ -94,7 +94,7 @@ When placing any Ender Storage in a crafting grid, you can change its frequency 
 
 - Place three dyes in the top row of a crafting grid, and the Ender Storage in any slot, to change the frequency.
 - Place a diamond in any slot to make the chest personal. The owner will be the player performing the crafting
-  operation, so if the player isn't available for some reason (e.g. automated crafting in some conditions), this recipe 
+  operation, so if the player isn't available for some reason (e.g. automated crafting in some conditions), this recipe
   will not work. The diamond will not be consumed.
 - Place an emerald in any slot to make the chest allow ComputerCraft to change its frequency. This also implies the
   chest is personal. The emerald will not be consumed.
@@ -113,7 +113,7 @@ local enderStorage = peripheral.wrap("ender_storage")
 
 ### `enderStorage.getFrequency(): number, number, number`
 
-Returns the current frequency of the chest. The numbers returned are equivalent to the ComputerCraft 
+Returns the current frequency of the chest. The numbers returned are equivalent to the ComputerCraft
 [`colors` API](https://tweaked.cc/module/colors.html).
 
 ### `enderStorage.getOwner(): string, string`
@@ -128,12 +128,12 @@ Returns `true` if the chest is a Personal Ender Storage chest, `false` otherwise
 ### `enderStorage.areComputerChangesEnabled(): boolean`
 
 Returns `true` if the chest allows ComputerCraft to change its frequency, `false` otherwise. This will always be `true`
-for non-personal Ender Storage chests. For Personal Ender Storage chests, this will be `true` if an emerald has been 
+for non-personal Ender Storage chests. For Personal Ender Storage chests, this will be `true` if an emerald has been
 used on the chest's handle.
 
 ### `enderStorage.setFrequency(left: number, middle: number, right: number)`
 
-Sets the frequency of the chest. The numbers passed are equivalent to the ComputerCraft 
+Sets the frequency of the chest. The numbers passed are equivalent to the ComputerCraft
 [`colors` API](https://tweaked.cc/module/colors.html). For example, to set the frequency to white, white, white:
 
 ```lua
@@ -169,7 +169,7 @@ default).
 ### Range
 
 By default, the magnet attracts items within a 3 block radius. This can be upgraded by crafting the Item Magnet with
-a Nether Star and a Netherite Ingot. 
+a Nether Star and a Netherite Ingot.
 Upgrades can be applied multiple times, increasing the range by 1 block each time, up to a maximum of 6 blocks.
 
 The range for disabling the magnet when another player with an active magnet is the range of the magnet plus 2 blocks.
@@ -231,14 +231,14 @@ generate naturally but their saplings can be found in loot chests.
 
 ## Renewable Shulkers
 
-Endermites will rarely bury into Purpur Blocks, similar to how Silverfish bury into stone. When they do, they fuse with 
+Endermites will rarely bury into Purpur Blocks, similar to how Silverfish bury into stone. When they do, they fuse with
 the block, forming a Shulker.
 
 ## Dragon Scale
 <img src="../../../assets/sc-goodies/dragon_scale.png" alt="Dragon Scale" title="Dragon Scale"
   style="float: right; margin-left: 16px" />
 
-When an Ender Dragon is killed, it will drop a Dragon Scale. The scale can be combined with an Elytra in a crafting 
+When an Ender Dragon is killed, it will drop a Dragon Scale. The scale can be combined with an Elytra in a crafting
 table to create a new Elytra. The old Elytra stays behind untouched, therefore making Elytra cloneable.
 
 ## Dyeable Elytra
@@ -378,7 +378,7 @@ Glass Item Frames also have special behavior for banners and shields placed insi
     <tr>
       <td><img src="../../../assets/sc-goodies/popcorn.png" name="Popcorn" mid /></td>
       <td>
-        A bottomless bag of popcorn. 
+        A bottomless bag of popcorn.
         (<a href="https://github.com/SwitchCraftCC/sc-goodies/issues/4" target="_blank" rel="noopener noreferrer">
           <em>currently unobtainable</em>
         </a>)

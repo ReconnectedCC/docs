@@ -8,8 +8,21 @@ import starlightLlmsTxt from "starlight-llms-txt";
 // https://astro.build/config
 export default defineConfig({
   site: "https://docs.reconnected.cc",
+  image: {
+    responsiveStyles: true,
+    layout: "constrained",
+  },
   integrations: [
     starlight({
+      logo: {
+        src: "./src/assets/rCC.svg",
+      },
+      favicon: "/favicon.ico",
+      customCss: [
+        // Relative path to your custom CSS file
+        "./src/styles/custom.css",
+      ],
+      description: "Documentation for ReconnectedCC Minecraft Server",
       plugins: [
         // Generate the documentation.
         starlightTypeDoc({
@@ -29,7 +42,7 @@ export default defineConfig({
 
         starlightLinksValidator({
           //exclude: ["/ReconnectedChat/**/*", "reconnectedchat/classes/client/"],
-          errorOnRelativeLinks: false,
+          //errorOnRelativeLinks: false,
         }),
         starlightLlmsTxt(),
       ],

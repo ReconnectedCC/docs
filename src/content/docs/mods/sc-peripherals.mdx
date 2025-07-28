@@ -9,9 +9,9 @@ import { Aside } from '@astrojs/starlight/components';
 Quick link to .3dm to .3dj converter: https://3dj.lem.sh/
 </Aside>
 
-[sc-peripherals](https://github.com/SwitchCraftCC/sc-peripherals) is a Fabric 1.20 
+[sc-peripherals](https://github.com/SwitchCraftCC/sc-peripherals) is a Fabric 1.20
 [CC: Tweaked](https://github.com/cc-tweaked/cc-tweaked) peripheral mod for the SwitchCraft server. It adds a 3D printer
-in the style of [OpenComputers](https://github.com/MightyPirates/OpenComputers), and a Wide Format Printer that prints 
+in the style of [OpenComputers](https://github.com/MightyPirates/OpenComputers), and a Wide Format Printer that prints
 custom posters to display in item frames.
 
 - `.3dj` models are printed in-game by running `print3d <filename.3dj>` on a computer with a 3D Printer peripheral.
@@ -24,7 +24,7 @@ custom posters to display in item frames.
 ## Useful links
 
 #### sc-peripherals
-- [sc-peripherals on GitHub](https://github.com/project-connecticut/sc-peripherals)
+- [sc-peripherals on GitHub](https://github.com/reconnectedcc/sc-peripherals)
 
 #### 3D Prints
 - [OpenComputers .3dm to .3dj converter](https://3dj.lem.sh) (Official)
@@ -93,7 +93,7 @@ All arguments except for `shapesOff`, `shapesOn`, and `bounds` are optional.
     { "bounds": [0, 0, 0, 16, 16, 16], "texture": "", "tint": "FFFFFF" }
   ],
   "shapesOn": [
-    { "bounds": [0, 0, 0, 16, 16, 16], "texture": "", "tint": "FFFFFF" }  
+    { "bounds": [0, 0, 0, 16, 16, 16], "texture": "", "tint": "FFFFFF" }
   ]
 }
 ```
@@ -112,7 +112,7 @@ All arguments except for `shapesOff`, `shapesOn`, and `bounds` are optional.
 - `lightWhenOn`: (optional, boolean) Whether the 3D print emits light when in the 'on' state.
 - `redstoneLevel`: (optional, number) The redstone level of the 3D print. Must be between 0 or 15.
 - `seatPos`: (optional, array of numbers) The position of the seat on the 3D print. If not null or undefined, must be a
-  array containing three numbers between 0.1 and 0.9, e.g. `[0.5, 0.5, 0.5]`, where 0.5 is the center of the block. When 
+  array containing three numbers between 0.1 and 0.9, e.g. `[0.5, 0.5, 0.5]`, where 0.5 is the center of the block. When
   not null or undefined, the print will be a seat that can be sat on by right-clicking.
 - `shapesOff`: (**required**, array of objects) The shapes of the 3D print when in the 'off' state. Each object in the array
   must have a `bounds` property with the bounds of the shape, an optional `texture` property with the texture of the shape,
@@ -140,12 +140,12 @@ All arguments except for `shapesOff`, `shapesOn`, and `bounds` are optional.
 
 ## Wide Format Printer
 
-<img src="../../../assets/poster_printer.png" alt="Wide Format Printer" title="Wide Format Printer" 
+<img src="../../../assets/poster_printer.png" alt="Wide Format Printer" title="Wide Format Printer"
   style="float: right; margin-left: 16px" />
 
-The Wide Format Printer is a [peripheral](#peripheral-api---wide-format-printer) that can print posters, which are 
-map-like items that can be displayed in item frames with custom images. A poster is 128x128 pixels and has a 
-customizable 64-color palette (including one transparent color). Like 3D prints, posters can have a custom label and 
+The Wide Format Printer is a [peripheral](#peripheral-api---wide-format-printer) that can print posters, which are
+map-like items that can be displayed in item frames with custom images. A poster is 128x128 pixels and has a
+customizable 64-color palette (including one transparent color). Like 3D prints, posters can have a custom label and
 tooltip.
 
 The Wide Format Printer requires ink cartridges and paper to print posters.
@@ -157,26 +157,26 @@ A 2dj file is a JSON file with the following structure:
 ```json
 {
   "label":   "...",
-  "tooltip": "...", 
+  "tooltip": "...",
   "palette": [],
   "pixels":  [],
   "width":   128,
-  "height":  128 
+  "height":  128
 }
 ```
 #### Fields
-  
-- `label`: (optional) The name of the poster, max 48 characters  
-- `tooltip`: (optional) The tooltip of the poster in the inventory, max 256 characters  
-- `pallete`: Up to 63 colors encoded as 0xRRGGBB integers, the transparent index 0 should not be included.  
-- `pixels`: 16384 (128*128) array of palette indices. 0 is transparent, 1 is the first palette color, etc.  
-- `width`: Width of the poster in pixels, not currently used  
+
+- `label`: (optional) The name of the poster, max 48 characters
+- `tooltip`: (optional) The tooltip of the poster in the inventory, max 256 characters
+- `pallete`: Up to 63 colors encoded as 0xRRGGBB integers, the transparent index 0 should not be included.
+- `pixels`: 16384 (128*128) array of palette indices. 0 is transparent, 1 is the first palette color, etc.
+- `width`: Width of the poster in pixels, not currently used
 - `height`: Height of the poster in pixels, not currently used
 
 Poster palettes are limited to 63 colors plus one transparent color. The first color in the palette (index 0) is
 fully transparent, and the remaining 63 colors (index 1 onward) are fully opaque but customizable. By default, the
 posters use the same palette as [vanilla maps](https://minecraft.wiki/w/Map_item_format#Base_colors), e.g.
-0 is NONE, 1 is <a style='color:rgb(127, 178, 56);'>GRASS</a>, 
+0 is NONE, 1 is <a style='color:rgb(127, 178, 56);'>GRASS</a>,
 2 is <a style='color:rgb(247, 233, 163);'>SAND</a>, etc.
 
 [Example .2dj file](https://p.sc3.io/umAmBHM3p2)
@@ -188,9 +188,9 @@ A 2dja file is primarily a collection of 2dj files, encoded with the following s
 ```json
 {
   "title": "...",
-  "width": 1,     
-  "height": 3,    
-  "pages": [      
+  "width": 1,
+  "height": 3,
+  "pages": [
     {  },
     {  },
     {  }
@@ -198,10 +198,10 @@ A 2dja file is primarily a collection of 2dj files, encoded with the following s
 }
 ```
 #### Fields
-`title`: (optional) The name of the collection of posters, not currently used  
-`width`: (optional) Count of posters in a row, not currently used  
-`height`: (optional) Count of posters in a column, not currently used  
-`pages`: Array of 2dj files, length should be width * height if specified  
+`title`: (optional) The name of the collection of posters, not currently used
+`width`: (optional) Count of posters in a row, not currently used
+`height`: (optional) Count of posters in a column, not currently used
+`pages`: Array of 2dj files, length should be width * height if specified
 
 ## Peripheral API - 3D Printer
 
@@ -213,19 +213,19 @@ local printer = peripheral.wrap("3d_printer")
 
 The 3D Printer has a local buffer of what to print, referred to here as the "model". A model has two shape sets
 (collections of "shapes", which are cuboids with a texture and tint), a set for the "on" state and a set for the "off" state. After adding
-the shapes to the model 
-with [`printer.addShape(...)`](#printeraddshapeminxnumber-minynumber-minznumber-maxxnumber-maxynumber-maxznumber-texturestring-stateboolean-tintnumber) 
-or [`printer.addShapes({ ... })`](#printeraddshapesshapestable) (recommended), it can be printed by committing it 
-with [`printer.commit(count)`](#printercommitcountnumber-boolean). 
+the shapes to the model
+with [`printer.addShape(...)`](#printeraddshapeminxnumber-minynumber-minznumber-maxxnumber-maxynumber-maxznumber-texturestring-stateboolean-tintnumber)
+or [`printer.addShapes({ ... })`](#printeraddshapesshapestable) (recommended), it can be printed by committing it
+with [`printer.commit(count)`](#printercommitcountnumber-boolean).
 
 The printer will remember the model, so subsequent copies can be printed by committing again, or a new model can be
 printed by resetting the printer with [`printer.reset()`](#printerreset).
 
-The two shape sets (off and on) have a limit of 128 shapes each, for a total of 256 shapes per model. The default state 
-is "off". 
+The two shape sets (off and on) have a limit of 128 shapes each, for a total of 256 shapes per model. The default state
+is "off".
 
 <Aside>
-For a practical example of the 3D Printer API, refer to the built-in 
+For a practical example of the 3D Printer API, refer to the built-in
 [print3d program](https://github.com/SwitchCraftCC/sc-peripherals/blob/HEAD/src/main/resources/data/computercraft/lua/rom/programs/print3d.lua).
 </Aside>
 
@@ -237,7 +237,7 @@ Using [`printer.addShapes`](#printeraddshapesshapestable) is preferred as it is 
 `addShape` call will take at least 1 tick.
 </Aside>
 
-Adds a single shape (cuboid) to the model. The shape dimensions must be between 0 and 16 (inclusive) and the shape must 
+Adds a single shape (cuboid) to the model. The shape dimensions must be between 0 and 16 (inclusive) and the shape must
 not have a volume of 0. A maximum of 128 shapes can be added to a shape set.
 
 #### Parameters
@@ -291,7 +291,7 @@ local shapes = {
 
 ### `printer.commit(count:number): boolean`
 
-Asynchronously begins printing the specified number of prints. 
+Asynchronously begins printing the specified number of prints.
 
 `count` must be greater than 0. Once a job has been committed, the printer will continue trying to print that number of
 items even if it runs out of ink or chamelium - it will simply wait for more resources to be added. If there is a
@@ -300,7 +300,7 @@ other item is removed.
 
 ### `printer.getButtonMode(): boolean`
 
-Returns whether this print model is in button mode. This can be changed with 
+Returns whether this print model is in button mode. This can be changed with
 [`printer.setButtonMode()`](#printersetbuttonmodeisbuttonboolean).
 
 ### `printer.getChameliumLevel(): number, number`
@@ -321,7 +321,7 @@ Returns the label of this print model (the name shown on the item). This can be 
 ### `printer.getLightLevel(): number`
 
 Returns the light level of this print model. On the model, this will be between 0 and 7 (inclusive). This can be changed
-with [`printer.setLightLevel()`](#printersetlightlevellevelnumber). Higher light levels can be achieved by crafting 
+with [`printer.setLightLevel()`](#printersetlightlevellevelnumber). Higher light levels can be achieved by crafting
 the resulting print with glowstone dust.
 
 ### `printer.getMaxShapeCount(): number`
@@ -363,7 +363,7 @@ Sets the label (item name) of the print item.
 
 ### `printer.setLightLevel(level:number)`
 
-Sets the light level of the print model. This must be between 0 and 7 (inclusive). Higher light levels can be achieved 
+Sets the light level of the print model. This must be between 0 and 7 (inclusive). Higher light levels can be achieved
 by crafting the resulting print with glowstone dust.
 
 ### `printer.setRedstoneLevel(level:number)`
@@ -432,11 +432,11 @@ A Wide Format Printer can be wrapped as a peripheral with the name `poster_print
 local posterPrinter = peripheral.wrap("poster_printer")
 ```
 
-The Wide Format Printer has a local buffer of what to print, referred to here as the "poster". A poster has a table of 
+The Wide Format Printer has a local buffer of what to print, referred to here as the "poster". A poster has a table of
 palette colors (63 colors, as index 0 is always transparent) and a table of pixels (16384 entries, 128*128). After
-blitting pixels to the poster with 
+blitting pixels to the poster with
 [`posterPrinter.blitPixels(...)`](#posterprinterblitpixelsxnumber-ynumber-pixelstable) and setting the palette with
-[`posterPrinter.blitPalette(...)`](#posterprinterblitpalettepalettetable), the poster can be printed with 
+[`posterPrinter.blitPalette(...)`](#posterprinterblitpalettepalettetable), the poster can be printed with
 [`posterPrinter.commit(count)`](#posterprintercommitcountnumber-boolean).
 
 The printer will remember the poster data, so subsequent copies can be printed by committing again, or a new poster can
@@ -453,17 +453,17 @@ For a practical example of the Wide Format Printer API, refer to the built-in [p
 Using [`posterPrinter.blitPixels`](#posterprinterblitpixelsxnumber-ynumber-pixelstable) is preferred as it is significantly faster. Each individual `setPixel` call will take at least 1 tick.
 </Aside>
 
-Sets the color of a single pixel in the poster. The color refers to the palette index and must be between 0 and 63 
+Sets the color of a single pixel in the poster. The color refers to the palette index and must be between 0 and 63
 (inclusive). Palette index 0 is always transparent. The pixel coordinates must be between 1 and 128 (inclusive).
 
 ### `posterPrinter.blitPixels(x:number, y:number, pixels:table)`
 
 Sets multiple pixels in the poster. The pixels table must be a one-dimensional table of pixel colors, of maximum size
-16384 (128 * 128). The pixel colors refer to the palette index and must be between 0 and 63 (inclusive). Palette index 0 
+16384 (128 * 128). The pixel colors refer to the palette index and must be between 0 and 63 (inclusive). Palette index 0
 is always transparent.
 
-Pixels will wrap onto the next row (starting at `x` = 1) if the table is larger than the remaining space in the row. 
-This means you can set the entire poster at once by calling `blitPixels(1, 1, pixels)`, where `pixels` is a table of 
+Pixels will wrap onto the next row (starting at `x` = 1) if the table is larger than the remaining space in the row.
+This means you can set the entire poster at once by calling `blitPixels(1, 1, pixels)`, where `pixels` is a table of
 16384 entries.
 
 ### `posterPrinter.setPaletteColor(index:number, red:number, green:number, blue:number)`
@@ -480,8 +480,8 @@ must be between 0 and 255 (inclusive). Palette index 0 is always transparent, an
 
 Sets the palette of the poster. The palette table must be a one-dimensional table of colors, of maximum size 63. The
 first entry in the table is index 1, as index 0 is always transparent. This means you can pass a one-indexed Lua table
-directly as a palette. A color is represented as a 24-bit integer, where the first 8 bits are the red component, the 
-next 8 bits are the green component, and the last 8 bits are the blue component. For example, `0xFF0000` is red, 
+directly as a palette. A color is represented as a 24-bit integer, where the first 8 bits are the red component, the
+next 8 bits are the green component, and the last 8 bits are the blue component. For example, `0xFF0000` is red,
 `0x00FF00` is green, and `0x0000FF` is blue.
 
 Example:
@@ -558,7 +558,7 @@ The `poster_printer_state` event is emitted whenever a print job starts, stops, 
 
 ### `poster_printer_complete` event
 
-The `poster_printer_complete` event is emitted when a poster item has been printed, i.e. once for each `count` in a 
+The `poster_printer_complete` event is emitted when a poster item has been printed, i.e. once for each `count` in a
 committed print job.
 
 #### Parameters

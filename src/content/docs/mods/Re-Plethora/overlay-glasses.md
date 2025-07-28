@@ -24,7 +24,7 @@ local canvas = interface.canvas()
 -- And add a rectangle
 local rect = canvas.addRectangle(0, 0, 100, 100, 0xFF0000FF)
 ```
-![One red square on the screen](/img/replethora/glasses_redsquare.png)
+![One red square on the screen](../../../../assets/replethora/glasses_redsquare.png)
 
 There’s a couple of things which stand out here:
 
@@ -47,7 +47,7 @@ while true do
   sleep(1)
 end
 ```
-![A primitive heads-up clock](/img/replethora/glasses_clock1.png)
+![A primitive heads-up clock](../../../../assets/replethora/glasses_clock1.png)
 
 
 Now we’re cooking with gas! We’ve now got a pretty ugly clock up and running in the top left of our screen. One interesting thing to note in the above is how we pass in the position to `.addText`. Many constructors take positions as tables instead - for these you can either pass `{ x = 5, y = 6 }` or just `{ 5, 6 }`. Any additional fields will be ignored, which is always nice.
@@ -94,6 +94,6 @@ while true do
   sleep(0.05)
 end
 ```
-![A clock which bounces around](/img/replethora/glasses_clock2.png)
+![A clock which bounces around](../../../../assets/replethora/glasses_clock2.png)
 
 While that was rather dense code, for which I apologise, I hope you can appreciate the end result! Not only can we move our clock around on screen without issue, we’ve recreated a screensaver from the days of old.
