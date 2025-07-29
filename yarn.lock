@@ -1388,6 +1388,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@webgpu/types@npm:0.1.21":
+  version: 0.1.21
+  resolution: "@webgpu/types@npm:0.1.21"
+  checksum: 10c0/74de9683b70064aeadcdd31381747650b323e7e2183fb38f90a35f1a79f80ad267c0a2ee5010c264befb3d31ad213dbdffa04897e2808f6b04feff8d66bc53e0
+  languageName: node
+  linkType: hard
+
 "abbrev@npm:^3.0.0":
   version: 3.0.1
   resolution: "abbrev@npm:3.0.1"
@@ -1526,6 +1533,19 @@ __metadata:
   peerDependencies:
     astro: ^4.0.0-beta || ^5.0.0-beta || ^3.3.0
   checksum: 10c0/b6fc47cc43a84f957787f68391ad84b28c04d46ed4c6699400268be983ef166cbe5289f0aa9978f58d33c8e14f7cc3a90734773daedcb684c0b6013576a57d6e
+  languageName: node
+  linkType: hard
+
+"astro-og-canvas@npm:^0.7.0":
+  version: 0.7.0
+  resolution: "astro-og-canvas@npm:0.7.0"
+  dependencies:
+    canvaskit-wasm: "npm:^0.39.1"
+    deterministic-object-hash: "npm:^2.0.2"
+    entities: "npm:^4.4.0"
+  peerDependencies:
+    astro: ^3.0.0 || ^4.0.0 || ^5.0.0
+  checksum: 10c0/d1c53e6262a46fc19b8b66f61b938793cdabeaf05bcc1aae0b3b51bd1ae49f7010aa7aa64fefef4de992f9af7e5ebff9abfea4571548165c548fda642dc59381
   languageName: node
   linkType: hard
 
@@ -1823,6 +1843,15 @@ __metadata:
   version: 8.0.0
   resolution: "camelcase@npm:8.0.0"
   checksum: 10c0/56c5fe072f0523c9908cdaac21d4a3b3fb0f608fb2e9ba90a60e792b95dd3bb3d1f3523873ab17d86d146e94171305f73ef619e2f538bd759675bc4a14b4bff3
+  languageName: node
+  linkType: hard
+
+"canvaskit-wasm@npm:^0.39.1":
+  version: 0.39.1
+  resolution: "canvaskit-wasm@npm:0.39.1"
+  dependencies:
+    "@webgpu/types": "npm:0.1.21"
+  checksum: 10c0/0ae60ae5c430aaa88152f3a20f40fc9a6debb15714a2ce1bdebef93005ec6d5e72e0316b91ab637f50aab220dd8694101abac497209bcf16788d00db78f5a898
   languageName: node
   linkType: hard
 
@@ -4911,6 +4940,7 @@ __metadata:
     "@astrojs/check": "npm:^0.9.4"
     "@astrojs/starlight": "npm:0.35.1"
     astro: "npm:5.12.0"
+    astro-og-canvas: "npm:^0.7.0"
     pagefind: "npm:^1.3.0"
     sharp: "npm:^0.32.5"
     starlight-links-validator: "npm:^0.17.0"
