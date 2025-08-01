@@ -15,7 +15,7 @@ export default defineConfig({
   integrations: [
     starlight({
       logo: {
-        src: "./src/assets/rCC.png", // TODO: CHANGE TO SVG
+        src: "./src/assets/rCC.svg",
       },
       favicon: "/favicon.ico",
       customCss: [
