@@ -15,6 +15,8 @@ You will receive a colored prefix to indicate your supporter tier.
 
 ![](../../../assets/supporter/prefixes.png)
 
+Your tier is decided by the *total* amount of money you have ever donated to ReconnectedCC. From €25, you gain tier 2, and from €75 you gain tier 3.
+
 You can run /fly in the lobby, and use /hat and /sleep everywhere
 
 Please note that more supporter perks are on the way.
