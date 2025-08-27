@@ -19,26 +19,30 @@ Sodium is a mod that improves the performance of Minecraft. It should be install
 Iris Shaders is a mod that adds shader support to our pack. It requires Sodium (and thus Indium) to be installed.
 It is not supported by Nvidium and some shader packs might not work with Distant Horizons.
 
-<Aside>Iris hasn't been added as it depends on Sodium.</Aside>
+<Aside>Iris hasn't been added by default as it depends on Sodium.</Aside>
 
 ## Distant Horizons
 
 Distant Horizons is a mod that improves the client side render distance by creating LODs beyond the real chunks' render distance.
 It only works with shaders built with Distant Horizons support in mind.
 
-<Aside>Distant Horizons is not enabled by default due to the LOD ComputerCraft monitors not rendering their display.</Aside>
+We have installed Distant Horizons on the server side in order to pre-render LODs for the client.
+
 <Aside type="caution">This mod is also in alpha and may be unstable.</Aside>
+<Aside>Distant Horizons is not enabled by default due to the LOD ComputerCraft monitors not rendering their display and because it is in alpha.</Aside>
 
 ## Bobby
 
 Bobby is a mod that improves the client side render distance by caching chunks it receives from the server. It renders the chunks as real Minecraft chunks.
 
-<Aside>Bobby is not enabled by default due to cached ComputerCraft monitors not rendering their display.</Aside>
-<Aside type="caution">It's data is stored locally and can get very large.</Aside>
+<Aside>Bobby is not enabled by default due to cached ComputerCraft monitors not rendering their display and because it uses a *lot* of storage on the client.</Aside>
+<Aside type="caution">Bobby's data is stored locally and can get very large.</Aside>
 
 ## Nvidium
 
 Nvidium replaces the rendering backend with NVIDIA exclusive OpenGL extensions to increase fps a lot, especially with huge render distances. Sodium (and thus Indium) should be installed for this to work.
 Nvidium disables itself when Iris is using a shader.
 
-<Aside>Nvidium hasn't been added as it only works for NVIDIA GeForce GTX 16xx cards and newer (GeForce RTX), and because its quite an experimental mod. We ship our own version of Nvidium that works with the latest version of Sodium, available [here](https://github.com/reconnectedcc/nvidium)</Aside>
+ We ship our own version of Nvidium that works with the latest version of Sodium, available [here](https://github.com/reconnectedcc/nvidium)
+
+<Aside>Nvidium hasn't been added by default as it only works for NVIDIA GeForce GTX 16xx cards and newer (GeForce RTX), and because its quite an experimental mod.</Aside>

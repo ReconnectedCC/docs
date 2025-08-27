@@ -15,6 +15,14 @@ You will receive a colored prefix to indicate your supporter tier.
 
 ![](../../../assets/supporter/prefixes.png)
 
+Your tier is decided by the *total* amount of money you have ever donated to ReconnectedCC. The perks are the same per tier, the tier is completely cosmetic.
+
+| Amount Donated | Tier |
+| -------------- | ---- |
+| €0 - €20       | 1    |
+| €25 - €70      | 2    |
+| €75+           | 3    |
+
 You can run /fly in the lobby, and use /hat and /sleep everywhere
 
 Please note that more supporter perks are on the way.

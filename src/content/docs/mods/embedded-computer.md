@@ -47,7 +47,7 @@ Every embedded computer has the following functions available:
 `embeddedComputer.unlock(string pass)` - alias to unlockHashed with SHA256. prior to 1.1.0 / 0.4.0 it was equivalent to embeddedComputer.unlockPlainText
 
 ### Hard drive API
-Please note, hard drives are made uncraftable by the server.
+Please note, hard drives are made uncraftable by the server. This only serves as a reference.
 
 `hardDrive.mount(location)` - mounts the hard drive to any location on computer
 `hardDrive.unmount(location)` - unmounts the hard drive from this location
