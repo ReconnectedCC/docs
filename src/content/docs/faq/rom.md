@@ -40,7 +40,8 @@ A mildly better shell for ComputerCraft
 
 ### hopper.lua
 
-Move items from A to B without any hassle, acts like a commandline hopper.
+Move items from A to B without any hassle, acts like a commandline hopper.  
+Documentation for hopper.lua can be found at https://github.com/umnikos/hopper.lua/wiki
 
 
 ## Custom shell commands
