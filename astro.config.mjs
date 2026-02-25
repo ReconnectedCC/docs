@@ -57,6 +57,9 @@ export default defineConfig({
       ],
       sidebar: [
         {
+          slug: "rules"
+        },
+        {
           label: "Frequently Asked Questions",
           autogenerate: { directory: "faq" },
         },
