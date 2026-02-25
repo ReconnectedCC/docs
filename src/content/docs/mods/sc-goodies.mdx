@@ -3,6 +3,55 @@ title: sc-goodies
 ---
 
 import { Aside } from '@astrojs/starlight/components';
+import { Image } from 'astro:assets';
+import ender_storage from '../../../assets/sc-goodies/ender_storage.png';
+import iron_storage from '../../../assets/sc-goodies/iron_storage.png';
+import gold_storage from '../../../assets/sc-goodies/gold_storage.png';
+import diamond_storage from '../../../assets/sc-goodies/diamond_storage.png';
+import vanilla_iron_chest_upgrade from '../../../assets/sc-goodies/vanilla_iron_chest_upgrade.png';
+import iron_gold_chest_upgrade from '../../../assets/sc-goodies/iron_gold_chest_upgrade.png';
+import iron_diamond_chest_upgrade from '../../../assets/sc-goodies/iron_diamond_chest_upgrade.png';
+import gold_diamond_chest_upgrade from '../../../assets/sc-goodies/gold_diamond_chest_upgrade.png';
+import barrel_hammer from '../../../assets/sc-goodies/barrel_hammer.png';
+import hover_boots from '../../../assets/sc-goodies/hover_boots.png';
+import item_magnet from '../../../assets/sc-goodies/item_magnet.png';
+import amethyst_blocks from '../../../assets/sc-goodies/amethyst_blocks.png';
+import stair_wrench from '../../../assets/sc-goodies/stair_wrench.png';
+import sakura_tree from '../../../assets/sc-goodies/sakura_tree.png';
+import maple_tree from '../../../assets/sc-goodies/maple_tree.png';
+import peppy_tree from '../../../assets/sc-goodies/peppy_tree.png';
+import dragon_scale from '../../../assets/sc-goodies/dragon_scale.png';
+import dyeable_elytra from '../../../assets/sc-goodies/dyeable_elytra.png';
+import elytra_lesbian from '../../../assets/sc-goodies/elytra_lesbian.png';
+import elytra_non_binary from '../../../assets/sc-goodies/elytra_non_binary.png';
+import elytra_pride from '../../../assets/sc-goodies/elytra_pride.png';
+import elytra_trans from '../../../assets/sc-goodies/elytra_trans.png';
+import dyeable_sharks from '../../../assets/sc-goodies/dyeable_sharks.png';
+import shark_trans from '../../../assets/sc-goodies/shark_trans.png';
+import ancient_tome from '../../../assets/sc-goodies/ancient_tome.png';
+import glass_item_frame from '../../../assets/sc-goodies/glass_item_frame.png';
+import popcorn from '../../../assets/sc-goodies/popcorn.png';
+import salami from '../../../assets/sc-goodies/salami.png';
+import icecream_vanilla from '../../../assets/sc-goodies/icecream_vanilla.png';
+import icecream_chocolate from '../../../assets/sc-goodies/icecream_chocolate.png';
+import icecream_sweetberry from '../../../assets/sc-goodies/icecream_sweetberry.png';
+import icecream_neapolitan from '../../../assets/sc-goodies/icecream_neapolitan.png';
+import icecream_spruce from '../../../assets/sc-goodies/icecream_spruce.png';
+import icecream_melon from '../../../assets/sc-goodies/icecream_melon.png';
+import icecream_beetroot from '../../../assets/sc-goodies/icecream_beetroot.png';
+import icecream_sundae from '../../../assets/sc-goodies/icecream_sundae.png';
+import elytra_item from '../../../assets/elytra.png';
+import red_dye from '../../../assets/dye/red_dye.png';
+import orange_dye from '../../../assets/dye/orange_dye.png';
+import white_dye from '../../../assets/dye/white_dye.png';
+import pink_dye from '../../../assets/dye/pink_dye.png';
+import magenta_dye from '../../../assets/dye/magenta_dye.png';
+import yellow_dye from '../../../assets/dye/yellow_dye.png';
+import purple_dye from '../../../assets/dye/purple_dye.png';
+import black_dye from '../../../assets/dye/black_dye.png';
+import green_dye from '../../../assets/dye/green_dye.png';
+import blue_dye from '../../../assets/dye/blue_dye.png';
+import light_blue_dye from '../../../assets/dye/light_blue_dye.png';
 
 [sc-goodies](https://github.com/SwitchCraftCC/sc-goodies) is a Fabric 1.20 content mod for the SwitchCraft server. It
 contains a variety of features specifically designed for SwitchCraft, many of which were inspired by previous 1.12 mods
@@ -20,18 +69,18 @@ Higher-capacity variants of chests, barrels, and shulker boxes are added to the 
 
 <ul>
   <li>
-    <img src="../../../assets/sc-goodies/iron_storage.png" alt="Iron Chest, Barrel, and Shulker Box"
-      title="Iron Chest, Barrel, and Shulker Box" className="h-8 inline-block align-bottom" />
+    <Image src={iron_storage} alt="Iron Chest, Barrel, and Shulker Box"
+      title="Iron Chest, Barrel, and Shulker Box" class="h-8 inline-block align-bottom" />
     Iron - 54 slots (9x6)
   </li>
   <li>
-    <img src="../../../assets/sc-goodies/gold_storage.png" alt="Gold Chest, Barrel, and Shulker Box"
-      title="Gold Chest, Barrel, and Shulker Box" className="h-8 inline-block align-bottom" />
+    <Image src={gold_storage} alt="Gold Chest, Barrel, and Shulker Box"
+      title="Gold Chest, Barrel, and Shulker Box" class="h-8 inline-block align-bottom" />
     Gold - 81 slots (9x9)
   </li>
   <li>
-    <img src="../../../assets/sc-goodies/diamond_storage.png" alt="Diamond Chest, Barrel, and Shulker Box"
-      title="Diamond Chest, Barrel, and Shulker Box" className="h-8 inline-block align-bottom" />
+    <Image src={diamond_storage} alt="Diamond Chest, Barrel, and Shulker Box"
+      title="Diamond Chest, Barrel, and Shulker Box" class="h-8 inline-block align-bottom" />
     Diamond - 108 slots (12x9)
   </li>
 </ul>
@@ -41,10 +90,10 @@ an Iron to Gold Storage Upgrade, and shift+right-clicking the chest with it. The
 shulker boxes.
 
 <ul>
-  <li><img src="../../../assets/sc-goodies/vanilla_iron_chest_upgrade.png"/> Vanilla to Iron Storage Upgrade</li>
-  <li><img src="../../../assets/sc-goodies/iron_gold_chest_upgrade.png"/> Iron to Gold Storage Upgrade</li>
-  <li><img src="../../../assets/sc-goodies/iron_diamond_chest_upgrade.png"/> Iron to Diamond Storage Upgrade</li>
-  <li><img src="../../../assets/sc-goodies/gold_diamond_chest_upgrade.png"/> Gold to Diamond Storage Upgrade</li>
+  <li><Image src={vanilla_iron_chest_upgrade} alt="Vanilla to Iron Storage Upgrade" /> Vanilla to Iron Storage Upgrade</li>
+  <li><Image src={iron_gold_chest_upgrade} alt="Iron to Gold Storage Upgrade" /> Iron to Gold Storage Upgrade</li>
+  <li><Image src={iron_diamond_chest_upgrade} alt="Iron to Diamond Storage Upgrade" /> Iron to Diamond Storage Upgrade</li>
+  <li><Image src={gold_diamond_chest_upgrade} alt="Gold to Diamond Storage Upgrade" /> Gold to Diamond Storage Upgrade</li>
 </ul>
 
 Iron Chests do not become double chests - they are always single chests. Otherwise, these upgraded storage variants
@@ -52,7 +101,7 @@ behave identically to their vanilla counterparts. Hoppers and comparators can be
 all can be wrapped as ComputerCraft peripherals.
 
 ### Barrel Hammer
-<img src="../../../assets/sc-goodies/barrel_hammer.png" alt="Barrel Hammer" title="Barrel Hammer"
+<Image src={barrel_hammer} alt="Barrel Hammer" title="Barrel Hammer"
   style="float: right; margin-left: 16px" />
 
 Chests can be converted to barrels (and vice-versa) by shift+right-clicking them with a barrel hammer. This makes it
@@ -60,7 +109,7 @@ easy to convert storage types while still keeping all items inside. The Barrel H
 repaired with an iron ingot.
 
 ## Ender Storage
-<img src="../../../assets/sc-goodies/ender_storage.png" alt="Ender Storage" title="Ender Storage"
+<Image src={ender_storage} alt="Ender Storage" title="Ender Storage"
   style="float: right; margin-left: 16px" />
 
 Ender Storage allows players to store their items in a special chest that features a changeable color coded frequency.
@@ -149,7 +198,7 @@ Returns the custom name of the chest's frequency, if it has one, or `nil` otherw
 Returns the custom description of the chest's frequency, if it has one, or `nil` otherwise.
 
 ## Hover Boots
-<img src="../../../assets/sc-goodies/hover_boots.png" alt="Hover Boots" title="Hover Boots"
+<Image src={hover_boots} alt="Hover Boots" title="Hover Boots"
   style="float: right; margin-left: 16px" />
 
 Hover Boots allow players to jump higher, walk up one-block high walls, and reduce fall damage. They can be equipped in
@@ -158,7 +207,7 @@ the "shoes" Trinket slot.
 Hover Boots have no durability, and can be dyed by crafting them with a dye.
 
 ## Item Magnet
-<img src="../../../assets/sc-goodies/item_magnet.png" alt="Item Magnet" title="Item Magnet"
+<Image src={item_magnet} alt="Item Magnet" title="Item Magnet"
   style="float: right; margin-left: 16px" />
 
 The Item Magnet attracts nearby items to the player. It can be equipped in the "gloves" Trinket slot. The Item Magnet
@@ -187,14 +236,14 @@ stairs.
 Additionally, walking speed on any type of concrete (blocks, slabs, stairs) is 25% faster.
 
 ## More Slabs and Stairs
-<img src="../../../assets/sc-goodies/amethyst_blocks.png" alt="Amethyst Slabs and Stairs" title="Amethyst Slabs and Stairs"
+<Image src={amethyst_blocks} alt="Amethyst Slabs and Stairs" title="Amethyst Slabs and Stairs"
   style="float: right; margin-left: 16px" />
 
 Amethyst Slabs and Stairs are also available. They are crafted with the same recipe as the vanilla slabs and
 stairs.
 
 ## Stair Wrench
-<img src="../../../assets/sc-goodies/stair_wrench.png" alt="Stair Wrench" title="Stair Wrench"
+<Image src={stair_wrench} alt="Stair Wrench" title="Stair Wrench"
   style="float: right; margin-left: 16px" />
 
 The Stair Wrench is a tool that can be used to rotate stairs. Right-clicking a stair block with the wrench will change
@@ -222,9 +271,9 @@ generate naturally but their saplings can be found in loot chests.
 </thead>
 <tbody>
   <tr>
-    <td><img src="../../../assets/sc-goodies/sakura_tree.png" alt="Sakura Tree" title="Sakura Tree" /></td>
-    <td><img src="../../../assets/sc-goodies/maple_tree.png" alt="Maple Tree" title="Maple Tree" /></td>
-    <td><img src="../../../assets/sc-goodies/peppy_tree.png" alt="Peppy Tree" title="Peppy Tree" /></td>
+    <td><Image src={sakura_tree} alt="Sakura Tree" title="Sakura Tree" /></td>
+    <td><Image src={maple_tree} alt="Maple Tree" title="Maple Tree" /></td>
+    <td><Image src={peppy_tree} alt="Peppy Tree" title="Peppy Tree" /></td>
   </tr>
 </tbody>
 </table>
@@ -235,14 +284,14 @@ Endermites will rarely bury into Purpur Blocks, similar to how Silverfish bury i
 the block, forming a Shulker.
 
 ## Dragon Scale
-<img src="../../../assets/sc-goodies/dragon_scale.png" alt="Dragon Scale" title="Dragon Scale"
+<Image src={dragon_scale} alt="Dragon Scale" title="Dragon Scale"
   style="float: right; margin-left: 16px" />
 
 When an Ender Dragon is killed, it will drop a Dragon Scale. The scale can be combined with an Elytra in a crafting
 table to create a new Elytra. The old Elytra stays behind untouched, therefore making Elytra cloneable.
 
 ## Dyeable Elytra
-<img src="../../../assets/sc-goodies/dyeable_elytra.png" alt="Dyeable Elytra in all 16 colors"
+<Image src={dyeable_elytra} alt="Dyeable Elytra in all 16 colors"
   title="Dyeable Elytra in all 16 colors" style="float: right; margin-left: 16px" />
 
 The Elytra can be dyed with any of the 16 dyes by crafting it with the dye. The dye will be consumed in the process.
@@ -262,72 +311,72 @@ Special dyed variants of the Elytra are also available, and can be crafted with 
   <tbody>
     <tr>
       <td>
-        <img src="../../../assets/sc-goodies/elytra_lesbian.png" name="Lesbian Elytra" mid />
+        <Image src={elytra_lesbian} alt="Lesbian Elytra" />
       </td>
       <td>
-        <img style="display:inline-block;" src="../../../assets/elytra.png" name="Elytra"/>
-        <img style="display:inline-block;" src="../../../assets/dye/red_dye.png" />
-        <img style="display:inline-block;" src="../../../assets/dye/orange_dye.png" />
-        <img style="display:inline-block;" src="../../../assets/dye/white_dye.png" />
-        <img style="display:inline-block;" src="../../../assets/dye/pink_dye.png" />
-        <img style="display:inline-block;" src="../../../assets/dye/magenta_dye.png" />
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <img src="../../../assets/sc-goodies/elytra_non_binary.png" name="Non-Binary Elytra" mid />
-      </td>
-      <td>
-        <img style="display:inline-block;" src="../../../assets/elytra.png" name="Elytra"/>
-        <img style="display:inline-block;" src="../../../assets/dye/yellow_dye.png" />
-        <img style="display:inline-block;" src="../../../assets/dye/white_dye.png" />
-        <img style="display:inline-block;" src="../../../assets/dye/purple_dye.png" />
-        <img style="display:inline-block;" src="../../../assets/dye/black_dye.png" />
+        <Image style="display:inline-block;" src={elytra_item} alt="Elytra" />
+        <Image style="display:inline-block;" src={red_dye} alt="Red Dye" />
+        <Image style="display:inline-block;" src={orange_dye} alt="Orange Dye" />
+        <Image style="display:inline-block;" src={white_dye} alt="White Dye" />
+        <Image style="display:inline-block;" src={pink_dye} alt="Pink Dye" />
+        <Image style="display:inline-block;" src={magenta_dye} alt="Magenta Dye" />
       </td>
     </tr>
     <tr>
       <td>
-        <img src="../../../assets/sc-goodies/elytra_pride.png" name="Pride Elytra" mid />
+        <Image src={elytra_non_binary} alt="Non-Binary Elytra" />
       </td>
       <td>
-        <img style="display:inline-block;" src="../../../assets/elytra.png" name="Elytra"/>
-        <img style="display:inline-block;" src="../../../assets/dye/red_dye.png" />
-        <img style="display:inline-block;" src="../../../assets/dye/orange_dye.png" />
-        <img style="display:inline-block;" src="../../../assets/dye/yellow_dye.png" />
-        <img style="display:inline-block;" src="../../../assets/dye/green_dye.png" />
-        <img style="display:inline-block;" src="../../../assets/dye/blue_dye.png" />
-        <img style="display:inline-block;" src="../../../assets/dye/purple_dye.png" />
+        <Image style="display:inline-block;" src={elytra_item} alt="Elytra" />
+        <Image style="display:inline-block;" src={yellow_dye} alt="Yellow Dye" />
+        <Image style="display:inline-block;" src={white_dye} alt="White Dye" />
+        <Image style="display:inline-block;" src={purple_dye} alt="Purple Dye" />
+        <Image style="display:inline-block;" src={black_dye} alt="Black Dye" />
       </td>
     </tr>
     <tr>
       <td>
-        <img src="../../../assets/sc-goodies/elytra_trans.png" name="Trans Elytra" mid />
+        <Image src={elytra_pride} alt="Pride Elytra" />
       </td>
       <td>
-        <img style="display:inline-block;" src="../../../assets/elytra.png" name="Elytra"/>
-        <img style="display:inline-block;" src="../../../assets/dye/light_blue_dye.png" />
-        <img style="display:inline-block;" src="../../../assets/dye/pink_dye.png" />
-        <img style="display:inline-block;" src="../../../assets/dye/white_dye.png" />
+        <Image style="display:inline-block;" src={elytra_item} alt="Elytra" />
+        <Image style="display:inline-block;" src={red_dye} alt="Red Dye" />
+        <Image style="display:inline-block;" src={orange_dye} alt="Orange Dye" />
+        <Image style="display:inline-block;" src={yellow_dye} alt="Yellow Dye" />
+        <Image style="display:inline-block;" src={green_dye} alt="Green Dye" />
+        <Image style="display:inline-block;" src={blue_dye} alt="Blue Dye" />
+        <Image style="display:inline-block;" src={purple_dye} alt="Purple Dye" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <Image src={elytra_trans} alt="Trans Elytra" />
+      </td>
+      <td>
+        <Image style="display:inline-block;" src={elytra_item} alt="Elytra" />
+        <Image style="display:inline-block;" src={light_blue_dye} alt="Light Blue Dye" />
+        <Image style="display:inline-block;" src={pink_dye} alt="Pink Dye" />
+        <Image style="display:inline-block;" src={white_dye} alt="White Dye" />
       </td>
     </tr>
   </tbody>
 </table>
 
 ## Soft Toy Sharks
-<img src="../../../assets/sc-goodies/dyeable_sharks.png" alt="Soft Toy Sharks in all 16 colors"
+<Image src={dyeable_sharks} alt="Soft Toy Sharks in all 16 colors"
 title="Soft Toy Sharks in all 16 colors" style="float: right; margin-left: 16px" />
 
 Soft Toy Sharks, also known as BLÅHAJ, are available in all 16 dye colors. They're cuddly to hold.
 
 <div style="display: flex; gap: 16px; align-items: center;">
-  <img src="../../../assets/sc-goodies/shark_trans.png" alt="Trans Soft Toy Shark" title="Trans Soft Toy Shark"/>
+  <Image src={shark_trans} alt="Trans Soft Toy Shark" title="Trans Soft Toy Shark"/>
   <p>A special variant of the Soft Toy Shark is also available.</p>
 </div>
 
 <div class="clearfix"></div>
 
 ## Ancient Tomes
-<img src="../../../assets/sc-goodies/ancient_tome.png" alt="Ancient Tome" title="Ancient Tome"
+<Image src={ancient_tome} alt="Ancient Tome" title="Ancient Tome"
   style="float: right; margin-left: 16px" />
 
 Ancient Tomes are special enchantment books that can an item one level beyond the maximum vanilla level. They are found
@@ -357,7 +406,7 @@ Ancient Tomes are available for most (but not all) enchantments:
 - Piercing (max. V)
 
 ## Glass Item Frame
-<img src="../../../assets/sc-goodies/glass_item_frame.png" alt="Glass Item Frame" title="Glass Item Frame"
+<Image src={glass_item_frame} alt="Glass Item Frame" title="Glass Item Frame"
   style="float: right; margin-left: 16px" />
 
 Glass Item Frames are a see-through variant of the vanilla Item Frame. They can be crafted by surrounding an Item Frame
@@ -376,7 +425,7 @@ Glass Item Frames also have special behavior for banners and shields placed insi
   </thead>
   <tbody>
     <tr>
-      <td><img src="../../../assets/sc-goodies/popcorn.png" name="Popcorn" mid /></td>
+      <td><Image src={popcorn} alt="Popcorn" /></td>
       <td>
         A bottomless bag of popcorn.
         (<a href="https://github.com/SwitchCraftCC/sc-goodies/issues/4" target="_blank" rel="noopener noreferrer">
@@ -385,39 +434,39 @@ Glass Item Frames also have special behavior for banners and shields placed insi
       </td>
     </tr>
     <tr>
-      <td><img src="../../../assets/sc-goodies/salami.png" name="Salami" mid /></td>
+      <td><Image src={salami} alt="Salami" /></td>
       <td>Yummy salami</td>
     </tr>
     <tr>
-      <td><img src="../../../assets/sc-goodies/icecream_vanilla.png" name="Vanilla Ice Cream" mid /></td>
+      <td><Image src={icecream_vanilla} alt="Vanilla Ice Cream" /></td>
       <td>A delicious treat!</td>
     </tr>
     <tr>
-      <td><img src="../../../assets/sc-goodies/icecream_chocolate.png" name="Chocolate Ice Cream" mid /></td>
+      <td><Image src={icecream_chocolate} alt="Chocolate Ice Cream" /></td>
       <td>A delicious treat!</td>
     </tr>
     <tr>
-      <td><img src="../../../assets/sc-goodies/icecream_sweetberry.png" name="Sweet Berry Ice Cream" mid /></td>
+      <td><Image src={icecream_sweetberry} alt="Sweet Berry Ice Cream" /></td>
       <td>A delicious treat!</td>
     </tr>
     <tr>
-      <td><img src="../../../assets/sc-goodies/icecream_neapolitan.png" name="Neapolitan Ice Cream" mid /></td>
+      <td><Image src={icecream_neapolitan} alt="Neapolitan Ice Cream" /></td>
       <td>Vanilla, Chocolate, and Sweet Berry.</td>
     </tr>
     <tr>
-      <td><img src="../../../assets/sc-goodies/icecream_spruce.png" name="Spruce Ice Cream" mid /></td>
+      <td><Image src={icecream_spruce} alt="Spruce Ice Cream" /></td>
       <td>A refreshing treat!</td>
     </tr>
     <tr>
-      <td><img src="../../../assets/sc-goodies/icecream_melon.png" name="Melon Ice Cream" mid /></td>
+      <td><Image src={icecream_melon} alt="Melon Ice Cream" /></td>
       <td>A delicious treat!</td>
     </tr>
     <tr>
-      <td><img src="../../../assets/sc-goodies/icecream_beetroot.png" name="Beetroot Ice Cream" mid /></td>
+      <td><Image src={icecream_beetroot} alt="Beetroot Ice Cream" /></td>
       <td>An earthy treat!</td>
     </tr>
     <tr>
-      <td><img src="../../../assets/sc-goodies/icecream_sundae.png" name="Triple Gooberberry Sunrise" mid /></td>
+      <td><Image src={icecream_sundae} alt="Triple Gooberberry Sunrise" /></td>
       <td>A suspiciously familiar sundae.</td>
     </tr>
   </tbody>

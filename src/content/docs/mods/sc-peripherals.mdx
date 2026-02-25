@@ -3,6 +3,9 @@ title: sc-peripherals
 ---
 
 import { Aside } from '@astrojs/starlight/components';
+import { Image } from 'astro:assets';
+import printer from '../../../assets/printer.png';
+import poster_printer from '../../../assets/poster_printer.png';
 
 # sc-peripherals
 <Aside>
@@ -39,7 +42,7 @@ custom posters to display in item frames.
 
 ## 3D Printer
 
-<img src="../../../assets/printer.png" alt="3D Printer" title="3D Printer"
+<Image src={printer} alt="3D Printer" title="3D Printer"
   style="float: right; margin-left: 16px" />
 
 The 3D Printer is a [peripheral](#peripheral-api---3d-printer) that can be used to print 3D models in-game. It takes
@@ -140,7 +143,7 @@ All arguments except for `shapesOff`, `shapesOn`, and `bounds` are optional.
 
 ## Wide Format Printer
 
-<img src="../../../assets/poster_printer.png" alt="Wide Format Printer" title="Wide Format Printer"
+<Image src={poster_printer} alt="Wide Format Printer" title="Wide Format Printer"
   style="float: right; margin-left: 16px" />
 
 The Wide Format Printer is a [peripheral](#peripheral-api---wide-format-printer) that can print posters, which are
