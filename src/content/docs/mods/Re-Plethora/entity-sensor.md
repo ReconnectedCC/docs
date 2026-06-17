@@ -38,7 +38,13 @@ end
 `.getMetaByName` does much the same, but only operates on players, taking a username instead.
 
 ## Upgrading
-By default, the sensor has a range of 16 blocks. The maximum range is configured to be 32 blocks. Crafting the sensor with a Nether Star and Netherite Ingot will increase the range by 8 blocks.
+By default, the sensor has a range of 16 blocks (Level 0). The maximum range is 32 blocks (Level 5). Crafting the sensor with a Nether Star and Netherite Ingot will increase the range. Note that this does not scale linearly; the upgrade levels are as follows:
+- Level 0 = 16 blocks (default)
+- Level 1 = 24 blocks (+8)
+- Level 2 = 28 blocks (+4)
+- Level 3 = 30 blocks (+2)
+- Level 4 = 31 blocks (+1)
+- Level 5 = 32 blocks (+1)
 
 ## Other functionality
 Holding the entity sensor will display an orb on every nearby entity. This provides a nice way of hunting down those pesky zombies!
