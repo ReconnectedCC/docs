@@ -21,7 +21,7 @@ Usable in:
 ![Block Scanner](../../../../assets/replethora/entity_sensor.png)
 
 ## Basic usage
-The entity sensor provides many nifty methods, but .sense() is definitely the one to get started with. After all, it’s what the sensor does best! This finds all entities within 32 blocks of the sensor and reports some very basic information about them.
+The entity sensor provides many nifty methods, but .sense() is definitely the one to get started with. After all, it’s what the sensor does best! This finds all entities within sensor range (taxicab distance) and reports some very basic information about them.
 ```lua
 local sensor = peripheral.wrap(--[[ whatever ]])
 for _, entity in pairs(sensor.sense()) do
@@ -37,11 +37,14 @@ end
 ```
 `.getMetaByName` does much the same, but only operates on players, taking a username instead.
 
+## Upgrading
+By default, the sensor has a range of 16 blocks (Level 0). The maximum range is 32 blocks (Level 5). Crafting the sensor with a Nether Star and Netherite Ingot will increase the range. Note that this does not scale linearly; the upgrade levels are as follows:
+- Level 0 = 16 blocks (default)
+- Level 1 = 24 blocks (+8)
+- Level 2 = 28 blocks (+4)
+- Level 3 = 30 blocks (+2)
+- Level 4 = 31 blocks (+1)
+- Level 5 = 32 blocks (+1)
+
 ## Other functionality
 Holding the entity sensor will display an orb on every nearby entity. This provides a nice way of hunting down those pesky zombies!
-
-
-## Configuring
-The entity sensor can be configured using the sensor category of the plethora.cfg file:
-
-`radius=16`: The maximum distance that a sensor can query. Note that the area is a cube, not a sphere.
