@@ -61,25 +61,24 @@ export default defineConfig({
         },
         {
           label: "Frequently Asked Questions",
-          autogenerate: { directory: "faq" },
+          items: [{ autogenerate: { directory: "faq" } }],
         },
         {
           label: "Community Guides",
-          autogenerate: { directory: "community" },
+          items: [{ autogenerate: { directory: "community" } }],
         },
         {
           label: "Mods",
-          autogenerate: { directory: "mods" },
+          items: [{ autogenerate: { directory: "mods" } }],
         },
         {
           label: "Chatbox",
-          autogenerate: { directory: "chatbox" },
+          items: [{ autogenerate: { directory: "chatbox" } }, typeDocSidebarGroup],
         },
         {
           label: "Kromer",
-          autogenerate: { directory: "kromer" },
+          items: [{ autogenerate: { directory: "kromer" } }],
         },
-        typeDocSidebarGroup,
       ],
     }),
   ],
