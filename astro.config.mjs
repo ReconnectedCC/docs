@@ -4,7 +4,6 @@ import starlight from "@astrojs/starlight";
 import starlightTypeDoc, { typeDocSidebarGroup } from "starlight-typedoc";
 import starlightLinksValidator from "starlight-links-validator";
 import starlightLlmsTxt from "starlight-llms-txt";
-import umami from "@yeskunall/astro-umami";
 
 // https://astro.build/config
 export default defineConfig({
@@ -14,8 +13,6 @@ export default defineConfig({
     layout: "constrained",
   },
   integrations: [
-    umami({ id: "fda22935-c8c7-4d6f-b8d3-975171fd7480", endpointUrl: "https://umami.knijn.one" }),
-
     starlight({
       logo: {
         src: "./src/assets/rCC.svg",
