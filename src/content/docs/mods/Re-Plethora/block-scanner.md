@@ -40,7 +40,7 @@ local scanned = scanner.scan()
 local function scanned_at(x, y, z)
   return scanned[scanner_width ^ 2 * (x + scanner_radius) + scanner_width * (y + scanner_radius) + (z + scanner_radius) + 1]
 end
-While it’s useful to know what block something is, there may be times you want to query a little more information. Maybe find out the energy levels of every energy cell within range? This is where .getBlockMeta comes in. This takes some coordinate relative to the scanner and returns all the information it knows about it - just like you’d called .getMetadata on the peripheral!
+-- While it’s useful to know what block something is, there may be times you want to query a little more information. Maybe find out the energy levels of every energy cell within range? This is where .getBlockMeta comes in. This takes some coordinate relative to the scanner and returns all the information it knows about it - just like you’d called .getMetadata on the peripheral!
 
 local meta = scanner.getBlockMeta(0, 3, 0) -- Get information about whatever is 3 blocks above
 print(textutils.serialise(meta))
@@ -48,8 +48,6 @@ print(textutils.serialise(meta))
 
 ## Other functionality
 The block scanner can also be held in your hand to reveal all ores within the scanner’s radius. It doesn’t serve much use, but looks kinda pretty.
-
-Hunting for blue shiny rocks with the block scanner
 
 ## Configuring
 The block scanner can be configured using the scanner category of the plethora.cfg file:

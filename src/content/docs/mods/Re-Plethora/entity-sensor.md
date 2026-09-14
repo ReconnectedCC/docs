@@ -27,7 +27,7 @@ local sensor = peripheral.wrap(--[[ whatever ]])
 for _, entity in pairs(sensor.sense()) do
   print(("We found an entity (name: %s, uuid: %s)"):format(entity.name, entity.id))
 end
-If you want to find some more information about an entity (maybe you want to find out how hungry your friends are), you can use .getMetaByID and .getMetaByName. The first of these is a little more general, at the cost of being slightly more confusing. .getMetaByID takes an entity’s UUID and returns lots of metadata about it. This ID can be found with the above .sense method, though beware - it’s possible the entity may have wandered off and thus no longer be within range.
+-- If you want to find some more information about an entity (maybe you want to find out how hungry your friends are), you can use .getMetaByID and .getMetaByName. The first of these is a little more general, at the cost of being slightly more confusing. .getMetaByID takes an entity’s UUID and returns lots of metadata about it. This ID can be found with the above .sense method, though beware - it’s possible the entity may have wandered off and thus no longer be within range.
 
 local entities = sensor.sense()
 if #entities > 0 then
